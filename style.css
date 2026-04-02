@@ -1,0 +1,433 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: 'MyCustomFont', sans-serif;
+    background-color: #FFF9EA;
+}
+
+/* Navigation */
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 20px 50px;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* ใช้ gap แทน margin */
+}
+
+.logo {
+    width: 70px;
+}
+
+.icon {
+    width: 30px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+/* BIO */
+
+.bio {
+    background: url('assets/images/beef-intro.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-bio {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    gap: 10px;
+}
+
+.content-bio h1 {
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+
+.content-bio p {
+    letter-spacing: 3px;
+}
+
+/* Detail */
+
+.detail {
+    display: flex;
+    background-color: #7E0001;
+    align-items: center;
+}
+
+.inner-detail {
+    padding: 40px;
+}
+
+.inner-detail hr {
+    margin: 20px 0;
+}
+
+.inner-detail p {
+    line-height: 1.6;
+}
+
+section .detail .inner-detail h1, p {
+    color: white;
+}
+
+.content-bio {
+    flex: 1;                  /* ให้กินพื้นที่เต็ม */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* กลางแนวตั้ง */
+    align-items: center;      /* กลางแนวนอน */
+    text-align: center;       /* ตัวหนังสืออยู่กลาง */
+}
+
+.content-bio h1 {
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+
+.content-bio p {
+    letter-spacing: 3px;
+}
+
+/* Product */
+
+.product {
+    text-align: center;
+    margin: 50px;
+}
+
+.product h1{
+    margin: 20px;
+    color: black;
+}
+
+.product p{
+    color: black;
+}
+
+/* Tip */
+
+.tip {
+    position: relative;
+    height: 100vh;
+    background: 
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('assets/images/beef-tip.png') center/cover no-repeat;
+    font-size: 30px;
+}
+
+.tip-first {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.tip-second {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    text-align: right;
+}
+
+/* History */
+
+.history-beef {
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('assets/images/history.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 80px 20px;
+}
+
+.history-topic {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.history-topic p {
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.history-topic h1 {
+    font-size: 32px;
+}
+
+.history-beef {
+    position: relative;
+}
+
+.history-beef > * {
+    position: relative;
+    z-index: 1;
+}
+
+.history-beef::before {
+    content: "";
+    position: absolute;
+    left: 43.5%;
+    top: 350px;
+    bottom: 200px;
+    width: 150px;
+    background: #7E0001;
+    z-index: 0;
+}
+
+.history-left,
+.history-right {
+    width: 45%;
+    margin: 40px 0;
+}
+
+.history-left {
+    margin-right: auto;
+    text-align: right;
+    padding-right: 40px;
+}
+
+.history-right {
+    margin-left: auto;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.history-beef h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.history-beef p {
+    line-height: 1.6;
+    color: #eee;
+}
+
+.history-beef .history-topic .gold-color {
+    color: #D1B171;
+}
+
+.beef-knife {
+    display: block;
+    margin: 40px auto;
+    width: 500px;
+}
+
+.beefs-with-rocks {
+    display: block;
+    margin: 60px auto 0;
+    width: 70%;
+}
+
+/* Why */
+
+.why {
+    /* background */
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+        url('assets/images/grass-field.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    /* center */
+    text-align: center;
+    flex: 1;                 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.why p{
+    color: white;
+}
+
+.why h1 {
+    color: white;
+}
+
+.why .red {
+    color: #B4151B;
+}
+
+.why-detail {
+    margin: 100px
+}
+
+/* Reasons */
+
+.reasons-3 {
+    display: flex;
+    align-items: center;
+}
+
+.cow-eat-grass {
+    width: 50%;
+    object-fit: contain;
+}
+
+.reasons-3 > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reason-3-topic {
+    text-align: center;
+}
+
+.reason-3-topic h1 {
+    color: #7E0001;
+    letter-spacing: 2px;
+    line-height: 1.3;
+}
+
+.red-reason-3 {
+    background-color: #7E0001;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.red-reason-3 p {
+    line-height: 1.7;
+    opacity: 0.95;
+}
+
+.reasons-3-png {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.reasons-3-png img {
+    width: 80px;
+    transition: transform 0.3s ease;
+}
+
+/* Response Part 2 */
+
+.reasons-3-part-2 {
+    display: flex;
+    min-height: 80vh;
+}
+
+.red-reasons-3-part-2 {
+    flex: 1;
+    background-color: #7E0001;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 60px;
+    gap: 20px;
+}
+
+.red-reasons-3-part-2 h3 {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.red-reasons-3-part-2 p {
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+.red-reasons-3-part-2 h1 {
+    margin-top: auto;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.reasons-3-part-2 img {
+    flex: 1;
+    width: 50%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+/* Badge */
+
+.badge {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+}
+
+.badge div {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+.badge div hr {
+    margin-top: 20px;
+}
+
+.badge-red {
+    background-color: #7E0001;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.badge-red img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30%;
+}
+
+.badge-red p {
+    margin-top: auto; 
+}
+
+.badge-steak-with-sault {
+    background-image: url(assets/images/steak-with-sault.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.badge-steak-with-folk {
+    background-image: url(assets/images/steak-with-folk.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
