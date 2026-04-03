@@ -1,0 +1,218 @@
+@media (max-width: 1024px) {
+    /* Navigation */
+    nav ul {
+        padding: 0px 30px;
+    }
+    
+    /* BIO */
+    .content-bio h1 {
+        font-size: 70px;
+    }
+
+    /* Product & Why */
+    .product p, .why p {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    /* Detail */
+    .inner-detail {
+        padding: 60px;
+    }
+
+    /* Reasons 3 */
+    .reasons-3, .reasons-3-part-2 {
+        height: auto;
+        min-height: 800px;
+    }
+    .red-reasons-3-part-2 h1 {
+        font-size: 80px;
+    }
+
+    /* Badge */
+    .badge {
+        padding: 50px 2%;
+    }
+    .badge > div {
+        min-height: 600px;
+        padding: 30px 15px;
+    }
+
+    /* Contact */
+    .contact {
+        gap: 40px;
+        padding: 60px 5%;
+    }
+}
+
+/* =========================================
+   Responsive สำหรับหน้าจอมือถือ (Mobiles) 
+   ขนาดหน้าจอไม่เกิน 768px
+========================================= */
+@media (max-width: 768px) {
+    /* Navigation */
+    nav {
+        margin-top: 20px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.8); /* ทำพื้นหลังกันตัวหนังสือกลืนรูป */
+    }
+    .nav-left, .nav-right {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* BIO */
+    .content-bio h1 {
+        font-size: 50px;
+        letter-spacing: 2px;
+    }
+    .content-bio p {
+        font-size: 18px;
+    }
+
+    /* Detail */
+    .detail {
+        flex-direction: column;
+    }
+    .inner-detail {
+        padding: 40px 20px;
+    }
+    .inner-detail h1 {
+        font-size: 40px;
+    }
+
+    /* Product & Why */
+    .product p, .why p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .why h1 {
+        font-size: 40px;
+    }
+    .why {
+        height: auto;
+        padding: 60px 0;
+    }
+
+    /* Tip */
+    .tip-first, .tip-second {
+        padding: 20px;
+    }
+    .tip-first p {
+        font-size: 40px;
+    }
+    .tip-second p {
+        font-size: 30px;
+    }
+    .tip::before {
+        display: none; /* ซ่อนจุดไข่ปลาบนมือถือ */
+    }
+
+    /* History */
+    .history-beef::before {
+        display: none; /* ซ่อนเส้นแดงตรงกลาง */
+    }
+    .history-left, .history-right {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 20px 0;
+    }
+    .beef-knife, .beefs-with-rocks {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Reasons 3 & Reasons 3 Part 2 */
+    .reasons-3, .reasons-3-part-2 {
+        flex-direction: column;
+        height: auto;
+    }
+    .cow-eat-grass, .reasons-3 > div, .reasons-3-part-2 img {
+        width: 100%;
+        height: 400px; /* กำหนดความสูงของรูปบนมือถือ */
+    }
+    .reason-3-topic h1 {
+        font-size: 30px;
+    }
+    .red-reason-3 h3, .red-reasons-3-part-2 h3 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    .red-reason-3 p, .red-reasons-3-part-2 p {
+        font-size: 18px;
+    }
+    .red-reasons-3-part-2 h1 {
+        font-size: 60px;
+        margin-top: 40px;
+    }
+    .red-reasons-3-part-2 {
+        padding: 40px 20px;
+    }
+
+    /* Badge */
+    .badge {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+    .badge > div {
+        margin-right: 0;
+        min-height: 400px;
+    }
+
+    /* Itthisak */
+    .itthisak {
+        flex-direction: column;
+    }
+    .itthisak-with-office {
+        height: 400px; /* ให้รูปห้องสูงพอดีบนมือถือ */
+    }
+    .itthisak-detail {
+        padding: 40px 20px;
+    }
+    .itthisak-detail h1 {
+        font-size: 32px;
+    }
+    .itthisak-detail p, .itthisak-detail h4 {
+        font-size: 18px;
+    }
+
+    /* Contact */
+    .contact {
+        flex-direction: column;
+        gap: 40px;
+        padding: 60px 20px;
+    }
+    .contact-topic h1:first-child, .contact-topic h1:last-child {
+        font-size: 50px;
+    }
+    .contact-option {
+        flex-direction: column;
+    }
+    .contact-form input[type="submit"] {
+        align-self: stretch; /* ให้ปุ่ม submit กว้างเต็มจอ */
+        text-align: center;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+    .quote {
+        border-left: none;
+        border-top: 2px solid #FFFFFF;
+        padding-top: 20px;
+    }
+}
