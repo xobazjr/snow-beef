@@ -150,6 +150,7 @@
   nav a { font-size: 13px; }
   .logo { width: 50px; }
 
+  
   .bio { height: 100svh; }
   .content-bio h1 { font-size: 44px; letter-spacing: 2px; }
   .content-bio    { font-size: 16px; }
@@ -218,7 +219,7 @@
   .itthisak-detail h4 { font-size: 16px; }
   .itthisak-detail p  { font-size: 15px; }
 
-  .contact { padding: 40px 16px; gap: 24px; }
+  .contact { padding: 40px 56px; gap: 24px; }
   .contact-topic h1:first-child,
   .contact-topic h1:last-child { font-size: 44px; }
   .contact-type p { font-size: 16px; }
@@ -261,3 +262,7 @@
 
   footer h1 { font-size: 140%; }
 }
+
+/* @media (max-width: 250px) {
+    nav { display: none; }
+} */
