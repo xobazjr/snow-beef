@@ -130,6 +130,7 @@ nav li {
 
 .content-bio p {
     letter-spacing: 3px;
+    text-align: start;
 }
 
 /* Detail */
@@ -137,11 +138,12 @@ nav li {
 .detail {
     display: flex;
     background-color: #7E0001;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .detail img {
     width: 100%;
+    object-fit: cover;
 }
 
 .inner-detail {
@@ -488,7 +490,7 @@ section .detail .inner-detail h1, p {
 
 .cow-eat-grass {
     width: 50%;
-    height: 100%; 
+    /* height: 100%;  */
     object-fit: cover;
     display: block;
 }
@@ -609,9 +611,9 @@ section .detail .inner-detail h1, p {
 
 .reasons-3-part-2 img {
     width: 50%;
-    height: 100%; 
+    /* height: 100%;  */
     object-fit: cover;
-    object-position: top; 
+    object-position: bottom; 
     display: block;
 }
 
@@ -889,6 +891,8 @@ section .detail .inner-detail h1, p {
 .contact-topic h1 {
     color: #7E0001;
 }
+
+/* Footer */
 
 footer {
     background-color: #7E0001;

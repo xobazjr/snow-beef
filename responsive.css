@@ -1,218 +1,263 @@
-@media (max-width: 1024px) {
-    /* Navigation */
-    nav ul {
-        padding: 0px 30px;
-    }
-    
-    /* BIO */
-    .content-bio h1 {
-        font-size: 70px;
-    }
+@media (max-width: 1440px) {
 
-    /* Product & Why */
-    .product p, .why p {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
+  nav ul { padding: 0 40px; }
 
-    /* Detail */
-    .inner-detail {
-        padding: 60px;
-    }
+  .content-bio h1 { font-size: 80px; }
+  .content-bio { font-size: 24px; }
 
-    /* Reasons 3 */
-    .reasons-3, .reasons-3-part-2 {
-        height: auto;
-        min-height: 800px;
-    }
-    .red-reasons-3-part-2 h1 {
-        font-size: 80px;
-    }
+  .inner-detail { padding: 80px; }
+  .inner-detail h1 { font-size: 48px; }
+  .inner-detail p  { font-size: 18px; }
 
-    /* Badge */
-    .badge {
-        padding: 50px 2%;
-    }
-    .badge > div {
-        min-height: 600px;
-        padding: 30px 15px;
-    }
+  .tip-first p  { font-size: 70px; }
+  .tip-second p { font-size: 55px; }
 
-    /* Contact */
-    .contact {
-        gap: 40px;
-        padding: 60px 5%;
-    }
+  .beef-knife      { width: 380px; }
+  .beefs-with-rocks { width: 80%; }
+
+  .why h1 { font-size: 56px; }
+  .why p  { font-size: 24px; padding: 0 180px; }
+
+  .reasons-3          { height: auto; min-height: 900px; }
+  .reason-3-topic h1  { font-size: 46px; }
+  .red-reason-3 h3    { font-size: 32px; }
+  .red-reason-3 p     { font-size: 24px; }
+
+  .reasons-3-part-2           { height: auto; min-height: 800px; }
+  .red-reasons-3-part-2 h3    { font-size: 32px; }
+  .red-reasons-3-part-2 p     { font-size: 22px; }
+  .red-reasons-3-part-2 h1    { font-size: 120px; }
+
+  .itthisak-detail h1 { font-size: 48px; }
+  .itthisak-detail p  { font-size: 20px; }
+
+  .contact-topic h1:first-child,
+  .contact-topic h1:last-child { font-size: 64px; }
 }
 
-/* =========================================
-   Responsive สำหรับหน้าจอมือถือ (Mobiles) 
-   ขนาดหน้าจอไม่เกิน 768px
-========================================= */
+@media (max-width: 1024px) {
+
+  nav { margin-top: 24px; }
+  nav ul { padding: 0 24px; gap: 0; }
+  nav a  { font-size: 14px; }
+  .nav-left, .nav-right { gap: 20px; }
+  .logo  { width: 60px; }
+
+  .content-bio h1 { font-size: 60px; letter-spacing: 3px; }
+  .content-bio    { font-size: 20px; }
+
+  .detail { flex-direction: column; }
+  .inner-detail {
+    padding: 60px 40px;
+    width: 100%;
+  }
+  .inner-detail h1 { font-size: 36px; }
+  .inner-detail p  { font-size: 16px; }
+  .detail img { width: 100%; max-height: 500px; object-fit: cover; }
+
+  .product p { padding: 0 60px; }
+
+  .tip-first  { padding: 30px; top: 30px; }
+  .tip-second { padding: 30px; bottom: 30px; }
+  .tip-first p  { font-size: 52px; }
+  .tip-second p { font-size: 40px; }
+
+  .history-beef::before { display: none; }
+  .history-left,
+  .history-right {
+    width: 80%;
+    text-align: left;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  .beef-knife       { width: 280px; }
+  .beefs-with-rocks { width: 90%; }
+
+  .why h1 { font-size: 48px; }
+  .why p  { font-size: 20px; padding: 0 60px; }
+  .why-detail { margin: 60px 40px; }
+
+  .reasons-3 {
+    flex-direction: column;
+    height: auto;
+  }
+  .cow-eat-grass {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  .reasons-3 > div { width: 100%; }
+  .reason-3-topic h1 { font-size: 36px; }
+  .reason-3-topic    { padding: 40px 5%; }
+  .red-reason-3 h3   { font-size: 26px; margin-top: 40px; }
+  .red-reason-3 p    { font-size: 20px; }
+  .reasons-3-png img { height: 100px; margin: 15px; margin-bottom: 60px; }
+
+  .reasons-3-part-2 {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .reasons-3-part-2 img {
+    width: 100%;
+    height: 400px;
+  }
+  .red-reasons-3-part-2         { padding: 60px 40px; }
+  .red-reasons-3-part-2 h3      { font-size: 26px; margin-top: 30px; }
+  .red-reasons-3-part-2 p       { font-size: 20px; }
+  .red-reasons-3-part-2 h1      { font-size: 90px; }
+
+  .badge { flex-wrap: wrap; padding: 30px 4%; gap: 0; }
+  .badge > div {
+    flex: 1 1 calc(50% - 10px);
+    min-height: 400px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .itthisak { flex-direction: column; }
+  .itthisak-with-office { min-height: 400px; }
+  .itthisak-detail { padding: 40px; }
+  .itthisak-detail h1 { font-size: 36px; }
+  .itthisak-detail p  { font-size: 18px; }
+
+  .contact {
+    align-items: unset;
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px 8%;
+  }
+  
+  .contact-topic {
+    text-align: center;
+  }
+  .contact-topic h1:first-child,
+  .contact-topic h1:last-child { font-size: 56px; }
+
+  footer {
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+  }
+  footer h1 { font-size: 220%; }
+}
+
 @media (max-width: 768px) {
-    /* Navigation */
-    nav {
-        margin-top: 20px;
-    }
-    nav ul {
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-        background-color: rgba(0, 0, 0, 0.8); /* ทำพื้นหลังกันตัวหนังสือกลืนรูป */
-    }
-    .nav-left, .nav-right {
-        flex-direction: column;
-        gap: 15px;
-        width: 100%;
-        justify-content: center;
-    }
 
-    /* BIO */
-    .content-bio h1 {
-        font-size: 50px;
-        letter-spacing: 2px;
-    }
-    .content-bio p {
-        font-size: 18px;
-    }
+  nav { margin-top: 16px; }
+  nav ul { padding: 0 16px; }
+  .nav-left { display: none; }
+  .nav-right { gap: 12px; }
+  nav a { font-size: 13px; }
+  .logo { width: 50px; }
 
-    /* Detail */
-    .detail {
-        flex-direction: column;
-    }
-    .inner-detail {
-        padding: 40px 20px;
-    }
-    .inner-detail h1 {
-        font-size: 40px;
-    }
+  .bio { height: 100svh; }
+  .content-bio h1 { font-size: 44px; letter-spacing: 2px; }
+  .content-bio    { font-size: 16px; }
+  .content-bio p  { letter-spacing: 2px; }
 
-    /* Product & Why */
-    .product p, .why p {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .why h1 {
-        font-size: 40px;
-    }
-    .why {
-        height: auto;
-        padding: 60px 0;
-    }
+  .inner-detail { padding: 40px 24px; }
+  .inner-detail h1 { font-size: 28px; line-height: 1.3; }
+  .inner-detail p  { font-size: 15px; }
 
-    /* Tip */
-    .tip-first, .tip-second {
-        padding: 20px;
-    }
-    .tip-first p {
-        font-size: 40px;
-    }
-    .tip-second p {
-        font-size: 30px;
-    }
-    .tip::before {
-        display: none; /* ซ่อนจุดไข่ปลาบนมือถือ */
-    }
+  .product { margin: 30px 16px; }
+  .product h1 { font-size: 22px; }
+  .product p  { padding: 0 16px; font-size: 14px; }
 
-    /* History */
-    .history-beef::before {
-        display: none; /* ซ่อนเส้นแดงตรงกลาง */
-    }
-    .history-left, .history-right {
-        width: 100%;
-        text-align: center;
-        padding: 0;
-        margin: 20px 0;
-    }
-    .beef-knife, .beefs-with-rocks {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
+  .tip { height: 70vh; }
+  .tip-first  { top: 20px; left: 16px; padding: 20px; }
+  .tip-second { bottom: 20px; right: 16px; padding: 20px; }
+  .tip-first p  { font-size: 36px; }
+  .tip-second p { font-size: 28px; }
 
-    /* Reasons 3 & Reasons 3 Part 2 */
-    .reasons-3, .reasons-3-part-2 {
-        flex-direction: column;
-        height: auto;
-    }
-    .cow-eat-grass, .reasons-3 > div, .reasons-3-part-2 img {
-        width: 100%;
-        height: 400px; /* กำหนดความสูงของรูปบนมือถือ */
-    }
-    .reason-3-topic h1 {
-        font-size: 30px;
-    }
-    .red-reason-3 h3, .red-reasons-3-part-2 h3 {
-        font-size: 24px;
-        margin-top: 20px;
-    }
-    .red-reason-3 p, .red-reasons-3-part-2 p {
-        font-size: 18px;
-    }
-    .red-reasons-3-part-2 h1 {
-        font-size: 60px;
-        margin-top: 40px;
-    }
-    .red-reasons-3-part-2 {
-        padding: 40px 20px;
-    }
+  .history-beef  { padding: 50px 16px; }
+  .history-topic h1 { font-size: 22px; }
+  .history-topic p  { font-size: 13px; }
+  .history-left,
+  .history-right { width: 100%; padding: 0 8px; }
+  .history-beef h2 { font-size: 20px; }
+  .history-beef p  { font-size: 14px; }
+  .beef-knife       { width: 200px; }
+  .beefs-with-rocks { width: 100%; }
 
-    /* Badge */
-    .badge {
-        flex-direction: column;
-        padding: 30px 20px;
-        gap: 20px;
-    }
-    .badge > div {
-        margin-right: 0;
-        min-height: 400px;
-    }
+  .why { height: auto; padding: 60px 0; }
+  .why-detail { margin: 30px 20px; }
+  .why h1 { font-size: 36px; }
+  .why p  { font-size: 16px; padding: 0 20px; }
 
-    /* Itthisak */
-    .itthisak {
-        flex-direction: column;
-    }
-    .itthisak-with-office {
-        height: 400px; /* ให้รูปห้องสูงพอดีบนมือถือ */
-    }
-    .itthisak-detail {
-        padding: 40px 20px;
-    }
-    .itthisak-detail h1 {
-        font-size: 32px;
-    }
-    .itthisak-detail p, .itthisak-detail h4 {
-        font-size: 18px;
-    }
+  .cow-eat-grass        { height: 280px; }
+  .reason-3-topic       { padding: 30px 20px; }
+  .reason-3-topic h1    { font-size: 26px; }
+  .red-reason-3         { padding: 30px 20px; }
+  .red-reason-3 h3      { font-size: 20px; margin-top: 20px; }
+  .red-reason-3 p       { font-size: 16px; }
+  .reasons-3-png img    { height: 70px; margin: 10px; margin-bottom: 40px; }
 
-    /* Contact */
-    .contact {
-        flex-direction: column;
-        gap: 40px;
-        padding: 60px 20px;
-    }
-    .contact-topic h1:first-child, .contact-topic h1:last-child {
-        font-size: 50px;
-    }
-    .contact-option {
-        flex-direction: column;
-    }
-    .contact-form input[type="submit"] {
-        align-self: stretch; /* ให้ปุ่ม submit กว้างเต็มจอ */
-        text-align: center;
-    }
+  .reasons-3-part-2 img        { height: 280px; }
+  .red-reasons-3-part-2        { padding: 30px 20px; }
+  .red-reasons-3-part-2 h3     { font-size: 20px; margin-top: 20px; margin-bottom: 16px; }
+  .red-reasons-3-part-2 p      { font-size: 16px; }
+  .red-reasons-3-part-2 h1     { font-size: 60px; }
 
-    /* Footer */
-    footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 40px 20px;
-        gap: 30px;
-    }
-    .quote {
-        border-left: none;
-        border-top: 2px solid #FFFFFF;
-        padding-top: 20px;
-    }
+  .badge { flex-direction: column; padding: 20px 16px; }
+  .badge > div {
+    flex: none;
+    width: 100%;
+    min-height: 300px;
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+
+  .earth { padding: 20px 16px; }
+  .earth h1 { font-size: 22px; }
+  .earth p  { font-size: 14px; }
+  .earth img { width: 100%; }
+
+  .itthisak-with-office { min-height: 320px; }
+  .itthisak-detail { padding: 30px 20px; }
+  .itthisak-detail h1 { font-size: 26px; }
+  .itthisak-detail h4 { font-size: 16px; }
+  .itthisak-detail p  { font-size: 15px; }
+
+  .contact { padding: 40px 16px; gap: 24px; }
+  .contact-topic h1:first-child,
+  .contact-topic h1:last-child { font-size: 44px; }
+  .contact-type p { font-size: 16px; }
+  .contact-form input[type="text"],
+  .contact-form input[type="tel"] { font-size: 18px; }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 30px 20px;
+  }
+  footer h1 { font-size: 180%; }
+  .qrcode_contact { gap: 6px; }
+  .qr_code { width: 80px; }
+}
+
+@media (max-width: 480px) {
+
+  .content-bio h1 { font-size: 34px; letter-spacing: 1px; }
+  .content-bio    { font-size: 13px; gap: 6px; }
+
+  .tip { height: 60vh; }
+  .tip-first p  { font-size: 26px; line-height: 1.2; }
+  .tip-second p { font-size: 22px; }
+
+  .why h1 { font-size: 28px; }
+  .why p  { font-size: 14px; padding: 0 12px; }
+
+  .reason-3-topic h1 { font-size: 22px; }
+  .red-reason-3 h3   { font-size: 18px; }
+  .red-reason-3 p    { font-size: 14px; }
+
+  .red-reasons-3-part-2 h3  { font-size: 18px; }
+  .red-reasons-3-part-2 p   { font-size: 14px; }
+  .red-reasons-3-part-2 h1  { font-size: 48px; }
+
+  .contact-topic h1:first-child,
+  .contact-topic h1:last-child { font-size: 36px; }
+
+  footer h1 { font-size: 140%; }
 }
