@@ -40,11 +40,12 @@ nav a {
 } */
 
 nav {
-    position: absolute; 
+    position: fixed; 
     left: 0;
     width: 100%;
     z-index: 1000;
-    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
 }
 
 nav ul {
