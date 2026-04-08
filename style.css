@@ -71,11 +71,11 @@ body {
 
 nav a {
     text-decoration: none;
-} */
+}  */
 
 /* Navigation */
 
-/* nav {
+nav {
     position: fixed; 
     left: 0;
     width: 100%;
@@ -124,15 +124,19 @@ nav a:hover {
     display: block;
 }
 
+.removal {
+    width: 30px;
+}
+
 .contact_nav {
     display: flex;
     align-items: center;
     gap: 10px;
-} */
+}
 
 /* Navigation */
 
-.navbar {
+/* .navbar {
     padding: 20px 50px;
     font-family: 'Outfit', sans-serif;
 }
@@ -223,18 +227,18 @@ nav a:hover {
 nav {
     position: relative;
     z-index: 10;
-}
+} */
 
 /* BIO */
 
-/* .bio {
+.bio {
     background: url('assets/images/beef-intro.jpg') center/cover no-repeat;
-    width: 1440px;
+    /* width: 1440px; */
     height: 900px;
     min-height: 900px;
     display: flex;
     flex-direction: column;
-} */
+}
 
 /* .video-bg {
   position: absolute;
@@ -254,9 +258,9 @@ nav {
   border: 0;
 } */
 
-.bio {
+/* .bio {
   position: relative;
-  /* width: 1440px; */
+  width: 1440px;
   height: 980px;
   overflow: hidden;
   background: #111;
@@ -310,10 +314,10 @@ nav {
 
 .content-bio p {
     letter-spacing: 5%;
-    /* text-align: start; */
+    text-align: start;
     font-weight: 200;
     font-size: 24px;
-}
+} */
 
 /* Detail */
 
@@ -374,7 +378,7 @@ section .detail .inner-detail p {
 /* Product */
 
 .product {
-    height: 880px;
+    height: 350px;
     display: flex;
     justify-content: center; 
     align-items: center;    
