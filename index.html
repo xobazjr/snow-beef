@@ -5,104 +5,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snow Beef</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
+    <!-- <link rel="stylesheet" href="responsive.css"> -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Suravaram&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Suravaram&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="bio">
-        <nav>
-            <ul>
-                <div class="nav-left">
-                <li><a href="">blog</a></li>
-                <li><a href="">Our Beef</a></li>
-                <li><a href="">Story</a></li>
-                </div class="nav-center">
-                <li><img src="assets/images/logo-snow-beef-gold.png" class="logo"></li>
-                <div class="nav-right"  >
-                <li class="contact_nav">
-                    <a href=""><label>Contact</label></a>
-                    <img src="assets/images/rg-removal.png" class="icon">
-                </li>
-                </div>
-            </ul>    
-        </nav>
-
-        <section class="content-bio">
-            <div>
-                <p>BIO FRESH</p>
-                <h1>SNOWBEEF</h1>
-            </div>
-        </section>
-    </div>
-
-    <section class="detail">
-        <div class="inner-detail">
-            <h1>สัมผัสความนุ่มละมุน <br> ดุจหิมะกับ Snow Beef</h1>
-            <hr>
-            <p>จากเนื้อวัวสายพันธุ์แท้ British Hereford ที่เลี้ยงด้วยหญ้าธรรมชาติ (Grass-Fed) จากทุ่งหญ้า อันกว้างใหญ่ในออสเตรเลีย สู่การยกระดับด้วยนวัตกรรม Artificial Marbling Technology ที่ช่วยแทรกลายไขมันให้สวยงาม มอบสัมผัสที่นุ่ม ชุ่มฉ่ำ และรสชาติที่เข้มข้นในทุกคำไม่เพียงแค่ความอร่อย แต่ยังเปี่ยมด้วยคุณค่าจาก โอเมก้า-3 ในสัดส่วนที่สมดุล ดีต่อสุขภาพ นี่คือวัตถุดิบชั้นเลิศที่จะช่วยสร้างมูลค่าเพิ่มและเปลี่ยนทุกจานอาหารของคุณให้เป็นเมนูระดับพรีเมียม</p>
+        <div class="video-bg">
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/Qup8u1Wdads?autoplay=1&mute=1&loop=1&playlist=Qup8u1Wdads&controls=0"
+                title="YouTube video player" 
+                frameborder="0"
+                allow="autoplay"
+                allowfullscreen>
+            </iframe>
         </div>
-        <img src="assets/images/cow-draw.jpg">
+
+    <!-- <div class="video-bg">
+        <iframe 
+            src="https://www.youtube.com/embed/Qup8u1Wdads?autoplay=1&mute=1&loop=1&playlist=Qup8u1Wdads&controls=0&disablekb=1&modestbranding=1"
+            frameborder="0"
+            allow="autoplay">
+        </iframe>
+    </div> -->
+
+    <!-- NAV -->
+    <!-- <nav>
+        <ul>
+            <li class="nav-logo">
+                <img src="assets/images/logo-snow-beef-gold.png" class="logo">
+            </li>
+
+            <li class="nav-menu">
+                <a href="#">blog</a>
+                <a href="#">Our Beef</a>
+                <a href="#">Story</a>
+                <a href="#">Contact</a>
+                <a href="#">
+                    <div>
+                        <p>TH</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav> -->
+
+    <nav class="navbar">
+            <ul>
+                <div class="snow-beef-logo">
+                    <img src="assets/images/logo-snow-beef-gold.png" class="logo">
+                    <div>
+                        <h1>BIO FRESH FOODS</h1>
+                        <p>Thailand Company Limited</p>
+                    </div>
+                </div>
+                <div class="menu">
+                    <li><a href="#">Our Beef</a></li>
+                    <li><a href="#">Why Snowbeef?</a></li>
+                    <li><a href="#">Story</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                    <!-- Language -->
+                    <li class="lang">
+                        <button class="lang-btn">
+                            <span id="current-lang">TH</span> ▾
+                        </button>
+
+                        <ul class="lang-dropdown">
+                            <li data-lang="th">TH</li>
+                            <li data-lang="en">EN</li>
+                        </ul>
+                    </li>
+                </div>
+            </ul>
+    </nav>
+
+    <!-- HERO TEXT -->
+    <section class="content-bio">
+        <div>
+            <p>BIO FRESH</p>
+            <h1 class="TimeNewRoman">SNOWBEEF</h1>
+        </div>
     </section>
 
+</div>
+
+    <!-- <section class="detail">
+        <div class="inner-detail">
+            <div>
+                <h1>สัมผัสความนุ่มละมุน<br>ดุจหิมะกับ <label class="TimeNewRoman">Snow Beef</label></h1>
+                <hr>
+                <p class="Sarabun">จากเนื้อวัวสายพันธุ์แท้ British Hereford ที่เลี้ยงด้วยหญ้าธรรมชาติ (Grass-Fed) จากทุ่งหญ้า อันกว้างใหญ่ในออสเตรเลีย สู่การยกระดับด้วยนวัตกรรม Artificial Marbling Technology ที่ช่วยแทรกลายไขมันให้สวยงาม มอบสัมผัสที่นุ่ม ชุ่มฉ่ำ และรสชาติที่เข้มข้นในทุกคำไม่เพียงแค่ความอร่อย แต่ยังเปี่ยมด้วยคุณค่าจาก โอเมก้า-3 ในสัดส่วนที่สมดุล ดีต่อสุขภาพ นี่คือวัตถุดิบชั้นเลิศที่จะช่วยสร้างมูลค่าเพิ่มและเปลี่ยนทุกจานอาหารของคุณให้เป็นเมนูระดับพรีเมียม</p>
+            </div>
+        </div>
+        <img src="assets/images/cow-draw.jpg">
+    </section> -->
+
     <section class="product">
-        <p>OUR PRODUCT</p>
-        <h1>ผลิตภัณฑ์ของเรา</h1>
-        <p>เนื้อส่วน สันใน, ริบอาย, สันนอก, เซอร์ลอยด์ และชัคโรลยกระดับด้วยนวัตกรรมแทรกไขมัน</p>
-        <p>เอกสิทธิ์เพื่อสัมผัสนุ่มละมุนดุจเนยและรสชาติที่เข้มข้นสม่ำเสมอในทุกชิ้น</p>
+        <div>
+            <p class="Suravaram">OUR PRODUCT</p>
+            <h1 class="ibmthai">ผลิตภัณฑ์ของเรา</h1>
+            <p class="Sarabun">เอกสิทธิ์เพื่อสัมผัสนุ่มละมุนดุจเนยและรสชาติที่เข้มข้นสม่ำเสมอในทุกชิ้นเนื้อส่วน สันใน, ริบอาย, สันนอก, เซอร์ลอยด์ และชัคโรลยกระดับด้วยนวัตกรรมแทรกไขมัน<br>เอกสิทธิ์เพื่อสัมผัสนุ่มละมุนดุจเนยและรสชาติที่เข้มข้นสม่ำเสมอในทุกชิ้น</p>
+        </div>
     </section>
 
     <section class="tip">
-        <div class="tip-first">
-            <p>Snow Beef Australia</p>
-            <p>Steak Tenderloin</p>
+        <div class="tip-topic">
+            <p class="TimeNewRoman">Snow Beef Australia<br>Steak Tenderloin</p>
         </div>
-        <div class="tip-second">
-            <p>Snow beef Australia Steak Tenderloin</p>
-            <p>Rib eye Striploin Sirloin (Tip) Chuck Roll</p>
+
+        <div class="tip-detail">
+            <p class="Outfit">Snow beef Australia Steak Tenderloin<br>Rib eye Striploin Sirloin (Tip) Chuck Roll</p>
+        </div>
+        <div>
+            <img src="assets/images/dot.png">
         </div>
     </section>
 
     <section class="history-beef">
-        <div class="history-topic">
-            <p class="gold-color">The origin of groundbreaking ideas and innovations</p>
-            <h1>จุดกำเนิดของแนวคิดและนวัตกรรมที่ล้ำหน้า</h1>
-        </div>
+        <!-- <div>
+            <div class="history-topic">
+                <p class="Suravaram">The origin of groundbreaking ideas and innovations</p>
+                <h1 class="ibmthai">จุดกำเนิดของแนวคิดและนวัตกรรมที่ล้ำหน้า</h1>
+            </div>
 
-        <img src="assets/images/beef-knife.png" class="beef-knife"> 
+            <img src="assets/images/logo-snow-beef-gold.png" class="history-logo"> 
 
-        <div class="history-left">
-            <h2>1989</h2>
-            <p>คุณพ่อของคุณอิโซเบะ โคอิชิ ได้เริ่มต่อตั้งบริษัทที่เป็นธุรกิจครอบครัวขนาดเล็ก ทำธุรกิจเกี่ยวกับแล็บวิจัยเคมี และพัฒนาสินค้าที่ใช้เกี่ยวกับความสวยความงาม แต่ด้วยคุณ อิโซเบะ โคอิชิ ยังไม่ได้มีความสนใจในธุรกิจของครอบครัวแต่มีความสนใจเรื่องของการทำฟาร์มโคมากกว่าจึงยังไม่ได้มาช่วยธุรกิจที่บ้าน</p>
-        </div>
+            <div class="history-left">
+                <h2 class="Outfit">1989</h2>
+                <p class="Sarabun">คุณพ่อของคุณอิโซเบะ โคอิชิ ได้เริ่มต่อตั้งบริษัทที่เป็นธุรกิจครอบครัวขนาดเล็ก ทำธุรกิจเกี่ยวกับแล็บวิจัยเคมี และพัฒนาสินค้าที่ใช้เกี่ยวกับความสวยความงาม แต่ด้วยคุณ อิโซเบะ โคอิชิ ยังไม่ได้มีความสนใจในธุรกิจของครอบครัวแต่มีความสนใจเรื่องของการทำฟาร์มโคมากกว่าจึงยังไม่ได้มาช่วยธุรกิจที่บ้าน</p>
+            </div>
 
-        <div class="history-right">
-            <h2>1999</h2>
-            <p>คุณอิโซเบะ โคอิชิ ได้ทำงานในฮอกไกโด และได้ทราบข่าวว่าธุรกิจครอบครัวเกิดประสบปัญหา เนื่องจากไม่มีทุนแบบยักษ์ใหญ่เลยทำให้ต้องเอาบ้านไปค้ำประกันกู้เงินนอกระบบ คุณอิโซเบะ โคอิชิ เลยต้องกลับมาช่วยกอบกู้ธุรกิจที่บ้าน</p>
-        </div>
+            <div class="history-right">
+                <h2 class="Outfit">1999</h2>
+                <p class="Sarabun">คุณอิโซเบะ โคอิชิ ได้ทำงานในฮอกไกโด และได้ทราบข่าวว่าธุรกิจครอบครัวเกิดประสบปัญหา เนื่องจากไม่มีทุนแบบยักษ์ใหญ่เลยทำให้ต้องเอาบ้านไปค้ำประกันกู้เงินนอกระบบ คุณอิโซเบะ โคอิชิ เลยต้องกลับมาช่วยกอบกู้ธุรกิจที่บ้าน</p>
+            </div>
 
-        <div class="history-left">
-            <h2>2000</h2>
-            <p>คุณอิโซเบะ โคอิชิ ได้เล็งเห็นว่า ฟาร์มโคในฮอกไกโดที่เคยทำงานนั้นมีเนื้อที่รสชาติดีมากมาย แต่ขายไม่ได้เพราะแค่ไม่มีลายไขมันแทรกและไม่นุ่มจึงเริ่มพัฒนาสินค้าร่วมกับบริษัทยักษ์ในวงการเนื้อแปรรูปและใช้เวลาพัฒนาถึง 8 เดือน โดยมีปณิธานว่า จะต้องทำของที่อร่อยที่สุดให้ทุกคนเข้าถึง จนประสบความสำเร็จและมียอดขายถล่มทลายมากกว่า 5000 ตัน ในประเทศญี่ปุ่น และนอกจากนี้ยังเพิ่มมีการวิจัยและพัฒนาสารประกอบอาหารอื่นๆ ที่ใช้กับเนื้อสัตว์ทุกประเภท</p>
-        </div>
+            <div class="history-left">
+                <h2 class="Outfit">2000</h2>
+                <p class="Sarabun">คุณอิโซเบะ โคอิชิ ได้เล็งเห็นว่า ฟาร์มโคในฮอกไกโดที่เคยทำงานนั้นมีเนื้อที่รสชาติดีมากมาย แต่ขายไม่ได้เพราะแค่ไม่มีลายไขมันแทรกและไม่นุ่มจึงเริ่มพัฒนาสินค้าร่วมกับบริษัทยักษ์ในวงการเนื้อแปรรูปและใช้เวลาพัฒนาถึง 8 เดือน โดยมีปณิธานว่า จะต้องทำของที่อร่อยที่สุดให้ทุกคนเข้าถึง จนประสบความสำเร็จและมียอดขายถล่มทลายมากกว่า 5000 ตัน ในประเทศญี่ปุ่น และนอกจากนี้ยังเพิ่มมีการวิจัยและพัฒนาสารประกอบอาหารอื่นๆ ที่ใช้กับเนื้อสัตว์ทุกประเภท</p>
+            </div>
 
-        <div class="history-right">
-            <h2>2001 - 2013</h2>
-            <p><strong>2001</strong> ขายเทคโนโลยีไปต่างประเทศ</p>
-            <p><strong>2005</strong> เปิดสาขาที่จีน</p>
-            <p><strong>2009</strong> เปิด ไบโอ เฟร็ช ฟู๊ดส์ ไทยแลนด</p>
-            <p><strong>2013</strong> เปิดออฟฟิศที่โตเกียว</p>
-        </div>
-
-        <img src="assets/images/beefs-with-rocks.png" class="beefs-with-rocks">
+            <div class="history-right">
+                <h2>2001 - 2013</h2>
+                <p><strong>2001</strong> ขายเทคโนโลยีไปต่างประเทศ</p>
+                <p><strong>2005</strong> เปิดสาขาที่จีน</p>
+                <p><strong>2009</strong> เปิด ไบโอ เฟร็ช ฟู๊ดส์ ไทยแลนด</p>
+                <p><strong>2013</strong> เปิดออฟฟิศที่โตเกียว</p>
+            </div>
+            <img src="assets/images/beefs-with-rocks.png" class="beefs-with-rocks">
+        </div> -->
     </section>
 
     <section class="why">
         <div class="why-detail">
-            <h1>ทําไมต้อง <label class="red">Snow Beef?</label></h1>
-            <p>เราเชื่อว่า "เนื้อที่ดี" ต้องเริ่มจากต้นกำเนิดที่ดี Snow Beef จึงเป็นเนื้อวัว Grass-Fed ที่เลี้ยงด้วยหญ้าธรรมชาติ 100% ท่ามกลางทุ่งหญ้าอันกว้างใหญ่ ผสานกับนวัตกรรม Artificial Marbling Technology ที่ช่วยสร้างลายไขมันแทรกในเนื้ออย่างพอเหมาะ ผลลัพธ์ที่ได้คือเนื้อที่ นุ่ม ชุ่มฉ่ำ และรสชาติเข้มข้น ดุจหิมะที่ละลายในปาก</p>
+            <h1><label class="ibmthai">ทําไมต้อง</label><label class="MrDafoe">Snow Beef?</label></h1>
+            <p class="Sarabun">เราเชื่อว่า "เนื้อที่ดี" ต้องเริ่มจากต้นกำเนิดที่ดี Snow Beef จึงเป็นเนื้อวัว Grass-Fed ที่เลี้ยงด้วยหญ้าธรรมชาติ 100% ท่ามกลางทุ่งหญ้าอันกว้างใหญ่ ผสานกับนวัตกรรม Artificial Marbling Technology ที่ช่วยสร้างลายไขมันแทรกในเนื้ออย่างพอเหมาะ ผลลัพธ์ที่ได้คือเนื้อที่ นุ่ม ชุ่มฉ่ำ และรสชาติเข้มข้น ดุจหิมะที่ละลายในปาก</p>
+            <div>
+                <a href="#"><label class="Outfit">Explore Our Story</label></a>
+            </div>
         </div>
     </section>
 
-    <section class="reasons-3">
+    <!-- <section class="reasons-3">
         <img src="assets/images/cow-eat-grass.png" class="cow-eat-grass">
         <div>
             <div class="reason-3-topic">
@@ -137,7 +210,7 @@
     <section class="product">
         <h1>Biological Matching : ความลับของความสอดคล้องทางชีวภาพ</h1>
         <p>เหตุผลที่ Snow Beef แตกต่างจากเนื้อฉีดไขมันทั่วไป คือการเลือกใช้หลักการ Biological Matching เราไม่ได้ใช้ไขมันจากแหล่งไหนก็ได้ แต่เราเจาะจงใช้ ไขมันวัวสายพันธุ์ British (British Fat) มาผสานเข้ากับ เนื้อวัวสายพันธุ์ British (British Meat) เมื่อ "สายพันธุ์" ตรงกัน ผลลัพธ์ที่ได้จึงมหัศจรรย์กว่า</p>
-    </section>
+    </section> 
 
     <section class="badge">
         <div class="badge-red">
@@ -156,12 +229,13 @@
             <h3>โครงสร้างไขมันที่สมบูรณ์</h3>
             <hr>
         </div>
-    </section>
+    </section> -->
 
     <section class="earth">
         <div>
-             <p>Growth rate of fat-injected beef.</p>
-            <h1>อัตราการเติบโตของเนื้อวัวฉีดไขมัน</h1>  
+            <p class="Suravaram">Growth rate of fat-injected beef.</p>
+            <h1 class="ibmthai">อัตราการเติบโตของเนื้อวัวฉีดไขมัน</h1>
+            <p class="Sarabun">"เนื้อวัวฉีดไขมันมีต้นกำเนิดจากเทคโนโลยีญี่ปุ่นช่วงปี 1980 เริ่มจำหน่ายเชิงพาณิชย์ในออสเตรเลียปี 2000 และสหรัฐฯ ปี 2004 ปัจจุบันมีการพัฒนาเทคโนโลยีนี้อย่างแพร่หลายในหลายประเทศทั่วโลก"</p> 
         </div>
              <img src="assets/images/earth.png">
     </section>
@@ -186,7 +260,7 @@
             <h1>Snow Beef</h1>
         </div>
         <div>
-            <div class="contact-type">
+            <!-- <div class="contact-type">
                 <p>What type of restaurant ?</p>
                
                     <form id="optionForm" class="contact-option">
@@ -199,9 +273,37 @@
                             <label for="opt1">Option 2</label><br>
                         </div>
                     </form>
-            </div>
+            </div> -->
             <div class="contact-form">
                 <form action="contact.php" method="POST">
+                    <p>What type of restaurant ?</p>
+                    <div class="contact-type">
+                        <div>
+                            <input type="radio" id="opt1" name="choice" value="Supermarket">
+                            <label for="opt1">Supermarket</label><br>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="opt2" name="choice" value="Chainrestaurant">
+                            <label for="opt2">Chainrestaurant</label><br>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="opt3" name="choice" value="Agency">
+                            <label for="opt3">Agency</label><br>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="opt4" name="choice" value="Restaurant">
+                            <label for="opt4">Restaurant</label><br>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="opt5" name="choice" value="Other">
+                            <label for="opt5">Other</label><br>
+                        </div>
+                    </div>
+
                     <input
                         type="text"
                         id="fcompany"
@@ -231,7 +333,7 @@
         </div>
     </section>
 
-    <footer>
+    <!-- <footer>
         <div>
             <p>BIO FREASH FOODS (Thailand) Company Limited</p>
             <h1>SNOWBEEF</h1>
@@ -240,10 +342,8 @@
         <div class="qrcode">
             <div class="qrcode_center">
                 <p>Chayada (Tip)</p>
-                <!-- QR code -->
                 <img src="assets/images/tip.png" class="qr_code">
                 <div class="qrcode_contact">
-                    <!-- LINE -->
                     <img src="assets/images/line.png" class="line">
                     <p>tipsnowbeef</p>
                 </div>
@@ -253,10 +353,8 @@
         <div class="qrcode">
             <div class="qrcode_center">
                 <p>Chayada (Tip)</p>
-                <!-- QR code -->
                 <img src="assets/images/tip.png" class="qr_code">
                 <div class="qrcode_contact">
-                    <!-- LINE -->
                     <img src="assets/images/line.png" class="line">
                     <p>tipsnowbeef</p>
                 </div>
@@ -266,10 +364,8 @@
         <div class="qrcode">
             <div class="qrcode_center">
                 <p>Chayada (Tip)</p>
-                <!-- QR code -->
                 <img src="assets/images/tip.png" class="qr_code">
                 <div class="qrcode_contact">
-                    <!-- LINE -->
                     <img src="assets/images/line.png" class="line">
                     <p>tipsnowbeef</p>
                 </div>
@@ -279,10 +375,8 @@
         <div class="qrcode">
             <div class="qrcode_center">
                 <p>Chayada (Tip)</p>
-                <!-- QR code -->
                 <img src="assets/images/tip.png" class="qr_code">
                 <div class="qrcode_contact">
-                    <!-- LINE -->
                     <img src="assets/images/line.png" class="line">
                     <p>tipsnowbeef</p>
                 </div>
@@ -299,6 +393,8 @@
                 <p>ladkrabang district., bangkok 10520</p>
             </div>
         </div>
-    </footer>
+    </footer> -->
+
+    <script src="script.js"></script>
 </body>
 </html>
