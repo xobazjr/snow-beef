@@ -3,12 +3,12 @@
     $lang = substr($lang, 0, 2);
 
     if ($lang === 'th') {
-        header("Location: /th");
+        header("Location: /snow-beef/th");
     } elseif ($lang === 'en') {
         // header("Location: /en");
-        header("Location: /th");
+        header("Location: /snow-beef/th");
     } else {
-        header("Location: /th");
+        header("Location: /snow-beef/th");
     }
     exit();
 ?>

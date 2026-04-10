@@ -1,3 +1,5 @@
+<?php include 'menudata.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,32 +13,46 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Suravaram&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,200..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <?php include 'navbar.php'; ?>
+    <?php include 'stamp.php'; ?>
     
     <main>
-        <section class="home">
-            <div>
-                <p class="roboto">BIO FRESH</p>
-                <h1 class="roboto">SNOWBEEF</h1>
+        <section class="home w-full">
+            <div class="video-bg">
+                <iframe 
+                    src="https://www.youtube.com/embed/Qup8u1Wdads?autoplay=1&mute=1&controls=0&loop=1&playlist=Qup8u1Wdads&start=0&end=15&showinfo=0&modestbranding=1"
+                    frameborder="0"
+                    allow="autoplay; fullscreen"
+                ></iframe>
+            </div>
+
+            <div class="content">
+                <p class="outfit white">BIO FRESH</p>
+                <h1 class="roboto times-new-roman gold">SNOWBEEF</h1>
             </div>
         </section>
 
-        <section class="taste">
+        <section class="taste w-full">
+            <div>
+                <h1 class="white ibmthai">สัมผัสความนุ่มละมุนดุจหิมะกับ<br><a class="times-new-roman">Snow Beef</a></h1>
+                <p class="white">จากเนื้อวัวสายพันธุ์แท้ British Hereford ที่เลี้ยงด้วยหญ้าธรรมชาติ (Grass-Fed) จากทุ่งหญ้าอันกว้างใหญ่ในออสเตรเลียสู่การยกระดับด้วยนวัตกรรม Artificial Marbling Technology ที่ช่วยแทรกลายไขมันให้สวยงาม มอบสัมผัสที่นุ่ม ชุ่มฉ่ำและรสชาติที่เข้มข้นในทุกคำไม่เพียงแค่ความอร่อย แต่ยังเปี่ยมด้วยคุณค่าจาก โอเมก้า-3 ในสัดส่วนที่สมดุล ดีต่อสุขภาพนี่คือวัตถุดิบชั้นเลิศที่จะช่วยสร้างมูลค่าเพิ่มและเปลี่ยนทุกจานอาหารของคุณให้เป็นเมนูระดับพรีเมียม</p>
+            </div>
+            <img src="assets/images/meats.jpg">
+        </section>
+
+        <!-- <section class="taste">
             <div>
                 <h1 class="ibmthai">สัมผัสความนุ่มละมุน<br>ดุจหิมะกับ <a class="times-new-roman">Snow Beef</a></h1>
                 <hr>
                 <p>จากเนื้อวัวสายพันธุ์แท้ British Hereford ที่เลี้ยงด้วยหญ้าธรรมชาติ (Grass-Fed) จากทุ่งหญ้าอันกว้างใหญ่ในออสเตรเลีย สู่การยกระดับด้วยนวัตกรรม Artificial Marbling Technology ที่ช่วยแทรกลายไขมันให้สวยงาม มอบสัมผัสที่นุ่ม ชุ่มฉ่ำ และรสชาติที่เข้มข้นในทุกคำไม่เพียงแค่ความอร่อย แต่ยังเปี่ยมด้วยคุณค่าจาก โอเมก้า-3 ในสัดส่วนที่สมดุล ดีต่อสุขภาพ นี่คือวัตถุดิบชั้นเลิศที่จะช่วยสร้างมูลค่าเพิ่มและเปลี่ยนทุกจานอาหารของคุณให้เป็นเมนูระดับพรีเมียม</p>
             </div>
             <img src="assets/images/cow-draw.jpg" class="object-cover w-full">
-        </section>
+        </section> -->
 
-        <section class="product grey">
-            <p class="gold suravaram">OUR PRODUCT</p>
-            <h1 class="ibmthai">ผลิตภัณฑ์ของเรา</h1>
-            <p>เนื้อส่วน สันใน, ริบอาย, สันนอก, เซอร์ลอยด์ และชัคโรลยกระดับด้วยนวัตกรรมแทรกไขมัน เอกสิทธิ์เพื่อสัมผัสนุ่มละมุนดุจเนยและรสชาติที่เข้มข้นสม่ำเสมอในทุกชิ้น</p>
-        </section>
+        <?php include 'menu.php' ?>
 
         <section class="tip w-full white">
             <h1 class="times-new-roman">Snow Beef Australia<br>Steak Tenderloin</h1>
@@ -56,10 +72,11 @@
             <div>
                 <h1 class="ibmthai">ทําไมต้อง <a class="mr-dafoe red">Snow Beef?</a></h1>
                 <p>เราเชื่อว่า "เนื้อที่ดี" ต้องเริ่มจากต้นกำเนิดที่ดี Snow Beef จึงเป็นเนื้อวัว Grass-Fed ที่เลี้ยงด้วยหญ้าธรรมชาติ 100% ท่ามกลางทุ่งหญ้าอันกว้างใหญ่ ผสานกับนวัตกรรม Artificial Marbling Technology ที่ช่วยสร้างลายไขมันแทรกในเนื้ออย่างพอเหมาะ ผลลัพธ์ที่ได้คือเนื้อที่ นุ่ม ชุ่มฉ่ำ และรสชาติเข้มข้น ดุจหิมะที่ละลายในปาก</p>
+                <a href="#" class="explore-btn outfit">Explore More</a>
             </div>
         </section>
 
-        <section class="reasons">
+        <!-- <section class="reasons">
             <img src="assets/images/cow-eat-grass.png" class="reasons-img object-cover">
             <div>
                 <h1 class="red ibmthai">3 เหตุผลที่ SNOW BEEF<br>คือทางเลือกที่ใช่สำหรับคุณ</h1>
@@ -93,17 +110,17 @@
                 </div>
             </div>
             <img src="assets/images/cows-on-grass.jpg" class="reasons-img-bottom object-cover">
-        </section>
+        </section> -->
 
-        <section class="biological">
+        <!-- <section class="biological">
             <div>
                 <h1 class="ibmthai grey">Biological Matching : ความลับของความสอดคล้องทางชีวภาพ</h1>
                 <p>เหตุผลที่ Snow Beef แตกต่างจากเนื้อฉีดไขมันทั่วไป คือการเลือกใช้หลักการ Biological Matching เราไม่ได้ใช้ไขมันจากแหล่งไหนก็ได้ แต่เราเจาะจงใช้ ไขมันวัวสายพันธุ์ British (British Fat) มาผสานเข้ากับ เนื้อวัวสายพันธุ์ British (British Meat) เมื่อ "สายพันธุ์" ตรงกัน ผลลัพธ์ที่ได้จึงมหัศจรรย์กว่า</p>
             </div>
             <img src="assets/images/next.png">
-        </section>
+        </section> -->
 
-        <section class="badges">
+        <!-- <section class="badges">
             <div class="badges-1 white">
                 <p>โครงสร้างไขมันที่สมบูรณ์</p>
                 <img src="assets/images/vector.png" class="align-center-img">
@@ -122,12 +139,13 @@
                 <p>จุดหลอมเหลวที่พอดี</p>
                 <img src="assets/images/vector.png" class="align-center-img">
             </div>
-        </section>
+        </section> -->
 
         <section class="earth">
             <div>
                 <p class="gold suravaram">GROWTH RATE OF FAT-INJECTED BEEF.</p>
                 <h1 class="ibmthai grey">อัตราการเติบโตของเนื้อวัวฉีดไขมัน</h1>
+                <p class="grey">"เนื้อวัวฉีดไขมันมีต้นกำเนิดจากเทคโนโลยีญี่ปุ่นช่วงปี 1980 เริ่มจำหน่ายเชิงพาณิชย์ในออสเตรเลียปี 2000 และสหรัฐฯ ปี 2004 ปัจจุบันมีการพัฒนาเทคโนโลยีนี้อย่างแพร่หลายในหลายประเทศทั่วโลก"</p>
             </div>
             <img src="assets/images/earth.png" class="align-center-img">
         </section>
