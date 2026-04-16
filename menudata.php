@@ -12,7 +12,7 @@
             $this->imageUrl = $imageUrl;
         }
     }
-
+    
     $menus = [
         new MenuItem(
             "BEST SELLER", 
@@ -56,6 +56,5 @@
             '"Hand-pressed duck, tart cherry réduction, silky parsnip"', 
             "assets/images/menu/rib-eye.png"
         ),
-
     ];
 ?>

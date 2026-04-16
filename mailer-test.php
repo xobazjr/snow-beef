@@ -36,7 +36,8 @@
             $company = $_POST["fcompany"];
             $phone = $_POST["fphone"];
             $name = $_POST["fname"];
-            $choice = $_POST["choice"];
+            $choice = $_POST["frestaurant"];
+            $message = $_POST["fmessage"];
 
             echo "<table>"."<br>";
             echo "<tr>"."<br>";
@@ -44,6 +45,7 @@
             echo "<th>"."Phone"."</th>"."<br>";
             echo "<th>"."Name"."</th>"."<br>";
             echo "<th>"."Type"."</th>"."<br>";
+            echo "<th>"."Message"."</th>"."<br>";
             echo "</tr>"."<br>";
 
             echo "<tr>"."<br>";
@@ -51,6 +53,7 @@
             echo "<td>".$phone."</td>"."<br>";
             echo "<td>".$name."</td>"."<br>";
             echo "<td>".$choice."</td>"."<br>";
+            echo "<td>".$message."</td>"."<br>";
             echo "</tr>"."<br>";
 
             echo "</table>";
