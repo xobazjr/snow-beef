@@ -11,7 +11,7 @@
     <li><a href="our-product.php">Our Product</a></li>
     <li><a href="#">Why Snowbeef?</a></li>
     <li><a href="#">Our Standards</a></li>
-    <li><a href="#">Sale & Support</a></li>
+    <li><a href="contact.php">Sale & Support</a></li>
   </ul>
 
   <!-- <div class="lang-switcher">

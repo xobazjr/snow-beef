@@ -15,7 +15,7 @@
         <div class="icon-circle">
             <img src="assets/images/logo/removal-snow-beef.png" alt="Catalog">
         </div>
-        <span class="button-text outfit">Snow Beef Catalog</span>
+        <span class="button-text outfit">Company Profile</span>
         <div class="arrow-svg">
             <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 6H17 M17 6L21 2L25 6L21 10Z" stroke="black" stroke-width="1" stroke-linejoin="miter"/>

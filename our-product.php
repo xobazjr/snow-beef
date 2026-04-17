@@ -14,7 +14,7 @@
 
         <section class="product-of-snow-beef">
             <div class="child">
-                <h1 class="white ibmthai">ผลิตภัณฑ์ของ <label class="red mr-dafoe">Snow Beef</label></h1>
+                <h1 class="white ibmthai">ผลิตภัณฑ์ของ <label class="red mr-dafoe h1-snowbeef">Snow Beef</label></h1>
                 <p class="white p-detail">เนื้อส่วน สันใน, ริบอาย, สันนอก, เซอร์ลอยด์ และชัคโรลยกระดับด้วยนวัตกรรมแทรกไขมัน<br>เอกสิทธิ์เพื่อสัมผัสนุ่มละมุนดุจเนยและรสชาติที่เข้มข้นสม่ำเสมอในทุกชิ้น</p>
             </div>
         </section>
