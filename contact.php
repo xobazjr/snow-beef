@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Our Product</title>
+    <title>Contact Info</title>
     <?php include 'includes/head.php'; ?>
 </head>
 <body>

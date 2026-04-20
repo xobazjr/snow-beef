@@ -65,7 +65,7 @@
                 
         <div class="bottom-content">
             <p class="outfit">BIO FREASH FOODS (Thailand) Company Limited</p>
-            <h1 class="times-new-roman">SNOWBEEF</h1>
+            <h1 class="times-new-roman muted-gold">SNOWBEEF</h1>
         </div>
                 
         <div class="plate-image-container">

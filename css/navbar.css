@@ -1,0 +1,56 @@
+/* Navigation */
+
+nav {
+    background-color: transparent; 
+    position: absolute;          
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 40px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 50;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.nav-logo { width: 75px; }
+
+.nav-brand-text { display: flex; flex-direction: column; }
+
+.nav-brand-name {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-brand-sub {
+    font-size: 14px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    list-style: none;
+    margin-left: auto; 
+    margin-right: 24px;
+    }
+
+.nav-menu a {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    font-weight: bolder;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+
+.nav-menu a:hover { color: #ffffff; }

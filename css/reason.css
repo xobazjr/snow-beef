@@ -1,0 +1,74 @@
+/* Reasons */
+
+.reasons {
+    display: flex;
+    height: 800px; 
+    overflow: hidden; 
+}
+
+.reasons-img, 
+.reasons-img-bottom {
+    width: 50%;
+    height: 100%; 
+    object-fit: cover;
+    object-position: center; 
+}
+
+.reasons > div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.reasons h1 {
+    padding: 50px 60px; 
+    background-color: #F6EEDD;
+    color: #A30000;
+    margin: 0;
+    flex-shrink: 0; 
+}
+.reasons h2 {
+    margin-bottom: 10px;
+}
+
+.reasons-red-box {
+    background-color: #7E0001;
+    padding: 40px 60px; 
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reasons-red-box h3 {
+    margin: 0 0 15px 0;
+}
+
+.reasons-red-box p {
+    opacity: 0.9;
+    margin: 0 0 90px 0; 
+}
+
+.reasons-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.reasons-icon img {
+    width: 145px;
+    max-width: 30%;
+    opacity: 1; 
+    filter: brightness(1.5) contrast(1.2); 
+}
+
+.reasons h4 {
+    text-align: center;
+    font-size: 100px;
+    font-weight: normal;
+    margin: 0;
+    line-height: 1;
+}

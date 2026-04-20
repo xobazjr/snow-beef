@@ -1,0 +1,26 @@
+/* Earth */
+
+.earth {
+    text-align: center;
+    padding: 0 50px 0 50px;
+}
+
+.earth div {
+    padding: 50px;
+}
+
+.earth div .suravaram {
+    font-size: 23px;
+    font-weight: lighter;
+    line-height: 72px;
+    letter-spacing: 2px;
+}
+
+.earth p {
+    padding: 0 20px 0 20px;
+}
+
+.earth div h1 {
+    font-size: 45px;
+    margin: 6px 0 6px 0;
+}

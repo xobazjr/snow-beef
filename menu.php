@@ -8,7 +8,7 @@
         </p>
 
         <div class="btn-group">
-            <a href="our-product.php" class="explore-btn p-detail btn-outline outfit">
+            <a href="our-product.php" class="explore-btn p-detail btn-outline btn-white outfit">
                 Our Product 
                 <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 6H17 M17 6L21 2L25 6L21 10Z" stroke="currentColor" stroke-width="1" stroke-linejoin="miter"/>

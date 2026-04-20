@@ -1,0 +1,60 @@
+/* Contact Page */
+
+.contact-page {
+    background-color: #141416; 
+    padding: 150px 20px 120px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-page-child {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact-page-child .h1-topic {
+    font-size: 48px;
+    font-weight: 500;
+    color: #C9A84C;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.contact-page-child .p-detail {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+.contact-page-box {
+    display: grid;
+    grid-template-columns: repeat(3, 340px); 
+    gap: 30px; 
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.contact-page-box-child {
+    background-color: #FCFAEF; 
+    padding: 90px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px; 
+}
+
+.contact-page-box-child svg {
+    width: 120px; 
+    height: 120px;
+    margin-bottom: 30px; 
+    fill: #000000; 
+}
+
+.contact-page-box-child h2 {
+    font-weight: 500;
+    margin: 0 0 15px 0;
+}
