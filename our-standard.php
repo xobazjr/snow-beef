@@ -9,7 +9,7 @@
     <?php include 'navbar.php'; ?>
     
     <section class="our-standard b-black">
-        <h1 class="muted-gold times-new-roman h1-topic">OUR STANDARD</h1>
+        <h1 class="gold-soft times-new-roman h1-topic">OUR STANDARD</h1>
         <p class="white p-detail"><strong>SNOW BEEF</strong> ดำเนินงานด้วยมาตรฐานสากล GHP และ HACCP โดยควบคุมระบบการผลิตระดับเดียวกับประเทศญี่ปุ่น<br>พร้อมมอบบริการแบบ One-Stop Service ที่สะอาดและปลอดภัยในทุกขั้นตอนการแปรรูป</p>
         <div class="our-standard-certificate">
             <img src="assets/images/certificates/haccp.png">
@@ -29,7 +29,7 @@
     </section>
 
     <section class="our-st-baner b-black white">
-        <h1 class="muted-gold times-new-roman h1-topic">Biological Matching</h1>
+        <h1 class="gold-soft times-new-roman h1-topic">Biological Matching</h1>
         <h1 class="white ibmthai h1-topic">ความลับของความสอดคล้องทางชีวภาพ</h1>
         <p class="p-detail">เหตุผลที่ Snow Beef แตกต่างจากเนื้อฉีดไขมันทั่วไป คือการเลือกใช้หลักการ Biological Matching<br>เราไม่ได้ใช้ไขมันจากแหล่งไหนก็ได้ แต่เราเจาะจงใช้ ไขมันวัวสายพันธุ์ British (British Fat) มาผสานเข้ากับ เนื้อวัว<br>สายพันธุ์ British (British Meat) เมื่อ "สายพันธุ์" ตรงกัน ผลลัพธ์ที่ได้จึงมหัศจรรย์กว่า</p>
     </section>
@@ -64,7 +64,7 @@
     </section>
 
     <section class="our-st-baner b-black white">
-        <h1 class="muted-gold times-new-roman h1-topic">Oleic Acid</h1>
+        <h1 class="gold-soft times-new-roman h1-topic">Oleic Acid</h1>
         <h1 class="white ibmthai h1-topic">กุญแจสู่สัมผัส "ละลายในปาก"</h1>
         <p class="p-detail">ความลับของความพรีเมียมใน Snow Beef คือปริมาณ กรดโอเลอิก (Oleic Acid)<br>ที่สูงกว่าไขมันวัวในเขตร้อน (Tropical Fat) ทั่วไป</p>
     </section>
@@ -92,7 +92,7 @@
     <section class="jp-exclusive white b-black">
         <div class="jp-top">
             <div>
-                <h1 class="muted-gold h1-topic times-new-roman">JP Exclusive Innovation</h1>
+                <h1 class="gold-soft h1-topic times-new-roman">JP Exclusive Innovation</h1>
                 <h1 class="ibmthai h1-topic">TN Plus โดย R&D จากญี่ปุ่น</h1>
             </div>
             <p class="p-detail">เพื่อยกระดับความเชื่อมั่นขึ้นไปอีกขั้น Snow Beef คือผลผลิตจากการวิจัย<br>และพัฒนาโดยทีม R&D ของ Bio Fresh Foods ประเทศญี่ปุ่น เราใช้โปรตีน<br>สูตรพิเศษ "TN Plus" เป็นตัวประสานอณูไขมันและเนื้อเข้าด้วยกัน </p>
@@ -111,7 +111,7 @@
 
             <div class="jp-ex-image-bx">
                 <img src="assets/images/menu/meat-3.png">
-                <h1 class="times-new-roman h1-topic muted-gold">After</h1>
+                <h1 class="times-new-roman h1-topic gold-soft">After</h1>
             </div>
         </div>
     </section>
