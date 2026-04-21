@@ -13,7 +13,7 @@
 
     <a href="#" class="glass-button">
         <div class="icon-circle">
-            <img src="assets/images/logo/removal-snow-beef.png" alt="Catalog">
+            <img src="assets/images/logo/removal-snow-beef.webp" alt="Catalog">
         </div>
         <span class="button-text outfit">Company Profile</span>
         <div class="arrow-svg">

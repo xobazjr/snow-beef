@@ -3,7 +3,7 @@
 .why {
     background-image: 
         linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)),
-        url("../assets/images/wallpapers/wallpaper-why.png");
+        url("../assets/images/wallpapers/wallpaper-why.webp");
     text-align: center;
     background-position: center 75%;
     background-size: cover;

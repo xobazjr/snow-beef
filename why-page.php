@@ -11,7 +11,7 @@
     <?php include 'why-snowbeef.php' ?>
 
     <section class="reasons">
-            <img src="assets/images/cow-eat-grass.png" class="reasons-img object-cover">
+            <img src="assets/images/cow-eat-grass.webp" class="reasons-img object-cover">
             <div>
                 <h1 class="red ibmthai h1-topic">3 เหตุผลที่ SNOW BEEF<br>คือทางเลือกที่ใช่สำหรับคุณ</h1>
                 <div class="reasons-red-box white">
@@ -21,9 +21,9 @@
                     </div>
 
                     <div class="reasons-icon">
-                        <img src="assets/images/icons/trees.png">
-                        <img src="assets/images/icons/cow.png">
-                        <img src="assets/images/icons/steak.png">
+                        <img src="assets/images/icons/trees.webp">
+                        <img src="assets/images/icons/cow.webp">
+                        <img src="assets/images/icons/steak.webp">
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                     <h4 class="mr-dafoe">Snow Beef</h4>
                 </div>
             </div>
-            <img src="assets/images/cows-on-grass.jpg" class="reasons-img-bottom object-cover">
+            <img src="assets/images/cows-on-grass.webp" class="reasons-img-bottom object-cover">
         </section>
 
     <?php include 'world-class.php' ?>

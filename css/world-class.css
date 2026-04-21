@@ -14,10 +14,6 @@
     gap: 80px; 
 }
 
-.world-class-content > div {
-    flex: 1; 
-}
-
 .world-class-content h1 {
     font-size: 64px;
     font-weight: 100;
@@ -26,9 +22,19 @@
 
 .world-class-content p {
     color: #888888; 
+    font-size: medium;
 }
 
-.world-class-content img {
-    width: 250px;
+.world-class-certificate {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 40px; 
+}
+
+.world-class-certificate img {
+    width: 120px; 
+    height: auto;
+    object-fit: contain;
     flex-shrink: 0; 
 }

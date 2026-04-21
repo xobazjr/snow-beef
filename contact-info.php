@@ -69,7 +69,7 @@
         </div>
                 
         <div class="plate-image-container">
-            <img src="assets/images/dinner-plate.png" alt="Dinner Plate">
+            <img src="assets/images/dinner-plate.webp" alt="Dinner Plate">
         </div>
     </div> 
 </section>

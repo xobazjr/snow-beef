@@ -12,10 +12,10 @@
         <h1 class="gold-soft times-new-roman h1-topic">OUR STANDARD</h1>
         <p class="white p-detail"><strong>SNOW BEEF</strong> ดำเนินงานด้วยมาตรฐานสากล GHP และ HACCP โดยควบคุมระบบการผลิตระดับเดียวกับประเทศญี่ปุ่น<br>พร้อมมอบบริการแบบ One-Stop Service ที่สะอาดและปลอดภัยในทุกขั้นตอนการแปรรูป</p>
         <div class="our-standard-certificate">
-            <img src="assets/images/certificates/haccp.png">
-            <img src="assets/images/certificates/ghp.png">
-            <img src="assets/images/certificates/halal.png">
-            <img src="assets/images/certificates/aus-meat.png">
+            <img src="assets/images/certificates/haccp.webp">
+            <img src="assets/images/certificates/ghp.webp">
+            <img src="assets/images/certificates/halal.webp">
+            <img src="assets/images/certificates/aus-meat.webp">
         </div>
     </section>
 
@@ -35,18 +35,18 @@
     </section>
 
     <section class="our-structure">
-        <img src="assets/images/our-meats-1.png">
+        <img src="assets/images/our-meats/our-meats-1.webp">
         <div class="our-bx">
             <div class="our-bx-child">
                 <div class="our-bx-children">
                     <h2 class="h3-topic ibmthai">โครงสร้างไขมันที่สมบูรณ์</h2>
                     <p class="grey p-sub">ไขมันของวัวสายพันธุ์ British จะมีความนุ่มและละลายง่ายกว่า ทำให้เมื่อย่างบนเตา ไขมันจะค่อยๆ ละลายสวยงาม ไม่แข็งเป็นก้อน</p>
                 </div>
-                <img src="assets/images/our-meats-2.png">
+                <img src="assets/images/our-meats/our-meats-2.webp">
             </div>
 
             <div class="our-bx-child">
-                 <img src="assets/images/our-meats-3.png">
+                 <img src="assets/images/our-meats/our-meats-3.webp">
                 <div class="our-bx-children">
                     <h2 class="h3-topic ibmthai">เนื้อสัมผัสที่เป็นธรรมชาติ</h2>
                     <p class="grey p-sub">ลายไขมันกระจายตัวได้เนียนกริบกลมกลืนไปกับเส้นใยเนื้อหมดปัญหาไขมันแยกตัวหรือดูไม่เป็นธรรมชาติ</p>
@@ -58,7 +58,7 @@
                     <h2 class="h3-topic ibmthai">จุดหลอมเหลวที่พอดี </h2>
                     <p class="grey p-sub">มอบสัมผัสที่ชุ่มฉ่ำและละลายในปาก (Melt-in the-mouth) ให้ความรู้สึกใกล้เคียงกับเนื้อวากิวระดับสูง (High-end Wagyu)</p>
                 </div>
-                <img src="assets/images/our-meats-4.jpg">
+                <img src="assets/images/our-meats/our-meats-4.webp">
             </div>
         </div>
     </section>
@@ -72,20 +72,20 @@
     <section class="our-interview">
         <div class="our-interview-child">
             <div class="our-interview-children">
-                <img src="assets/images/menu/meat-3.png">
+                <img src="assets/images/menu/meat-3.webp">
                 <h1 class="grey outfit">Melting Behavior</h1>
                 <p class="p-detail grey">ไขมันของวัวสายพันธุ์ British จะมีความนุ่มและละลายง่ายกว่า<br>ทำให้เมื่อย่างบนเตา ไขมันจะค่อยๆ ละลายสวยงาม ไม่แข็งเป็นก้อน</p>
             </div>
-            <img src="assets/images/melting-behavior.png">
+            <img src="assets/images/melting-behavior.webp">
         </div>
 
         <div class="our-interview-child b-black-premium white">
             <div class="our-interview-children">
-                <img src="assets/images/menu/meat-7.png">
+                <img src="assets/images/menu/meat-7.webp">
                 <h1 class="outfit">Premium Perception</h1>
                 <p class="p-detail">มอบสัมผัสที่ชุ่มฉ่ำและละลายในปาก (Melt-in-the-mouth)<br>ให้ความรู้สึกใกล้เคียงกับเนื้อวากิวระดับสูง (High-end Wagyu)</p>
             </div>
-            <img src="assets/images/premium-perception.png">
+            <img src="assets/images/premium-perception.webp">
         </div>
     </section>
 
@@ -100,7 +100,7 @@
 
         <div class="jp-bottom">
             <div class="jp-ex-image-bx">
-                <img src="assets/images/meat-before.png">
+                <img src="assets/images/meat-before.webp">
                 <h1 class="times-new-roman h1-topic white">Before</h1>
             </div>
             
@@ -110,9 +110,20 @@
             </svg>
 
             <div class="jp-ex-image-bx">
-                <img src="assets/images/menu/meat-3.png">
+                <img src="assets/images/menu/meat-3.webp">
                 <h1 class="times-new-roman h1-topic gold-soft">After</h1>
             </div>
+        </div>
+    </section>
+
+    <section class="dc-japan-section">
+        <img src="assets/images/doctor-japan/dc-japan-1.webp" class="dc-japan-base-img" alt="Lab Background">
+        <img src="assets/images/doctor-japan/dc-japan-2.webp" class="dc-japan-transparent-img" alt="Doctor Transparent">
+        <div class="dc-japan-text-box">
+            <p class="dc-japan-desc white p-detail">
+                ช่วยล็อกความชุ่มฉ่ำและรสชาติที่เข้มข้นไว้ภายใน ทำให้เนื้อคงความนุ่ม<br>
+                และฉ่ำวาวได้ยาวนาน แม้จะผ่านการปรุงด้วยความร้อนสูง
+            </p>
         </div>
     </section>
 

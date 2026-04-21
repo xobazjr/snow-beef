@@ -1,6 +1,6 @@
 <nav>
   <a href="index.php" class="nav-brand">
-    <img src="assets/images/logo/logo-snow-beef.png" class="nav-logo" alt="Bio Fresh Foods">
+    <img src="assets/images/logo/logo-snow-beef.webp" class="nav-logo" alt="Bio Fresh Foods">
     <div class="nav-brand-text">
       <span class="nav-brand-name outfit">BIO FRESH FOODS</span>
       <span class="nav-brand-sub white">Thailand Company Limited</span>

@@ -35,10 +35,10 @@ class QrManager {
 
     public function __construct() {
         $this->contacts = [
-            new QrContact("assets/images/qrcode/qrcode.png", "assets/images/line.png", "tipsnowbeef", "098-334-6983"),
-            new QrContact("assets/images/qrcode/qrcode.png", "assets/images/line.png", "tipsnowbeef", "098-334-6983"),
-            new QrContact("assets/images/qrcode/qrcode.png", "assets/images/line.png", "tipsnowbeef", "098-334-6983"),
-            new QrContact("assets/images/qrcode/qrcode.png", "assets/images/line.png", "tipsnowbeef", "098-334-6983")
+            new QrContact("assets/images/qrcode/qrcode.png", "assets/images/icons/line.webp", "tipsnowbeef", "098-334-6983"),
+            new QrContact("assets/images/qrcode/qrcode.png", "assets/images/icons/line.webp", "tipsnowbeef", "098-334-6983"),
+            new QrContact("assets/images/qrcode/qrcode.png", "assets/images/icons/line.webp", "tipsnowbeef", "098-334-6983"),
+            new QrContact("assets/images/qrcode/qrcode.png", "assets/images/icons/line.webp", "tipsnowbeef", "098-334-6983")
         ];
     }
 

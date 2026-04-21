@@ -14,7 +14,7 @@
 .history {
     background-image: 
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url("../assets/images/wallpapers/wallpaper-history.png");
+        url("../assets/images/wallpapers/wallpaper-history.webp");
     background-position: center;
     background-size: cover;
     min-height: 1754px;

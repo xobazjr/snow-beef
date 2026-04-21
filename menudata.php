@@ -18,43 +18,43 @@
             "BEST SELLER", 
             "Steak Tenderloin", 
             '"Hand-pressed duck, tart cherry réduction, silky parsnip"', 
-            "assets/images/menu/meat-0.png"
+            "assets/images/menu/meat-0.webp"
         ),
         new MenuItem(
             "BEST SELLER", 
             "Rib eye Australia", 
             '"Hand-pressed duck, tart cherry réduction, silky parsnip"', 
-            "assets/images/menu/meat-1.png"
+            "assets/images/menu/meat-1.webp"
         ),
         new MenuItem(
             "BEST SELLER", 
             "Steak Tenderloin", 
             '"Hand-pressed duck, tart cherry réduction, silky parsnip"', 
-            "assets/images/menu/meat-2.png"
+            "assets/images/menu/meat-2.webp"
         ),
         new MenuItem(
             "BEST SELLER", 
             "Rib eye Australia", 
             '"Hand-pressed duck, tart cherry réduction, silky parsnip"', 
-            "assets/images/menu/meat-3.png"
+            "assets/images/menu/meat-3.webp"
         ),
         new MenuItem(
             "BEST SELLER", 
             "Steak Tenderloin", 
             '"Hand-pressed duck, tart cherry réduction, silky parsnip"', 
-            "assets/images/menu/meat-4.png"
+            "assets/images/menu/meat-4.webp"
         ),
         new MenuItem(
             "BEST SELLER", 
             "Steak Tenderloin", 
             '"Hand-pressed duck, tart cherry réduction, silky parsnip"', 
-            "assets/images/menu/meat-5.png"
+            "assets/images/menu/meat-5.webp"
         ),
         new MenuItem(
             "BEST SELLER", 
             "Steak Tenderloin", 
             '"Hand-pressed duck, tart cherry réduction, silky parsnip"', 
-            "assets/images/menu/meat-6.png"
+            "assets/images/menu/meat-6.webp"
         ),
     ];
 ?>
