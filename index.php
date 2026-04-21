@@ -1,15 +1,14 @@
-<?php include 'menudata.php'; ?>
+<?php include 'core/menudata.php'; ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <title>Snow Beef</title>
     <?php include 'includes/head.php'; ?>
 </head>
 <body>
-    <?php include 'navbar.php'; ?>
-    <?php /* include 'stamp.php'; */ ?>
-    <?php include 'glass-button.php'; ?>
+    <?php include 'includes/navbar.php'; ?>
+    <?php include 'includes/glass-button.php'; ?>
     
     <main>
         <section class="home w-full">
@@ -31,20 +30,20 @@
                 <h1 class="white ibmthai">สัมผัสความนุ่มละมุนดุจหิมะกับ<br><a class="times-new-roman">Snow Beef</a></h1>
                 <p class="white p-detail">จากเนื้อวัวสายพันธุ์แท้ British Hereford ที่เลี้ยงด้วยหญ้าธรรมชาติ (Grass-Fed) จากทุ่งหญ้าอันกว้างใหญ่ในออสเตรเลียสู่การยกระดับด้วยนวัตกรรม Artificial Marbling Technology ที่ช่วยแทรกลายไขมันให้สวยงาม มอบสัมผัสที่นุ่ม ชุ่มฉ่ำและรสชาติที่เข้มข้นในทุกคำไม่เพียงแค่ความอร่อย แต่ยังเปี่ยมด้วยคุณค่าจาก โอเมก้า-3 ในสัดส่วนที่สมดุล ดีต่อสุขภาพนี่คือวัตถุดิบชั้นเลิศที่จะช่วยสร้างมูลค่าเพิ่มและเปลี่ยนทุกจานอาหารของคุณให้เป็นเมนูระดับพรีเมียม</p>
             </div>
-            <img src="assets/images/meats.webp">
+            <img src="assets/images/meats.webp" alt="เนื้อวัว Snow Beef ลายไขมันแทรกละเอียดนุ่มละมุน">
         </section>
 
-        <?php include 'menu.php' ?>
+        <?php include 'includes/menu.php'; ?>
 
         <section class="history">
             <div>
                 <p class="suravaram gold">The origin of groundbreaking ideas and innovations</p>
                 <h1 class="ibmthai h1-topic white">จุดกำเนิดของแนวคิดและนวัตกรรมที่ล้ำหน้า</h1>
-                <img src="assets/images/history-snow-beef/history-line-desktop.webp">
+                <img src="assets/images/history-snow-beef/history-line-desktop.webp" alt="นวัตกรรมและเทคโนโลยีของ Snow Beef">
             </div>
         </section>
 
-        <?php include 'why-snowbeef.php' ?>
+        <?php include 'includes/why-snowbeef.php'; ?>
 
         <section class="standard-section w-full">
             <div class="video-bg">
@@ -65,7 +64,7 @@
         </section>
         
         <section class="itthisak w-full">
-            <img src="assets/images/itthisak.webp">
+            <img src="assets/images/itthisak.webp" alt="คุณอิทธิศักดิ์ เชี่ยวเจริญวงศ์ ผู้ก่อตั้งแบรนด์ Snow Beef">
             <div>
                 <h1 class="ibmthai white">โดย คุณอิทธิศักดิ์ เชี่ยวเจริญวงศ์</h1>
                 <p class="Sarabun white">ผู้สานต่อประสบการณ์และแนวคิดที่ว่า อยากให้ทุกคนได้ทานเนื้อดีๆ ที่ราคาสมเหตุสมผล<br>แต่มีคุณภาพดีเทียบเท่าเนื้อราคาแพงๆ ด้วยแนวคิดดังนี้ เราจึงนำเทคโนโลยีการผลิต<br>อันทันสมัยจากญี่ปุ่นมาใช้ และได้มาเป็นเนื้อลายหิมะอันนุ่มละมุน ในชื่อ  “SNOW BEEF”<br>โดยผ่านการควบคุมการผลิตอย่างเข้มงวดจากประเทศญี่ปุ่น เพื่อให้มั่นใจได้ในความสะอาดและปลอดภัย</p>
@@ -79,16 +78,16 @@
                 <h1 class="ibmthai grey">อัตราการเติบโตของเนื้อวัวฉีดไขมัน</h1>
                 <p class="grey p-detail">"เนื้อวัวฉีดไขมันมีต้นกำเนิดจากเทคโนโลยีญี่ปุ่นช่วงปี 1980 เริ่มจำหน่ายเชิงพาณิชย์ในออสเตรเลียปี 2000 และสหรัฐฯ ปี 2004<br>ปัจจุบันมีการพัฒนาเทคโนโลยีนี้อย่างแพร่หลายในหลายประเทศทั่วโลก"</p>
             </div>
-            <img src="assets/images/earth/earth-desktop.webp" class="align-center-img">
+            <img src="assets/images/earth/earth-desktop.webp" class="align-center-img" alt="แผนที่แสดงอัตราการเติบโตของเนื้อวัวฉีดไขมันทั่วโลก">
         </section>
 
-        <?php include 'world-class.php' ?>
-
-        <?php include "contact-info.php"; ?>      
+        <?php include 'includes/world-class.php'; ?>
+        
+        <?php include "includes/contact-info.php"; ?>      
     </main>
 
-    <footer>
-
-    </footer>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/menu-toggle.js"></script>
+    <script src="js/master.js"></script>
 </body>
 </html>

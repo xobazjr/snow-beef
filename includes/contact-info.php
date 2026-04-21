@@ -14,7 +14,7 @@
             <?php include "qrpage.php" ?>
         </div>
 
-        <form id="contactForm" class="contact-form" action="mailer-test.php" method="post">
+        <form id="contactForm" class="contact-form" action="core/mailer-test.php" method="post">
             <div class="form-group">
                 <label class="field-label outfit">YOUR COMPANY</label>
                 <input name="fcompany" type="text" placeholder="Ex.Allmass idea" required>
@@ -74,9 +74,9 @@
     </div> 
 </section>
 
-<script src="https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY"></script>
+<!-- <script src="https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY"></script>
 
-<!-- <script>
+ <script>
     function onSubmit(e) {
         e.preventDefault();
         
