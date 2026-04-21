@@ -360,6 +360,16 @@ img {
     text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.9), 
                  0px 0px 20px rgba(0, 0, 0, 0.7);
 }
+
+.brush-bottom {
+    position: absolute;   /* ทำให้รูปภาพลอยเป็นอิสระจากกล่องอื่น ๆ */
+    bottom: 0;            /* ดึงรูปภาพให้ชิดขอบล่างสุดของ .home */
+    left: 0;              /* ดึงให้ชิดซ้าย */
+    width: 100%;          /* ให้รูปกางเต็มความกว้างหน้าจอ (ลบออกได้ถ้ารูปขนาดพอดีแล้ว) */
+    z-index: 10;          /* บังคับให้อยู่เลเยอร์บนสุด (เพราะ .content คือ 2) */
+    pointer-events: none; /* ป้องกันไม่ให้รูปนี้ไปขวางการคลิก (Click) สิ่งที่อยู่ข้างล่าง */
+}
+
 /* MARK: Taste */
 
 .taste {
@@ -531,7 +541,7 @@ nav {
 
 .nav-menu a:hover { color: #ffffff; }
 
-/* MARK: Contact */
+/* MARK: Contact Info */
 
 .contact {
     background-color: #7E0001;
@@ -784,7 +794,7 @@ nav {
 
 .bottom-content p {
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     letter-spacing: 1px;
     margin-bottom: 5px;
@@ -1440,6 +1450,8 @@ nav {
 
 /* MARK: Our Standard */
 
+/* Home */
+
 .our-standard {
     display: flex;
     flex-direction: column;
@@ -1480,6 +1492,8 @@ nav {
     object-fit: contain;
 }
 
+/* Banner */
+
 .our-st-baner {
     text-align: center;
     padding: 130px 0 130px 0;
@@ -1489,6 +1503,8 @@ nav {
     margin-bottom: 30px;
     font-weight: 500;
 }
+
+/* Structure */
 
 .our-structure {
     display: flex;
@@ -1538,6 +1554,8 @@ nav {
     font-weight: 500;
     margin-bottom: 7px;
 }
+
+/* Interview */
 
 .our-interview {
     width: 100%;
@@ -1592,6 +1610,8 @@ nav {
     object-position: 50% 65%;
 }
 
+/* Japan Exclusive */
+
 .jp-exclusive {
     width: 100%;
     padding: 130px 100px 220px 100px;
@@ -1640,7 +1660,6 @@ nav {
 
 .jp-bottom .jp-ex-image-bx:last-of-type img {
     width: 410px;
-    height: 240px; 
     object-fit: contain;
 }
 
@@ -1652,6 +1671,8 @@ nav {
 .jp-top h1{
     font-weight: 500;
 }
+
+/* Doctor */
 
 .dc-japan-section {
     position: relative;
@@ -1702,4 +1723,891 @@ nav {
     line-height: 1.8;
     opacity: 0.8; 
     margin: 0;
+}
+
+/* MARK: Mobile Section */
+
+.hamburger-btn, 
+.close-btn, 
+.mobile-menu-header, 
+.mobile-only,
+.nav-overlay {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    
+    /* MARK: Navigation (Mobile) */
+
+    nav {
+        padding: 20px; 
+    }
+
+    .nav-brand-text {
+        display: none; 
+    }
+
+    .hamburger-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        background-color: transparent;
+        border: 1px solid rgba(255,255,255,0.2);
+        border-radius: 8px;
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .hamburger-btn span {
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        transition: 0.3s;
+    }
+
+    .nav-menu-wrapper {
+        position: fixed;
+        top: 0;
+        right: -300px; 
+        width: 300px;
+        height: 100vh;
+        background-color: #0A0A0A; 
+        padding: 24px;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+    }
+
+    .nav-menu-wrapper.active {
+        right: 0;
+    }
+
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        background: transparent;
+        border: 1px solid rgba(255,255,255,0.2);
+        border-radius: 4px;
+        color: white;
+        font-size: 16px;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+    }
+
+    .mobile-menu-header {
+        display: block;
+        margin-bottom: 40px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        padding-bottom: 20px;
+    }
+
+    .mobile-menu-header img {
+        width: 60px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        margin: 0;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .nav-label {
+        font-size: 12px;
+        color: rgba(255,255,255,0.5);
+        letter-spacing: 1px;
+        margin-bottom: -10px;
+    }
+
+    .nav-overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.7);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+
+    .nav-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* MARK: World Class (Mobile) */
+
+    .world-class-content {
+        flex-direction: column;      
+        text-align: center;          
+        padding: 60px 20px;          
+        gap: 40px;                   
+    }
+
+    .world-class-content h1 {
+        font-size: 36px;             
+        margin-bottom: 20px;
+    }
+
+    .world-class-content p {
+        font-size: 14px;             
+        line-height: 1.6;            
+    }
+    
+    .world-class-content p br {
+        display: none;
+    }
+
+    .world-class-certificate {
+        gap: 20px;                   
+        flex-wrap: wrap;             
+    }
+
+    .world-class-certificate img {
+        width: 100px;                
+    }
+
+    /* MARK: Menu (Mobile) */
+
+    .menu-section {
+        padding: 80px 20px;
+    }
+
+    .product {
+        margin-bottom: 45px;
+    }
+
+    .product p.p-detail {
+        line-height: 1.8;
+        margin-bottom: 35px;
+        font-size: 15px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .btn-group .explore-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 16px 20px;
+    }
+
+    .carousel-track {
+        gap: 20px;
+        padding: 10px 20px 30px 20px; 
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        justify-content: flex-start; 
+    }
+
+    .menu-card {
+        flex: 0 0 280px;
+        padding: 24px;
+        scroll-snap-align: center; 
+    }
+
+    .menu-image {
+        height: 180px;
+    }
+
+    /* MARK: Home (Mobile) */
+
+    .home {
+        height: 60vh;            
+        min-height: 400px;       
+    }
+
+    .home .content {
+        padding: 0 20px;         
+        margin-top: 40px;       
+    }
+
+    .home h1 {
+        font-size: 36px;         
+        letter-spacing: 4px;     
+        margin-top: 8px;
+    }
+
+    .home p {
+        font-size: 12px;         
+        letter-spacing: 2px;
+    }
+
+    .brush-bottom {
+        height: 50px;           
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* MARK: Contact Info (Mobile) */
+
+    .contact {
+        padding-top: 40px;
+    }
+
+    .contact-top {
+        flex-direction: column;     
+        padding: 0 20px;            
+        gap: 40px;                   
+    }
+
+    .contact-information {
+        padding: 24px 20px;          
+    }
+
+    .contact-information h1 {
+        font-size: 20px;             
+    }
+
+    .contact-information .address {
+        font-size: 13px;            
+        margin-bottom: 20px;
+    }
+
+    .contact-qr-main {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+    }
+
+    .contact-qr h3 {
+        font-size: 14px;
+    }
+
+    .contact-form {
+        width: 100%;
+        gap: 15px;                  
+    }
+
+    .submit-btn {
+        margin-top: 5px;
+        padding: 14px 20px;          
+    }
+
+    .contact-bottom {
+        height: auto;                
+        margin-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    .plate-image-container {
+        width: 800px;
+        bottom: -480px; 
+        opacity: 1; 
+        z-index: 1;
+    }
+    
+    .plate-image-container img {
+        mix-blend-mode: normal; 
+        filter: brightness(1.05); 
+    }
+
+    .bottom-content {
+        margin-top: 30px;
+        position: relative;
+        z-index: 10; 
+    }
+
+    .bottom-content p {
+        font-size: 12px;             
+        margin-bottom: 5px;
+    }
+
+    .bottom-content h1 {
+        font-size: 38px;             
+        letter-spacing: 6px;
+    }
+    
+    .horizontal-line {
+        display: none;
+    }
+    /* MARK: Our Product (Mobile) */
+
+    .our-product-home {
+        min-height: 350px;
+        letter-spacing: 4px; 
+    }
+
+    .our-product-home h1 {
+        font-size: 42px;    
+    }
+
+    .product-of-snow-beef .child h1 {
+        font-size: 28px;
+        padding-top: 40px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .product-of-snow-beef .child .h1-snowbeef {
+        margin-left: 0;         
+        font-size: 48px;        
+    }
+
+    .product-of-snow-beef .child p {
+        padding: 0 20px 40px 20px; 
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .list-menu-best-seller {
+        grid-template-columns: 1fr; 
+        gap: 20px;                  
+        padding: 0 20px 80px 20px;  
+    }
+
+    .menu-card-product {
+        width: 100%;               
+        max-width: 380px;           
+        margin: 0 auto;             
+        height: auto;              
+        min-height: 380px;
+    }
+
+    .menu-card__image {
+        transform: scale(1.1) translateY(0); 
+    }
+
+    /* MARK: Contact Page (Mobile) */
+
+    .contact-page {
+        padding: 100px 20px 80px 20px; 
+    }
+
+    .contact-page-child {
+        margin-bottom: 40px;
+    }
+
+    .contact-page-child .h1-topic {
+        font-size: 36px;         
+    }
+
+    .contact-page-child .p-detail {
+        font-size: 14px;        
+        line-height: 1.6;
+        padding: 0 10px;        
+    }
+
+    .contact-page-child .p-detail br,
+    .contact-page-box-child .p-sub br {
+        display: none;
+    }
+
+    .contact-page-box {
+        grid-template-columns: 1fr; 
+        gap: 20px;                 
+    }
+
+    .contact-page-box-child {
+        padding: 60px 20px;         
+        max-width: 380px;           
+        margin: 0 auto;             
+    }
+
+    .contact-page-box-child svg {
+        width: 80px;              
+        height: 80px;
+        margin-bottom: 20px;
+    }
+
+    .contact-page-box-child h2 {
+        font-size: 22px;         
+        margin-bottom: 10px;
+    }
+
+    .contact-page-box-child .p-sub {
+        font-size: 14px;         
+    }
+
+    /* MARK: Earth (Mobile) */
+    
+    .earth {
+        padding: 0 15px;            
+    }
+
+    .earth div {
+        padding: 40px 10px 20px 10px; 
+    }
+
+    .earth div .suravaram {
+        font-size: 14px;            
+        line-height: 1.5;           
+        letter-spacing: 1px;       
+        margin-bottom: 10px;       
+    }
+
+    .earth div h1 {
+        font-size: 28px;           
+        margin-bottom: 15px;        
+        line-height: 1.3;
+    }
+
+    .earth p.p-detail {
+        font-size: 14px;           
+        line-height: 1.6;          
+        padding: 0;               
+    }
+
+    .earth p.p-detail br {
+        display: none;
+    }
+
+    .earth .align-center-img {
+        width: 100%;                
+        height: auto;              
+        margin-top: 20px;          
+    }
+
+    /* MARK: Taste (Mobile) */
+
+    .taste {
+        flex-direction: column;      
+        padding: 60px 20px 20px 20px; 
+        text-align: center;         
+    }
+
+    .taste div {
+        max-width: 100%;            
+        padding-right: 0;          
+        margin-bottom: 40px;       
+    }
+
+    .taste h1 {
+        font-size: 28px;            
+        margin-bottom: 20px;
+    }
+
+    .taste h1 .times-new-roman {
+        font-size: 46px;            
+        margin-top: 10px;
+        display: block;              
+    }
+
+    .taste h1 br {
+        display: none;
+    }
+
+    .taste p.p-detail {
+        font-size: 14px;            
+        line-height: 1.6;          
+    }
+
+    .taste img {
+        width: 100%;                 
+        min-width: auto;            
+        height: auto;               
+        margin-right: 0;            
+        object-position: center;    
+    }
+
+    /* MARK: History (Mobile) */
+
+    .history {
+        min-height: auto;         
+        padding: 60px 20px;        
+    }
+
+    .history div {
+        margin-top: 0;             
+        width: 100%;
+    }
+
+    .history p.suravaram {
+        font-size: 14px;           
+        line-height: 1.5;         
+        margin-bottom: 10px;
+    }
+
+    .history h1.h1-topic {
+        font-size: 28px;           
+        margin-bottom: 30px;
+        line-height: 1.3;
+    }
+
+    .history img {
+        width: 100%;               
+        height: auto;              
+        padding: 0;               
+        margin: 0 auto;        
+        /* content: url("../assets/images/history-snow-beef/history-line-mobile.webp"); */
+    }
+
+    /* MARK: Why (Mobile) */
+
+    .why {
+        min-height: 500px;           
+        padding: 60px 0;
+        background-position: center bottom; 
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .why div {
+        margin-bottom: 0;           
+        padding: 0 20px;
+    }
+
+    .why h1 {
+        font-size: 28px;            
+        line-height: 1.3;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;     
+        align-items: center;
+        gap: 5px;
+    }
+
+    .why .mr-dafoe {
+        margin-left: 0;             
+        font-size: 44px;             
+    }
+
+    .why p.p-detail {
+        font-size: 14px;             
+        line-height: 1.6;
+        margin-bottom: 35px;
+        max-width: 100%;
+    }
+
+    .why p.p-detail br {
+        display: none;
+    }
+
+    .why .explore-btn {
+        padding: 14px 28px;         
+        font-size: 14px;
+    }
+
+    /* MARK: Standard Section (Mobile) */
+
+    .standard-section {
+        height: 60vh;            
+        min-height: 400px;      
+        padding-bottom: 40px;   
+    }
+
+    .standard-section .content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+    .standard-section .explore-btn {
+        max-width: 280px;        
+        padding: 14px 20px;      
+        font-size: 14px;
+    }
+
+    /* MARK: itthisak (Mobile) */
+
+    .itthisak {
+        flex-direction: column;     
+    }
+
+    .itthisak img {
+        width: 100%;                 
+        height: 450px;               
+        object-fit: cover;           
+        object-position: top center; 
+    }
+
+    .itthisak div {
+        width: 100%;                 
+        padding: 50px 25px;          
+        text-align: center;          
+    }
+
+    .itthisak h1 {
+        font-size: 26px;             
+        margin-bottom: 20px;
+        line-height: 1.4;
+    }
+
+    .itthisak p {
+        font-size: 14px;             
+        line-height: 1.7;
+        margin-bottom: 25px;
+        max-width: 100%;
+    }
+
+    .itthisak p br {
+        display: none;
+    }
+
+    .itthisak h4 {
+        font-size: 15px;             
+        line-height: 1.5;
+    }
+
+    /* MARK: Glass button (Mobile) */
+
+    .glass-container {
+        bottom: 20px;           
+        right: 15px;            
+        padding: 12px;           
+        gap: 10px;               
+        border-radius: 20px;
+    }
+
+    .glass-button {
+        width: 220px;            
+        padding: 8px 12px;       
+        border-radius: 12px;    
+    }
+
+    .icon-circle {
+        width: 32px;            
+        height: 32px;
+        margin-right: 10px;     
+    }
+
+    .button-text {
+        font-size: 13px;         
+    }
+
+    .arrow-svg {
+        padding-left: 5px;
+    }
+
+    .arrow-svg svg {
+        width: 20px;            
+    }
+
+    /* MARK: Our Standard (Mobile) */
+
+    /* MARK: Home */
+
+    .our-standard {
+        padding: 80px 20px;         
+    }
+
+    .our-standard h1 {
+        font-size: 32px;           
+        margin: 0 0 30px 0;         
+        letter-spacing: 3px;
+    }
+
+    .our-standard p {
+        font-size: 14px;            
+        line-height: 1.7;          
+        margin-bottom: 40px;
+        padding: 0 10px;
+    }
+
+    .our-standard p br {
+        display: none;
+    }
+
+    .our-standard-certificate {
+        gap: 30px;                  
+        display: grid;             
+        grid-template-columns: repeat(2, 1fr); 
+        max-width: 320px;           
+        margin: 0 auto;
+    }
+
+    .our-standard-certificate img {
+        height: 100px;             
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* MARK: Biological Matching (Mobile) */
+
+    .our-st-baner {
+        padding: 80px 20px;      
+    }
+
+    .our-st-baner .gold-soft {
+        font-size: 24px;          
+        margin-bottom: 8px;       
+        letter-spacing: 2px;
+    }
+
+    .our-st-baner .ibmthai {
+        font-size: 22px;         
+        line-height: 1.4;
+        margin-bottom: 25px;     
+    }
+
+    .our-st-baner .p-detail {
+        font-size: 14px;          
+        line-height: 1.7;         
+        padding: 0 10px;          
+    }
+
+    .our-st-baner .p-detail br {
+        display: none;
+    }
+
+    /* MARK: Our Structure (Mobile) */
+
+    .our-structure {
+        flex-direction: column;      
+    }
+
+    .our-structure > img {
+        width: 100%;                
+        height: 350px;              
+    }
+
+    .our-bx {
+        width: 100%;                 
+    }
+
+    .our-bx-child {
+        flex-direction: column;      
+        height: auto;                
+    }
+
+    .our-bx-child:nth-child(2) {
+        flex-direction: column-reverse; 
+    }
+
+    .our-bx-child img, 
+    .our-bx-children {
+        width: 100%;                 
+        height: auto;               
+    }
+
+    .our-bx-child img {
+        height: 250px;              
+    }
+
+    .our-bx-children {
+        padding: 40px 25px;          
+        text-align: center;        
+    }
+
+    .our-bx-child h2 {
+        font-size: 22px;            
+        margin-bottom: 12px;
+    }
+
+    .our-bx-child p.p-sub {
+        font-size: 14px;           
+        line-height: 1.6;
+    }
+
+    /* MARK: Our Interview (Mobile) */
+
+    .our-interview-child {
+        flex-direction: column;     
+        height: auto;                
+        min-height: auto;           
+    }
+
+    .our-interview-child > img {
+        width: 100%;                 
+        height: 300px;              
+        order: 1;                   
+    }
+
+    .our-interview-children {
+        width: 100%;                
+        padding: 50px 25px;          
+        order: 2;                    
+    }
+
+    .our-interview-children img {
+        max-width: 180px;           
+        margin-bottom: 20px;
+    }
+
+    .our-interview-children h1 {
+        font-size: 28px;             
+        margin-bottom: 12px;
+    }
+
+    .our-interview-children .p-detail {
+        font-size: 14px;             
+        line-height: 1.6;
+    }
+
+    .our-interview-children .p-detail br {
+        display: none;
+    }
+
+    /* MARK: JP Exclusive */
+
+    .jp-exclusive {
+        padding: 80px 20px;
+        gap: 50px;                  
+    }
+
+    .jp-top {
+        flex-direction: column;
+        align-items: center;         
+        text-align: center;
+        gap: 20px;
+    }
+
+    .jp-top > div {
+        width: 100%;                 
+    }
+
+    .jp-top h1 {
+        font-size: 26px;
+        line-height: 1.3;
+        width: 100%;                
+    }
+
+    .jp-top .p-detail {
+        font-size: 14px;
+        max-width: 90%;              
+        margin: 0 auto;
+    }
+
+    .jp-bottom {
+        flex-direction: column;
+        gap: 30px;                  
+    }
+
+    .jp-ex-image-bx {
+        gap: 10px;
+    }
+
+    .jp-bottom .jp-ex-image-bx img {
+        max-width: 220px;            
+        height: auto;
+        object-fit: contain;
+    }
+
+    .jp-bottom svg {
+        margin: 20px 0;              
+        transform: rotate(90deg) scale(0.8); 
+        height: auto;
+        width: 60px;                
+    }
+
+    .jp-ex-image-bx h1 {
+        font-size: 24px;            
+    }
 }

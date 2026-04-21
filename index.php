@@ -12,6 +12,8 @@
     
     <main>
         <section class="home w-full">
+            <img src="assets/images/brush-black.webp" alt="blush black" class="brush-bottom">
+            
             <div class="video-bg">
                 <div class="video-overlay bt-black"></div>
                 <video autoplay loop muted playsinline>

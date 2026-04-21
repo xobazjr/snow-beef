@@ -16,20 +16,20 @@
 
         <form id="contactForm" class="contact-form" action="core/mailer-test.php" method="post">
             <div class="form-group">
-                <label class="field-label outfit">YOUR COMPANY</label>
-                <input name="fcompany" type="text" placeholder="Ex.Allmass idea" required>
+                <label for="fcompany" class="field-label outfit">YOUR COMPANY</label>
+                <input name="fcompany" id="fcompany" type="text" placeholder="Ex.Allmass idea" required>
             </div>
             <div class="form-group">
-                <label class="field-label outfit">PHONE NUMBER</label>
-                <input name="fphone" type="text" placeholder="Ex.086-334-XXXX" required>
+                <label for="fphone" class="field-label outfit">PHONE NUMBER</label>
+                <input name="fphone" id="fphone" type="text" placeholder="Ex.086-334-XXXX" required>
             </div>
             <div class="form-group">
-                <label class="field-label outfit">YOUR NAME</label>
-                <input name="fname" type="text" placeholder="Ex.Marisa Thanaluangklung" required>
+                <label for="fname" class="field-label outfit">YOUR NAME</label>
+                <input name="fname" id="fname" type="text" placeholder="Ex.Marisa Thanaluangklung" required>
             </div>
             <div class="form-group">
-                <label class="field-label outfit">WHAT TYPE OF RESTAURANT?</label>
-                <select name="frestaurant" required>
+                <label for="frestaurant" class="field-label outfit">WHAT TYPE OF RESTAURANT?</label>
+                <select name="frestaurant" id="frestaurant" required>
                     <option value="Supermarket" selected>Supermarket</option>
                     <option value="Chainrestaurant">Chainrestaurant</option>
                     <option value="Agency">Agency</option>
@@ -38,18 +38,11 @@
                 </select>
             </div>
             <div class="form-group">
-                <label class="field-label">MESSAGE</label>
-                <textarea name="fmessage" placeholder="Describe your requirements..." required></textarea>
+                <label for="fmessage" class="field-label">MESSAGE</label>
+                <textarea name="fmessage" id="fmessage" placeholder="Describe your requirements..." required></textarea>
             </div>
             
             <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
-
-            <!-- <button type="button" class="submit-btn" onclick="onSubmit(event)">
-                <span class="times-new-roman">SEND MESSAGE</span>
-                <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 6H17 M17 6L21 2L25 6L21 10Z" stroke="currentColor" stroke-width="1" stroke-linejoin="miter"/>
-                </svg>
-            </button> -->
 
             <button type="submit" class="submit-btn">
                 <span class="times-new-roman">SEND MESSAGE</span>
@@ -57,6 +50,13 @@
                     <path d="M1 6H17 M17 6L21 2L25 6L21 10Z" stroke="#D1B171" stroke-width="1" stroke-linejoin="miter"/>
                 </svg>
             </button>
+
+            <!-- <button type="button" class="submit-btn" onclick="onSubmit(event)">
+                <span class="times-new-roman">SEND MESSAGE</span>
+                <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 6H17 M17 6L21 2L25 6L21 10Z" stroke="currentColor" stroke-width="1" stroke-linejoin="miter"/>
+                </svg>
+            </button> -->
         </form>
     </div>
 

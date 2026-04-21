@@ -7,10 +7,28 @@
     </div>
   </a>
 
-  <ul class="nav-menu outfit p-detail">
-    <li><a href="our-product.php">Our Product</a></li>
-    <li><a href="why-page.php">Why Snowbeef?</a></li>
-    <li><a href="our-standard.php">Our Standards</a></li>
-    <li><a href="contact.php">Sale & Support</a></li>
-  </ul>
+  <button class="hamburger-btn" aria-label="Menu" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+  </button>
+
+  <div class="nav-menu-wrapper" id="navMenu">
+      <button class="close-btn" onclick="toggleMenu()">✕</button>
+
+      <div class="mobile-menu-header">
+          <img src="assets/images/logo/logo-snow-beef.webp" alt="Bio Fresh Foods">
+      </div>
+
+      <ul class="nav-menu outfit p-detail">
+        <li class="mobile-only nav-label">NAVIGATION</li>
+        <li><a href="our-product.php">Our Product</a></li>
+        <li><a href="why-page.php">Why Snowbeef?</a></li>
+        <li><a href="our-standard.php">Our Standards</a></li>
+        <li><a href="contact.php">Sale & Support</a></li>
+        
+        </ul>
+  </div>
+
+  <div class="nav-overlay" id="navOverlay" onclick="toggleMenu()"></div>
 </nav>

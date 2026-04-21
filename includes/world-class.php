@@ -5,8 +5,8 @@
             <p class="grey p-detail">ดำเนินงานด้วยมาตรฐานสากล GHP และ HACCP โดยควบคุมระบบการผลิตระดับเดียวกับประเทศญี่ปุ่น<br>พร้อมมอบบริการแบบ One-Stop Service ที่สะอาดและปลอดภัยในทุกขั้นตอนการแปรรูป</p>
         </div>
         <div class="world-class-certificate">
-            <img src="assets/images/certificates/haccp.webp">
-            <img src="assets/images/certificates/ghp.webp">
+            <img src="assets/images/certificates/haccp.webp" alt="ใบรับรอง HACCP">
+            <img src="assets/images/certificates/ghp.webp" alt="ใบรับรอง GHP">
         </div>
     </div>
 </section>
