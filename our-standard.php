@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <title>Our Standard</title>
+    <title>Our Standard - Snow Beef Thailand</title>
     <?php include 'includes/head.php'; ?>
 </head>
 <body>

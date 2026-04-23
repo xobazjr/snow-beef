@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <title>Why Snowbeef?</title>
+    <title>Why Snowbeef? - Snow Beef Thailand</title> 
     <?php include 'includes/head.php'; ?>
 </head>
 <body>

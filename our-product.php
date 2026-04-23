@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <title>Our Product - Snow Beef</title>
+    <title>Our Product - Snow Beef Thailand</title>
     <?php include 'includes/head.php'; ?>
 </head>
 <body>

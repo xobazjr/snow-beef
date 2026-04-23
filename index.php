@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <title>Snow Beef</title>
+    <title>Snow Beef Thailand</title>
     <?php include 'includes/head.php'; ?>
 </head>
 <body>
