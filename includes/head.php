@@ -2,7 +2,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>เนื้อวัว สโนว์ บีฟ เนื้อวัวออสเตรเลีย เนื้อวัวลายหิมะ Snow Beef Thailand</title>
     <meta name="description" content="Snow beef คือเนื้อวัวออสเตรเลียที่เติบโตและเลี้ยงด้วยการกินหญ้าจากธรรมชาติ (Grass-Fed Australian) ก่อนจะนำมาผ่านกระบวนการตัดแต่งและแปรรูปด้วย นวัตกรรม Injection เพื่อให้เนื้อมีลายไขมันแทรกและมีความนุ่ม ชุ่มฉ่ำ ยกระดับคุณภาพและรสชาติของเนื้อวัวให้พิเศษยิ่งขึ้น">
     <meta name="keywords" content="เนื้อวัว, สโนว์ บีฟ, เนื้อวัวลายหิมะ, เนื้อวัวออสเตรเลีย, Snow Beef Thailand">
     <meta name="author" content="Snow Beef Thailand">

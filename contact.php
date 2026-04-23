@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <?php include 'includes/head.php'; ?>
     <title>Contact - Snow Beef Thailand</title>
+    <?php include 'includes/head.php'; ?>
 </head>
 <body>
     <?php include 'includes/glass-button.php'; ?>
