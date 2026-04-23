@@ -1,7 +1,7 @@
 <section class="menu-section">
     <div class="product-meats-img">
-        <img src="assets/images/menu/meat-1.webp" class="meat-left">
-        <img src="assets/images/melting-behavior-transparency.webp" class="meat-right">
+        <img src="assets/images/menu/meat-1.webp" class="meat-left" alt="meat">
+        <img src="assets/images/melting-behavior-transparency.webp" class="meat-right" alt="meat">
     </div>
 
     <div class="product">
@@ -46,7 +46,7 @@
 
                 <p class="menu-desc newsreader">"<?= htmlspecialchars($menu->description) ?>"</p>
 
-                <img src="<?= htmlspecialchars($menu->imageUrl) ?>" class="menu-image">
+                <img src="<?= htmlspecialchars($menu->imageUrl) ?>" class="menu-image" alt="meat">
             </div>
         <?php endforeach; ?>
     </div>
