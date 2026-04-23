@@ -2,12 +2,12 @@
     <div class="contact-top">
         <div class="contact-left">
             <div class="contact-information">
-                <div class="label-gold outfit">CONTACT INFORMATION</div>
-                <h1 class="times-new-roman">Bio Fresh Foods (THAILAND) CO., LTD</h1>
-                <p class="address outfit">27/13 pattana chonnabot 4 rd.,<br>klong soongtonnoon,<br>ladkrabang district., bangkok 10520</p>
+                <div class="label-gold text-label outfit">CONTACT INFORMATION</div>
+                <h2 class="times-new-roman text-white">Bio Fresh Foods (THAILAND) CO., LTD</h2>
+                <p class="address text-body outfit">27/13 pattana chonnabot 4 rd.,<br>klong soongtonnoon,<br>ladkrabang district., bangkok 10520</p>
                 <div class="contact-email">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#060606" d="M15 2H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h14c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1M4.94 9.94l-3 3c-.12.12-.28.18-.44.18s-.32-.06-.44-.18a.63.63 0 0 1 0-.88l3-3c.24-.24.64-.24.88 0c.25.24.25.64 0 .88m10 3c-.12.12-.28.18-.44.18s-.32-.06-.44-.18l-3-3a.63.63 0 0 1 0-.88c.24-.24.64-.24.88 0l3 3c.25.24.25.64 0 .88m0-9L8.8 10.09c-.22.22-.51.33-.8.33s-.58-.11-.8-.33L1.06 3.94c-.24-.24-.24-.64 0-.88s.64-.24.88 0L8 9.12l6.06-6.06c.24-.24.64-.24.88 0c.25.24.25.64 0 .88"/></svg>
-                    <p class="roboto">chayada@biofresh.co.th</p>
+                    <p class="text-body roboto">chayada@biofresh.co.th</p>
                 </div>
             </div>
 
@@ -16,19 +16,19 @@
 
         <form id="contactForm" class="contact-form" action="core/mailer-test.php" method="post">
             <div class="form-group">
-                <label for="fcompany" class="field-label outfit">YOUR COMPANY</label>
+                <label for="fcompany" class="field-label text-body outfit">YOUR COMPANY</label>
                 <input name="fcompany" id="fcompany" type="text" placeholder="Ex.Allmass idea" required>
             </div>
             <div class="form-group">
-                <label for="fphone" class="field-label outfit">PHONE NUMBER</label>
+                <label for="fphone" class="field-label text-body outfit">PHONE NUMBER</label>
                 <input name="fphone" id="fphone" type="text" placeholder="Ex.086-334-XXXX" required>
             </div>
             <div class="form-group">
-                <label for="fname" class="field-label outfit">YOUR NAME</label>
+                <label for="fname" class="field-label text-body outfit">YOUR NAME</label>
                 <input name="fname" id="fname" type="text" placeholder="Ex.Marisa Thanaluangklung" required>
             </div>
             <div class="form-group">
-                <label for="frestaurant" class="field-label outfit">WHAT TYPE OF RESTAURANT?</label>
+                <label for="frestaurant" class="field-label text-body outfit">WHAT TYPE OF RESTAURANT?</label>
                 <select name="frestaurant" id="frestaurant" required>
                     <option value="Supermarket" selected>Supermarket</option>
                     <option value="Chainrestaurant">Chainrestaurant</option>
@@ -38,7 +38,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="fmessage" class="field-label">MESSAGE</label>
+                <label for="fmessage" class="field-label text-body">MESSAGE</label>
                 <textarea name="fmessage" id="fmessage" placeholder="Describe your requirements..." required></textarea>
             </div>
             
@@ -64,8 +64,8 @@
         <div class="horizontal-line"></div>
                 
         <div class="bottom-content">
-            <p class="outfit">BIO FREASH FOODS (Thailand) Company Limited</p>
-            <h1 class="times-new-roman gold-soft">SNOWBEEF</h1>
+            <p class="outfit text-body">BIO FREASH FOODS (Thailand) Company Limited</p>
+            <h1 class="times-new-roman text-gold text-h1">SNOWBEEF</h1>
         </div>
                 
         <div class="plate-image-container">

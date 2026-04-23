@@ -37,7 +37,7 @@
                 
                 <h2 class="text-h2 font-medium text-white ibmthai">
                     สัมผัสความนุ่มละมุนดุจหิมะกับ<br>
-                    <span class="text-h2 times-new-roman">Snow Beef</span>
+                    <span class="times-new-roman">Snow Beef</span>
                 </h2>
 
                 <p class="text-body font-light text-white">
@@ -57,8 +57,8 @@
 
         <section class="history">
             <div>
-                <p class="suravaram gold">The origin of groundbreaking ideas and innovations</p>
-                <h1 class="ibmthai h1-topic white">จุดกำเนิดของแนวคิดและนวัตกรรมที่ล้ำหน้า</h1>
+                <p class="suravaram text-gold">The origin of groundbreaking ideas and innovations</p>
+                <h2 class="ibmthai text-h2 white">จุดกำเนิดของแนวคิดและนวัตกรรมที่ล้ำหน้า</h2>
                 <img src="assets/images/history-snow-beef/history-line-desktop.webp" alt="นวัตกรรมและเทคโนโลยีของ Snow Beef">
             </div>
         </section>
@@ -86,17 +86,25 @@
         <section class="itthisak w-full">
             <img src="assets/images/itthisak.webp" alt="คุณอิทธิศักดิ์ เชี่ยวเจริญวงศ์ ผู้ก่อตั้งแบรนด์ Snow Beef">
             <div>
-                <h1 class="ibmthai white">โดย คุณอิทธิศักดิ์ เชี่ยวเจริญวงศ์</h1>
-                <p class="Sarabun white">ผู้สานต่อประสบการณ์และแนวคิดที่ว่า อยากให้ทุกคนได้ทานเนื้อดีๆ ที่ราคาสมเหตุสมผล<br>แต่มีคุณภาพดีเทียบเท่าเนื้อราคาแพงๆ ด้วยแนวคิดดังนี้ เราจึงนำเทคโนโลยีการผลิต<br>อันทันสมัยจากญี่ปุ่นมาใช้ และได้มาเป็นเนื้อลายหิมะอันนุ่มละมุน ในชื่อ  “SNOW BEEF”<br>โดยผ่านการควบคุมการผลิตอย่างเข้มงวดจากประเทศญี่ปุ่น เพื่อให้มั่นใจได้ในความสะอาดและปลอดภัย</p>
-                <h3 class="Sarabun white p-detail">ภายใต้ปรัชญาที่ว่า อยากให้ผู้คนทั้งหลายได้รับประทาน “อาหารอร่อย” ในราคาที่เข้าถึงได้</h3>
+                <h2 class="ibmthai text-h2 white">โดย คุณอิทธิศักดิ์ เชี่ยวเจริญวงศ์</h2>
+                <p class="Sarabun text-body white">
+                    ผู้สานต่อประสบการณ์และแนวคิดที่ว่า อยากให้ทุกคนได้ทานเนื้อดีๆ ที่ราคาสมเหตุสมผล<br>
+                    แต่มีคุณภาพดีเทียบเท่าเนื้อราคาแพงๆ ด้วยแนวคิดดังนี้ เราจึงนำเทคโนโลยีการผลิต<br>
+                    อันทันสมัยจากญี่ปุ่นมาใช้ และได้มาเป็นเนื้อลายหิมะอันนุ่มละมุน ในชื่อ  “SNOW BEEF”<br>
+                    โดยผ่านการควบคุมการผลิตอย่างเข้มงวดจากประเทศญี่ปุ่น เพื่อให้มั่นใจได้ในความสะอาดและปลอดภัย
+                </p>
+                <h3 class="Sarabun white text-body">ภายใต้ปรัชญาที่ว่า อยากให้ผู้คนทั้งหลายได้รับประทาน “อาหารอร่อย” ในราคาที่เข้าถึงได้</h3>
             </div>
         </section>
 
         <section class="earth">
             <div>
-                <p class="gold suravaram">GROWTH RATE OF FAT-INJECTED BEEF.</p>
-                <h1 class="ibmthai grey">อัตราการเติบโตของเนื้อวัวฉีดไขมัน</h1>
-                <p class="grey text-body">"เนื้อวัวฉีดไขมันมีต้นกำเนิดจากเทคโนโลยีญี่ปุ่นช่วงปี 1980 เริ่มจำหน่ายเชิงพาณิชย์ในออสเตรเลียปี 2000 และสหรัฐฯ ปี 2004<br>ปัจจุบันมีการพัฒนาเทคโนโลยีนี้อย่างแพร่หลายในหลายประเทศทั่วโลก"</p>
+                <p class="gold text-body suravaram">GROWTH RATE OF FAT-INJECTED BEEF.</p>
+                <h2 class="ibmthai text-h2 grey">อัตราการเติบโตของเนื้อวัวฉีดไขมัน</h2>
+                <p class="grey text-body">
+                    "เนื้อวัวฉีดไขมันมีต้นกำเนิดจากเทคโนโลยีญี่ปุ่นช่วงปี 1980 เริ่มจำหน่ายเชิงพาณิชย์ในออสเตรเลียปี 2000 และสหรัฐฯ ปี 2004
+                    ปัจจุบันมีการพัฒนาเทคโนโลยีนี้อย่างแพร่หลายในหลายประเทศทั่วโลก"
+                </p>
             </div>
             <img src="assets/images/earth/earth-desktop.webp" class="align-center-img" alt="แผนที่แสดงอัตราการเติบโตของเนื้อวัวฉีดไขมันทั่วโลก">
         </section>

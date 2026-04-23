@@ -9,8 +9,8 @@
     <?php include 'includes/navbar.php'; ?>
     
     <section class="our-standard b-black">
-        <h1 class="gold-soft times-new-roman h1-topic">OUR STANDARD</h1>
-        <p class="white p-detail"><strong>SNOW BEEF</strong> ดำเนินงานด้วยมาตรฐานสากล GHP และ HACCP โดยควบคุมระบบการผลิตระดับเดียวกับประเทศญี่ปุ่น<br>พร้อมมอบบริการแบบ One-Stop Service ที่สะอาดและปลอดภัยในทุกขั้นตอนการแปรรูป</p>
+        <h1 class="gold-soft times-new-roman text-h2">OUR STANDARD</h1>
+        <p class="white text-body"><strong>SNOW BEEF</strong> ดำเนินงานด้วยมาตรฐานสากล GHP และ HACCP โดยควบคุมระบบการผลิตระดับเดียวกับประเทศญี่ปุ่น<br>พร้อมมอบบริการแบบ One-Stop Service ที่สะอาดและปลอดภัยในทุกขั้นตอนการแปรรูป</p>
         <div class="our-standard-certificate">
             <img src="assets/images/certificates/haccp.webp" alt="ใบรับรองมาตรฐาน HACCP">
             <img src="assets/images/certificates/ghp.webp" alt="ใบรับรองมาตรฐาน GHP">
@@ -29,9 +29,10 @@
     </section>
 
     <section class="our-st-baner b-black white">
-        <h1 class="gold-soft times-new-roman h1-topic">Biological Matching</h1>
-        <h1 class="white ibmthai h1-topic">ความลับของความสอดคล้องทางชีวภาพ</h1>
-        <p class="p-detail">เหตุผลที่ Snow Beef แตกต่างจากเนื้อฉีดไขมันทั่วไป คือการเลือกใช้หลักการ Biological Matching<br>เราไม่ได้ใช้ไขมันจากแหล่งไหนก็ได้ แต่เราเจาะจงใช้ ไขมันวัวสายพันธุ์ British (British Fat) มาผสานเข้ากับ เนื้อวัว<br>สายพันธุ์ British (British Meat) เมื่อ "สายพันธุ์" ตรงกัน ผลลัพธ์ที่ได้จึงมหัศจรรย์กว่า</p>
+        <h2 class="gold-soft times-new-roman text-h2">Biological Matching<br>
+            <span class="white ibmthai text-h2">ความลับของความสอดคล้องทางชีวภาพ</span>
+        </h2>
+        <p class="text-body">เหตุผลที่ Snow Beef แตกต่างจากเนื้อฉีดไขมันทั่วไป คือการเลือกใช้หลักการ Biological Matching<br>เราไม่ได้ใช้ไขมันจากแหล่งไหนก็ได้ แต่เราเจาะจงใช้ ไขมันวัวสายพันธุ์ British (British Fat) มาผสานเข้ากับ เนื้อวัว<br>สายพันธุ์ British (British Meat) เมื่อ "สายพันธุ์" ตรงกัน ผลลัพธ์ที่ได้จึงมหัศจรรย์กว่า</p>
     </section>
 
     <section class="our-structure">
@@ -39,8 +40,8 @@
         <div class="our-bx">
             <div class="our-bx-child">
                 <div class="our-bx-children">
-                    <h2 class="h3-topic ibmthai">โครงสร้างไขมันที่สมบูรณ์</h2>
-                    <p class="grey p-sub">ไขมันของวัวสายพันธุ์ British จะมีความนุ่มและละลายง่ายกว่า ทำให้เมื่อย่างบนเตา ไขมันจะค่อยๆ ละลายสวยงาม ไม่แข็งเป็นก้อน</p>
+                    <h3 class="text-h3 ibmthai">โครงสร้างไขมันที่สมบูรณ์</h3>
+                    <p class="grey text-sub">ไขมันของวัวสายพันธุ์ British จะมีความนุ่มและละลายง่ายกว่า ทำให้เมื่อย่างบนเตา ไขมันจะค่อยๆ ละลายสวยงาม ไม่แข็งเป็นก้อน</p>
                 </div>
                 <img src="assets/images/our-meats/our-meats-2.webp" alt="เนื้อสัมผัสที่เป็นธรรมชาติ">
             </div>
@@ -48,15 +49,15 @@
             <div class="our-bx-child">
                  <img src="assets/images/our-meats/our-meats-3.webp" alt="ลายไขมันกระจายตัวเนียนกลมกลืน">
                 <div class="our-bx-children">
-                    <h2 class="h3-topic ibmthai">เนื้อสัมผัสที่เป็นธรรมชาติ</h2>
-                    <p class="grey p-sub">ลายไขมันกระจายตัวได้เนียนกริบกลมกลืนไปกับเส้นใยเนื้อหมดปัญหาไขมันแยกตัวหรือดูไม่เป็นธรรมชาติ</p>
+                    <h3 class="text-h3 ibmthai">เนื้อสัมผัสที่เป็นธรรมชาติ</h3>
+                    <p class="grey text-sub">ลายไขมันกระจายตัวได้เนียนกริบกลมกลืนไปกับเส้นใยเนื้อหมดปัญหาไขมันแยกตัวหรือดูไม่เป็นธรรมชาติ</p>
                 </div>
             </div>
 
             <div class="our-bx-child">
                 <div class="our-bx-children">
-                    <h2 class="h3-topic ibmthai">จุดหลอมเหลวที่พอดี </h2>
-                    <p class="grey p-sub">มอบสัมผัสที่ชุ่มฉ่ำและละลายในปาก (Melt-in the-mouth) ให้ความรู้สึกใกล้เคียงกับเนื้อวากิวระดับสูง (High-end Wagyu)</p>
+                    <h3 class="text-h3 ibmthai">จุดหลอมเหลวที่พอดี </h3>
+                    <p class="grey text-sub">มอบสัมผัสที่ชุ่มฉ่ำและละลายในปาก (Melt-in the-mouth) ให้ความรู้สึกใกล้เคียงกับเนื้อวากิวระดับสูง (High-end Wagyu)</p>
                 </div>
                 <img src="assets/images/our-meats/our-meats-4.webp" alt="เนื้อชุ่มฉ่ำละลายในปาก">
             </div>
@@ -64,17 +65,18 @@
     </section>
 
     <section class="our-st-baner b-black white">
-        <h1 class="gold-soft times-new-roman h1-topic">Oleic Acid</h1>
-        <h1 class="white ibmthai h1-topic">กุญแจสู่สัมผัส "ละลายในปาก"</h1>
-        <p class="p-detail">ความลับของความพรีเมียมใน Snow Beef คือปริมาณ กรดโอเลอิก (Oleic Acid)<br>ที่สูงกว่าไขมันวัวในเขตร้อน (Tropical Fat) ทั่วไป</p>
+        <h2 class="gold-soft times-new-roman text-h2">Oleic Acid<br>
+            <span class="white ibmthai text-h2">กุญแจสู่สัมผัส "ละลายในปาก"</span>
+        </h2>
+        <p class="text-body">ความลับของความพรีเมียมใน Snow Beef คือปริมาณ กรดโอเลอิก (Oleic Acid)<br>ที่สูงกว่าไขมันวัวในเขตร้อน (Tropical Fat) ทั่วไป</p>
     </section>
 
     <section class="our-interview">
         <div class="our-interview-child">
             <div class="our-interview-children">
                 <img src="assets/images/menu/meat-3.webp" alt="ไขมันละลายง่าย ไม่แข็งเป็นก้อน">
-                <h1 class="grey outfit">Melting Behavior</h1>
-                <p class="p-detail grey">ไขมันของวัวสายพันธุ์ British จะมีความนุ่มและละลายง่ายกว่า<br>ทำให้เมื่อย่างบนเตา ไขมันจะค่อยๆ ละลายสวยงาม ไม่แข็งเป็นก้อน</p>
+                <h2 class="grey text-h2 outfit">Melting Behavior</h2>
+                <p class="text-body grey">ไขมันของวัวสายพันธุ์ British จะมีความนุ่มและละลายง่ายกว่า<br>ทำให้เมื่อย่างบนเตา ไขมันจะค่อยๆ ละลายสวยงาม ไม่แข็งเป็นก้อน</p>
             </div>
             <img src="assets/images/melting-behavior.webp" alt="พฤติกรรมการละลายของไขมันเนื้อวัว (Melting Behavior)">
         </div>
@@ -82,8 +84,8 @@
         <div class="our-interview-child b-black-premium white">
             <div class="our-interview-children">
                 <img src="assets/images/menu/meat-7.webp" alt="เนื้อสัมผัสชุ่มฉ่ำระดับวากิว">
-                <h1 class="outfit">Premium Perception</h1>
-                <p class="p-detail">มอบสัมผัสที่ชุ่มฉ่ำและละลายในปาก (Melt-in-the-mouth)<br>ให้ความรู้สึกใกล้เคียงกับเนื้อวากิวระดับสูง (High-end Wagyu)</p>
+                <h2 class="outfit text-h2">Premium Perception</h2>
+                <p class="text-body">มอบสัมผัสที่ชุ่มฉ่ำและละลายในปาก (Melt-in-the-mouth)<br>ให้ความรู้สึกใกล้เคียงกับเนื้อวากิวระดับสูง (High-end Wagyu)</p>
             </div>
             <img src="assets/images/premium-perception.webp" alt="สัมผัสระดับพรีเมียม (Premium Perception)">
         </div>
@@ -92,16 +94,16 @@
     <section class="jp-exclusive white b-black">
         <div class="jp-top">
             <div>
-                <h1 class="gold-soft h1-topic times-new-roman">JP Exclusive Innovation</h1>
-                <h1 class="ibmthai h1-topic">TN Plus โดย R&D จากญี่ปุ่น</h1>
+                <h2 class="gold-soft text-h2 times-new-roman">JP Exclusive Innovation</h2>
+                <h2 class="ibmthai text-h2">TN Plus โดย R&D จากญี่ปุ่น</h2>
             </div>
-            <p class="p-detail">เพื่อยกระดับความเชื่อมั่นขึ้นไปอีกขั้น Snow Beef คือผลผลิตจากการวิจัย<br>และพัฒนาโดยทีม R&D ของ Bio Fresh Foods ประเทศญี่ปุ่น เราใช้โปรตีน<br>สูตรพิเศษ "TN Plus" เป็นตัวประสานอณูไขมันและเนื้อเข้าด้วยกัน </p>
+            <p class="text-body">เพื่อยกระดับความเชื่อมั่นขึ้นไปอีกขั้น Snow Beef คือผลผลิตจากการวิจัย<br>และพัฒนาโดยทีม R&D ของ Bio Fresh Foods ประเทศญี่ปุ่น เราใช้โปรตีน<br>สูตรพิเศษ "TN Plus" เป็นตัวประสานอณูไขมันและเนื้อเข้าด้วยกัน </p>
         </div>
 
         <div class="jp-bottom">
             <div class="jp-ex-image-bx">
                 <img src="assets/images/meat-before.webp" alt="เนื้อวัวก่อนผ่านนวัตกรรม TN Plus">
-                <h1 class="times-new-roman h1-topic white">Before</h1>
+                <h2 class="times-new-roman text-h2 white">Before</h2>
             </div>
             
             <svg width="140" height="24" viewBox="0 0 140 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -111,7 +113,7 @@
 
             <div class="jp-ex-image-bx">
                 <img src="assets/images/menu/meat-3.webp" alt="เนื้อวัวหลังผ่านนวัตกรรม TN Plus">
-                <h1 class="times-new-roman h1-topic gold-soft">After</h1>
+                <h2 class="times-new-roman text-h2 gold-soft">After</h2>
             </div>
         </div>
     </section>
@@ -120,7 +122,7 @@
         <img src="assets/images/doctor-japan/dc-japan-1.webp" class="dc-japan-base-img" alt="Lab Background">
         <img src="assets/images/doctor-japan/dc-japan-2.webp" class="dc-japan-transparent-img" alt="Doctor Transparent">
         <div class="dc-japan-text-box">
-            <p class="dc-japan-desc white p-detail">
+            <p class="dc-japan-desc white text-body">
                 ช่วยล็อกความชุ่มฉ่ำและรสชาติที่เข้มข้นไว้ภายใน ทำให้เนื้อคงความนุ่ม<br>
                 และฉ่ำวาวได้ยาวนาน แม้จะผ่านการปรุงด้วยความร้อนสูง
             </p>

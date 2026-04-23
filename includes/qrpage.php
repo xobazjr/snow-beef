@@ -6,8 +6,8 @@
 ?>
 
 <div class="contact-qr">
-    <h3 class="times-new-roman">Connect Digitally</h3>
-    <p class="outfit">SCAN TO ENGAGE WITH OUR SPECIALIZED TEAMS.</p>
+    <h3 class="times-new-roman text-h3">Connect Digitally</h3>
+    <p class="outfit text-label">SCAN TO ENGAGE WITH OUR SPECIALIZED TEAMS.</p>
     
     <div class="contact-qr-main">
         <?php foreach ($qrList as $qr): ?>

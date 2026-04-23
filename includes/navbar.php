@@ -3,7 +3,7 @@
     <img src="assets/images/logo/logo-snow-beef.webp" class="nav-logo" alt="Bio Fresh Foods">
     <div class="nav-brand-text">
       <span class="nav-brand-name outfit">BIO FRESH FOODS</span>
-      <span class="nav-brand-sub white outfit">Thailand Company Limited</span>
+      <span class="nav-brand-sub white text-body outfit">Thailand Company Limited</span>
     </div>
   </a>
 
@@ -20,7 +20,7 @@
           <img src="assets/images/logo/logo-snow-beef.webp" alt="Bio Fresh Foods">
       </div>
 
-      <ul class="nav-menu outfit p-detail">
+      <ul class="nav-menu text-body">
         <li class="mobile-only nav-label outfit">NAVIGATION</li>
         <li><a href="our-product.php" class="outfit">Our Product</a></li>
         <li><a href="why-page.php" class="outfit">Why Snowbeef?</a></li>

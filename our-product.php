@@ -9,13 +9,13 @@
     <?php include 'includes/navbar.php'; ?>
     <main class="b-black">
         <section class="our-product-home w-full">
-            <h1 class="white times-new-roman h1-topic">Our Product</h1>
+            <h1 class="white times-new-roman text-h2">Our Product</h1>
         </section>
 
         <section class="product-of-snow-beef">
             <div class="child">
-                <h1 class="white ibmthai">ผลิตภัณฑ์ของ <span class="red mr-dafoe h1-snowbeef">Snow Beef</span></h1>
-                <p class="white p-detail">เนื้อส่วน สันใน, ริบอาย, สันนอก, เซอร์ลอยด์ และชัคโรลยกระดับด้วยนวัตกรรมแทรกไขมัน<br>เอกสิทธิ์เพื่อสัมผัสนุ่มละมุนดุจเนยและรสชาติที่เข้มข้นสม่ำเสมอในทุกชิ้น</p>
+                <h2 class="white text-h2 ibmthai">ผลิตภัณฑ์ของ <span class="red mr-dafoe h1-snowbeef">Snow Beef</span></h2>
+                <p class="white text-body">เนื้อส่วน สันใน, ริบอาย, สันนอก, เซอร์ลอยด์ และชัคโรลยกระดับด้วยนวัตกรรมแทรกไขมัน<br>เอกสิทธิ์เพื่อสัมผัสนุ่มละมุนดุจเนยและรสชาติที่เข้มข้นสม่ำเสมอในทุกชิ้น</p>
             </div>
         </section>
 
@@ -24,7 +24,7 @@
         <section class="list-menu-best-seller">
             <?php foreach ($menus as $menu): ?>
                 <div class="menu-card-product">
-                    <span class="menu-card__label outfit"><?= htmlspecialchars($menu->label) ?></span>
+                    <span class="menu-card__label text-label outfit"><?= htmlspecialchars($menu->label) ?></span>
                     <h2 class="menu-card__title h2-topic times-new-roman"><?= htmlspecialchars($menu->title) ?></h2>
 
                     <div class="menu-card__divider">
@@ -39,7 +39,7 @@
                         </span>
                     </div>
 
-                    <p class="menu-card__description p-title newsreader"><?= htmlspecialchars($menu->description) ?></p>
+                    <p class="menu-card__description p-body newsreader"><?= htmlspecialchars($menu->description) ?></p>
 
                     <div class="menu-card__image-wrapper">
                         <img
