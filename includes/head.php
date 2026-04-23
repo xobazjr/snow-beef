@@ -15,10 +15,20 @@
 
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
+    <!-- Preconnect -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Mr+Dafoe&family=Newsreader:opsz,wght@6..72,200..800&family=Outfit:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Sarabun:wght@300;400;500;700&family=Suravaram&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Suravaram&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
     
