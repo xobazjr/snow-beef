@@ -562,6 +562,10 @@ nav {
     text-decoration: none;
 }
 
+.nav-brand-sub {
+    line-height: 25px;
+}
+
 .nav-logo { width: 75px; }
 
 .nav-brand-text { display: flex; flex-direction: column; }
