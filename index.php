@@ -40,13 +40,13 @@
                     <span class="times-new-roman">Snow Beef</span>
                 </h2>
 
-                <p class="text-body font-light text-white">
+                <h3 class="text-h3 font-light text-white">
                     จากเนื้อวัวสายพันธุ์แท้ British Hereford ที่เลี้ยงด้วยหญ้าธรรมชาติ (Grass-Fed)
                     จากทุ่งหญ้าอันกว้างใหญ่ในออสเตรเลียสู่การยกระดับด้วยนวัตกรรม Artificial Marbling Technology
                     ที่ช่วยแทรกลายไขมันให้สวยงาม มอบสัมผัสที่นุ่ม ชุ่มฉ่ำและรสชาติที่เข้มข้นในทุกคำ
                     ไม่เพียงแค่ความอร่อย แต่ยังเปี่ยมด้วยคุณค่าจากโอเมก้า-3 ในสัดส่วนที่สมดุล
                     ดีต่อสุขภาพ นี่คือวัตถุดิบชั้นเลิศที่จะช่วยสร้างมูลค่าเพิ่มและเปลี่ยนทุกจานอาหารของคุณให้เป็นเมนูระดับพรีเมียม
-                </p>
+                </h3>
 
             </div>
 
@@ -101,16 +101,15 @@
             <div>
                 <p class="gold text-body suravaram">GROWTH RATE OF FAT-INJECTED BEEF.</p>
                 <h2 class="ibmthai text-h2 grey">อัตราการเติบโตของเนื้อวัวฉีดไขมัน</h2>
-                <p class="grey text-body">
+                <h3 class="grey text-h3">
                     "เนื้อวัวฉีดไขมันมีต้นกำเนิดจากเทคโนโลยีญี่ปุ่นช่วงปี 1980 เริ่มจำหน่ายเชิงพาณิชย์ในออสเตรเลียปี 2000 และสหรัฐฯ ปี 2004
                     ปัจจุบันมีการพัฒนาเทคโนโลยีนี้อย่างแพร่หลายในหลายประเทศทั่วโลก"
-                </p>
+                </h3>
             </div>
             <img src="assets/images/earth/earth-desktop.webp" class="align-center-img" alt="แผนที่แสดงอัตราการเติบโตของเนื้อวัวฉีดไขมันทั่วโลก">
         </section>
 
         <?php include 'includes/world-class.php'; ?>
-        
         <?php include "includes/contact-info.php"; ?>      
     </main>
 

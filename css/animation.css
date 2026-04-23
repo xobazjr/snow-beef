@@ -1,0 +1,44 @@
+/* MARK: Default (แสดงปกติ) */
+
+.reveal-up,
+.reveal-left,
+.reveal-right {
+    opacity: 1;
+    transform: none;
+}
+
+/* MARK: เมื่อ JS ทำงาน */
+
+.js-enabled .reveal-up,
+.js-enabled .reveal-left,
+.js-enabled .reveal-right {
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+/* MARK: Direction */
+
+.js-enabled .reveal-up {
+    transform: translateY(60px);
+}
+
+.js-enabled .reveal-left {
+    transform: translateX(-80px);
+}
+
+.js-enabled .reveal-right {
+    transform: translateX(80px);
+}
+
+/* MARK: Active */
+
+.js-enabled .active {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* MARK: Delay */
+
+.delay-plate {
+    transition-delay: 0.4s;
+}

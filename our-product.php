@@ -15,7 +15,10 @@
         <section class="product-of-snow-beef">
             <div class="child">
                 <h2 class="white text-h2 ibmthai">ผลิตภัณฑ์ของ <span class="red mr-dafoe text-snowbeef">Snow Beef</span></h2>
-                <p class="white text-body">เนื้อส่วน สันใน, ริบอาย, สันนอก, เซอร์ลอยด์ และชัคโรลยกระดับด้วยนวัตกรรมแทรกไขมัน<br>เอกสิทธิ์เพื่อสัมผัสนุ่มละมุนดุจเนยและรสชาติที่เข้มข้นสม่ำเสมอในทุกชิ้น</p>
+                <p class="white text-body">
+                    เนื้อส่วน สันใน, ริบอาย, สันนอก, เซอร์ลอยด์ และชัคโรลยกระดับด้วยนวัตกรรมแทรกไขมัน    
+                    เอกสิทธิ์เพื่อสัมผัสนุ่มละมุนดุจเนยและรสชาติที่เข้มข้นสม่ำเสมอในทุกชิ้น
+                </p>
             </div>
         </section>
 
@@ -57,6 +60,6 @@
     </main>
 
     <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/menu-toggle.js"></s>
+    <script src="js/menu-toggle.js"></script>
 </body>
 </html>

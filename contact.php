@@ -11,8 +11,10 @@
     <main class="b-black">
         <section class="contact-page">
             <div class="contact-page-child">
-                <h1 class="text-h2 text-gold times-new-roman">Contact</h1>
-                <p class="text-body white">หากคุณมีข้อสงสัยเกี่ยวกับผลิตภัณฑ์ สนใจสั่งซื้อเพื่อนำไปประกอบธุรกิจร้านอาหาร<br>หรือต้องการสอบถามรายละเอียดทีมงานผู้เชี่ยวชาญของเราพร้อมให้คำปรึกษาและบริการคุณ</p>
+                <h2 class="text-h2 text-gold times-new-roman">Contact</h2>
+                <h3 class="text-h3 white">
+                    หากคุณมีข้อสงสัยเกี่ยวกับผลิตภัณฑ์ สนใจสั่งซื้อเพื่อนำไปประกอบธุรกิจร้านอาหาร<br>
+                    หรือต้องการสอบถามรายละเอียดทีมงานผู้เชี่ยวชาญของเราพร้อมให้คำปรึกษาและบริการคุณ</h3>
             </div>
             
             <div class="contact-page-box">
@@ -41,6 +43,6 @@
     </main>
 
     <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/menu-toggle.js"></>
+    <script src="js/menu-toggle.js"></script>
 </body>
 </html>

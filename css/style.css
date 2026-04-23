@@ -31,7 +31,6 @@
 /* MARK: Root */
 
 :root {
-    /* SIZE */
     --h1-size: 64px;
     --h2-size: 40px;
     --h3-size: 24px;
@@ -39,17 +38,16 @@
     --label-size: 10px;
     --sub-size: 15px;
     --snowbeef-size: 60px;
-
-    /* SPACING */
-    --h1-spacing: 2px;
-    --body-spacing: 0.5px;
+    --h1-line: 1.2;
+    --body-line: 35px;
+    --sub-line: 25px;
 
     /* COLOR */
     --white: #ffffff;
     --gold: #E2C282;
 }
 
-/* MARK: TYPOGRAPHY */
+/* MARK: Typography Classes */
 
 .text-label {
     font-size: var(--label-size);
@@ -57,7 +55,7 @@
 
 .text-h1 {
     font-size: var(--h1-size);
-    line-height: 1.2;
+    line-height: var(--h1-line);
 }
 
 .text-h2 {
@@ -66,19 +64,23 @@
 
 .text-h3 {
     font-size: var(--h3-size);
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.9;
+    letter-spacing: 0.01em;
 }
 
 .text-body {
     font-size: var(--body-size);
     font-weight: 300;
-    line-height: 35px;
+    line-height: var(--body-line);
     letter-spacing: 0.05em;
 }
 
 .text-sub {
     font-size: var(--sub-size);
     font-weight: 100;
-    line-height: 25px;
+    line-height: var(--sub-line);
     letter-spacing: 0.03em;
 }
 
@@ -345,7 +347,6 @@ img {
     padding: 0 20px; 
 }
 
-/* VIDEO */
 .video-bg {
     position: absolute;
     inset: 0;
@@ -359,7 +360,6 @@ img {
     pointer-events: none;
 }
 
-/* OVERLAY */
 .video-overlay {
     position: absolute;
     inset: 0;
@@ -367,7 +367,6 @@ img {
     z-index: 2;
 }
 
-/* CONTENT */
 .home .content {
     position: relative;
     z-index: 3;
@@ -381,19 +380,15 @@ img {
     transform: translateY(-40px);
 }
 
-/* TEXT */
 .home .content p {
-    font-size: clamp(14px, 2vw, 20px);
     letter-spacing: 4px;
 }
 
 .home .content h1 {
     font-weight: 400;
-    font-size: clamp(36px, 6vw, 80px); /* 🔥 scale ตามจอ */
     letter-spacing: clamp(4px, 1vw, 12px);
 }
 
-/* BRUSH */
 .brush-bottom {
     position: absolute;
     bottom: 0;
@@ -401,6 +396,7 @@ img {
     width: 100%;
     z-index: 5;
     pointer-events: none;
+    transform: translateY(50px);
 }
 
 /* MARK: Taste */
@@ -413,7 +409,6 @@ img {
 }
 
 .taste-content {
-    max-width: 700px;
     position: relative;
     z-index: 2;
 }
@@ -422,8 +417,8 @@ img {
     margin-bottom: 36px;
 }
 
-.taste p {
-    max-width: 690px;
+.taste h3 {
+    max-width: 900px;
 }
 
 .taste-content h2 {
@@ -504,8 +499,12 @@ img {
     padding: 60px 20px; 
 }
 
+.why-page-home a {
+    display: none;
+}
+
 .why > div {
-    max-width: 880px;
+    max-width: 1190px;
     width: 100%;
 
     display: flex;
@@ -526,12 +525,8 @@ img {
 }
 
 .why-text {
-    font-weight: 300;
-    line-height: 1.7;
-    letter-spacing: 0.02em;
     text-align: center;
     margin-bottom: 50px;
-    max-width: 790px;
 }
 
 /* BUTTON */
@@ -608,8 +603,8 @@ nav {
 .contact-top {
     display: flex;
     justify-content: center;
-    align-items: stretch; 
-    gap: 100px;
+    align-items: stretch;
+    gap: 80px;
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 40px;
@@ -619,11 +614,9 @@ nav {
 
 .contact-form {
     flex: 1;
-    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    height: 100%; 
 }
 
 .contact-form .form-group:nth-child(5) {
@@ -635,39 +628,37 @@ nav {
 .contact-form textarea {
     flex-grow: 1;
     min-height: 150px;
-    height: 100%; 
     resize: none;
 }
 
 .submit-btn {
-    margin-top: auto !important; 
+    margin-top: auto;
     width: 100%;
     background-color: white;
-    border: 1px solid #E9C1764D; 
+    border: 1px solid #E9C1764D;
     color: #7E0001;
     font-size: 13px;
     font-weight: 100;
     letter-spacing: 3px;
-    padding: 20px 24px;
+    padding: 18px 22px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 2px;
-    transition: all 0.25s ease; 
+    transition: all 0.25s ease;
 }
 
 .contact-left {
-    flex: 1; 
-    width: 50%; 
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 63px;
+    gap: 50px;
 }
 
 .contact-information {
     background-color: #2B1D18;
-    padding: 45px 40px;
+    padding: 40px 32px;
     border-radius: 2px;
 }
 
@@ -679,6 +670,7 @@ nav {
     align-items: center;
     gap: 15px;
     margin-bottom: 25px;
+
 }
 
 .label-gold::before {
@@ -687,6 +679,7 @@ nav {
     width: 40px;
     height: 1px;
     background-color: #CBA153;
+
 }
 
 .contact-information h2 {
@@ -743,10 +736,11 @@ nav {
 .contact-qr-child {
     background-color: #2B1D18;
     border-radius: 2px;
-    padding: 15px 10px 15px 10px;
+    padding: 14px 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+
 }
 
 .contact-qr-child > img {
@@ -771,8 +765,8 @@ nav {
 }
 
 .contact-qr-line img { width: 14px; height: 14px; }
-.contact-qr-phone svg { width: 14px; height: 14px; }
 
+.contact-qr-phone svg { width: 14px; height: 14px; }
 .contact-qr-line p,
 .contact-qr-phone p {
     color: #FFFFFF;
@@ -801,6 +795,7 @@ nav {
     color: #FFFFFF;
     padding: 14px 16px;
     outline: none;
+
 }
 
 .contact-form input::placeholder,
@@ -817,90 +812,137 @@ nav {
     background-size: 14px;
     cursor: pointer;
     color: #777777;
-}
 
-.contact-form .form-group:has(textarea) {
-    flex-grow: 1;
 }
 
 .submit-btn:hover {
+
     background-color: #9A1418;
+
     color: white;
-    border-color: #9A1418; 
+
+    border-color: #9A1418;
+
 }
 
 .contact-bottom {
+
     position: relative;
+
     width: 100%;
+
     height: 200px;
+
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
+
     margin-top: 40px;
+
 }
 
 .horizontal-line {
+
     position: absolute;
+
     top: 99px;
+
     left: 0;
+
     width: 100%;
+
     height: 1px;
-    z-index: 10;    
+
+    z-index: 10;
+
 }
 
 .horizontal-line::before,
+
 .horizontal-line::after {
+
     content: "";
+
     position: absolute;
+
     top: 0;
+
     height: 1px;
+
     background-color: white;
-    width: 28%;      
+
+    width: 28%;
+
 }
 
-.horizontal-line::before {
-    left: 0;
-}
+.horizontal-line::before { left: 0; }
 
-.horizontal-line::after {
-    right: 0;
-}
+.horizontal-line::after { right: 0; }
 
 .bottom-content {
+
     text-align: center;
+
     z-index: 3;
+
     position: relative;
+
     margin-top: 45px;
+
 }
 
 .bottom-content p {
+
     color: black;
+
     font-weight: 400;
+
     letter-spacing: 1px;
+
     margin-bottom: 5px;
+
 }
 
 .bottom-content h1 {
+
     font-weight: 400;
+
     letter-spacing: 12px;
+
     margin: 0;
+
 }
 
 .plate-image-container {
+
     position: absolute;
-    bottom: -500px;
+
+    bottom: -400px;
+
     left: 50%;
+
     transform: translateX(-50%);
-    width: 1000px;
+
+    width: 900px;
+
     z-index: 0;
+
     pointer-events: none;
+
 }
 
 .plate-image-container img {
+
     width: 100%;
+
     height: auto;
+
     display: block;
+
     mix-blend-mode: screen;
+
 }
 
 /* MARK: Glass button */
@@ -981,13 +1023,13 @@ nav {
 .contact-page-child {
     text-align: center;
     margin-bottom: 60px;
-    max-width: 700px;
+    max-width: 890px;
 }
 
 .contact-page-child .text-h2 {
     font-weight: 500;
     letter-spacing: 4px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .contact-page-child .text-body {
@@ -1077,7 +1119,8 @@ nav {
 
 .product-of-snow-beef .child p {
     padding: 0;
-    margin-bottom: 60px;
+    margin: 0 auto 60px;
+    max-width: 710px;
 }
 
 .product-of-snow-beef .child .h1-snowbeef {
@@ -1170,12 +1213,13 @@ nav {
 
 .standard-section {
     position: relative;
-    height: 800px; 
+    min-height: 100vh;
+    min-height: 100svh;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-end; 
-    padding-bottom: 80px;  
+    align-items: flex-end;
+    padding-bottom: 80px;
     overflow: hidden;
     background-color: #000;
 }
@@ -1251,6 +1295,10 @@ nav {
     letter-spacing: 1px;
     margin-bottom: 30px;
     max-width: 760px;
+}
+
+.itthisak p br {
+    display: none;
 }
 
 .itthisak h3 {
@@ -1341,7 +1389,7 @@ nav {
 
 .product {
     text-align: center;
-    max-width: 800px;
+    max-width: 920px;
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
@@ -1357,12 +1405,12 @@ nav {
     font-size: 15px;
 }
 
-.product p.text-white {
-    max-width: 700px;
+.product h2 {
+    padding: 10px 0 20px;
 }
 
-.product h1 {
-    padding: 10px 0 20px;
+.product h3 {
+    padding: 10px 0 10px;
 }
 
 .carousel-track {
@@ -1492,7 +1540,7 @@ nav {
 }
 
 .earth > div {
-    max-width: 970px;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -1510,8 +1558,7 @@ nav {
     margin: 6px 0;
 }
 
-.earth p {
-    line-height: 1.7;
+.earth h3 {
     padding: 0;
 }
 
@@ -1520,6 +1567,7 @@ nav {
 }
 
 .earth img {
+    margin-top: 130px;
     width: 90%;
 }
 
@@ -1527,44 +1575,43 @@ nav {
 
 .reasons {
     display: flex;
-    height: 800px; 
-    overflow: hidden; 
+    min-height: 800px;
+    height: auto;
+}
+
+.reasons > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .reasons-img, 
 .reasons-img-bottom {
     width: 50%;
-    height: 100%; 
+    height: auto;
     object-fit: cover;
     object-position: bottom;
 }
 
-.reasons > div {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
 .reasons-white-box {
-    padding: 50px 60px; 
+    padding: 50px 60px;
     background-color: #F6EEDD;
-    margin: 0;
-    flex-shrink: 0; 
 }
 
 .reasons-white-box h1 {
+    font-size: 54px;
     color: #A30000;
-    max-width: 470px;
-}
-
-.reasons h2 {
-    margin-bottom: 10px;
+    max-width: 630px;
+    margin: 0 auto;
+    padding: 30px 0;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .reasons-red-box {
     background-color: #7E0001;
-    padding: 40px 60px; 
+    padding: 100px 60px;
     color: white;
     flex: 1;
     display: flex;
@@ -1573,32 +1620,25 @@ nav {
 }
 
 .reasons-red-box h3 {
-    margin: 0 0 15px 0;
-}
-
-.reasons-red-box p {
-    opacity: 0.9;
-    margin: 0 0 90px 0; 
+    margin: 30px 0 150px 0;
 }
 
 .reasons-icon {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-shrink: 0;
 }
 
 .reasons-icon img {
-    width: 145px;
+    width: 170px;
     max-width: 30%;
-    opacity: 1; 
-    filter: brightness(1.5) contrast(1.2); 
+    filter: brightness(1.5) contrast(1.2);
 }
 
 .reasons h4 {
     text-align: center;
-    font-size: 100px;
     font-weight: normal;
+    font-size: 100px;
     margin: 0;
     line-height: 1;
 }
@@ -1615,12 +1655,12 @@ nav {
     padding: 160px 20px;
 }
 
-.our-standard h1 {
+.our-standard h2 {
     margin: 90px 0 50px 0;
     letter-spacing: 5px;
 }
 
-.our-standard p {
+.our-standard h3 {
     margin: 0 0 60px 0;
     font-weight: 300;
     line-height: 40px;
@@ -1628,7 +1668,7 @@ nav {
     text-align: center;
 }
 
-.our-standard p strong {
+.our-standard h3 strong {
     font-weight: 500;
 }
 
@@ -1737,7 +1777,7 @@ nav {
 }
 
 .our-interview-children h2,
-.our-interview-children p {
+.our-interview-children h3 {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -1746,6 +1786,14 @@ nav {
 .our-interview-children h2 {
     margin-bottom: 15px;
     font-weight: 600;
+}
+
+.our-interview-children h3 {
+    max-width: 642px;
+}
+
+.our-interview-child.b-black-premium h3 {
+    max-width: 594px;
 }
 
 .our-interview-children img {
@@ -1776,17 +1824,18 @@ nav {
 
 .jp-top {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
-    width: 100%;
-    gap: 40px;
+    gap: 250px;
+    margin: 0 auto;
 }
 
 .jp-top > div {
-    flex: 1;
+    flex: 0 0 auto;
+    max-width: 530px;
 }
 
-.jp-top > p.text-body {
+.jp-top > h3.text-h3 {
     margin: 0;
 }
 
@@ -1822,16 +1871,17 @@ nav {
 }
 
 .jp-top h2 {
+    font-size: 45px;
     font-weight: 500;
 }
 
-/* Doctor */
+/* MARK: Doctor */
 
 .dc-japan-section {
     position: relative;
     width: 100%;
-    margin-top: -10vw; 
-    z-index: 10; 
+    margin-top: -10vw;
+    z-index: 10;
 }
 
 .dc-japan-section::before {
@@ -1842,17 +1892,18 @@ nav {
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%);
-    z-index: 3; 
-    clip-path: inset(10vw 0 0 0); 
-    pointer-events: none; 
+    z-index: 3;
+    clip-path: inset(10vw 0 0 0);
+    pointer-events: none;
 }
 
 .dc-japan-text-box {
     position: absolute;
-    top: 30%; 
+    top: 30%;
     left: 10%;
     transform: translateY(-50%);
-    z-index: 4; 
+    z-index: 4;
+    max-width: 710px;
 }
 
 .dc-japan-base-img {
@@ -1868,13 +1919,13 @@ nav {
     left: 0;
     width: 100%;
     height: auto;
-    z-index: 2; 
-    pointer-events: none; 
+    z-index: 2;
+    pointer-events: none;
 }
 
 .dc-japan-desc {
     line-height: 1.8;
-    opacity: 0.8; 
+    opacity: 0.8;
     margin: 0;
 }
 
@@ -1890,308 +1941,16 @@ nav {
 
 @media (max-width: 1024px) {
 
-    /* MARK: Home */
-
-    .home .content {
-        transform: translateY(-20px);
-    }
-
-    /* MARK: Taste */
-
-    .taste {
-        padding: 100px 6%;
-    }
-
-    .taste img {
-        right: -200px;
-        width: 650px;
-    }
-
-    .taste-content p {
-        padding-right: 60px;
-    }
-
-    /* MARK: World Class */
-
-    .world-class-content {
-        padding: 80px 40px;
-        gap: 50px;
-    }
-
-    .world-class-certificate img {
-        width: 100px;
-    }
-
-    /* MARK: Menu */
-
-    .carousel-track {
-        padding: 20px 40px 40px;
-        scroll-padding-left: 40px;
-    }
-
-    .menu-card {
-        flex: 0 0 280px;
-    }
-
-    .meat-left,
-    .meat-right {
-        width: 200px;
-        top: 80px;
-    }
-
-    /* MARK: Why */
-
-    .why > div {
-        transform: translateY(-20px);
-    }
-
-    /* MARK: Itthisak */
-
-    .itthisak img {
-        width: 45%;
-    }
-
-    .itthisak div {
-        width: 55%;
-        padding: 60px 5%;
-    }
-
-    /* MARK: Earth */
-
-    .earth {
-        padding: 60px 20px 0 20px;
-    }
-
-        .contact-top {
-        flex-direction: column;
-        gap: 40px;
-        padding: 0 30px;
-    }
-
-    /* MARK: Contact Info */
-
-    .contact-qr-main {
-        grid-template-columns: repeat(2, 1fr); 
-    }
-
-    .bottom-content h1 {
-        font-size: 48px;
-        letter-spacing: 6px;
-    }
-
-    .plate-image-container {
-        width: 700px;
-        bottom: -300px;
-    }
-
-    /* MARK: Contact Page */
-
-    .contact-page-box {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* MARK: Our Product */
-
-    .list-menu-best-seller {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-    }
-
-    .menu-card-product {
-        height: 360px;
-    }
-
-    .menu-card__image-wrapper {
-        height: 140px;
-    }
-
-    /* MARK: Our Standard (Home) */
-
-    .our-standard {
-        padding: 120px 20px;
-    }
-
-    .our-standard h1 {
-        margin: 70px 0 40px 0;
-        letter-spacing: 3px;
-    }
-
-    .our-standard p {
-        line-height: 34px;
-        margin: 0 0 50px 0;
-    }
-
-    .our-standard-certificate {
-        gap: 40px;
-    }
-
-    .our-standard-certificate img {
-        height: 120px;
-    }
-
-    /* MARK: Our Standard (Banner) */
-
-    .our-st-baner {
-        padding: 100px 20px;
-    }
-
-    .our-st-baner .ibmthai {
-        margin-bottom: 25px;
-    }
-
-    /* MARK: Our Standard (Structure) */
-
-    .our-structure > img {
-        height: 750px; 
-    }
-
-    .our-bx-child {
-        height: 250px; 
-    }
-
-    .our-bx-child img,
-    .our-bx-children {
-        height: 250px;
-    }
-
-    .our-bx-children {
-        padding: 30px 4%; 
-    }
-
-    /* MARK: Our Standard (Interview) */
-
-    .our-interview-child {
-        height: 400px;
-        min-height: 400px;
-    }
-
-    .our-interview-children {
-        padding: 20px;
-    }
-
-    .our-interview-children h1 {
-        font-size: 32px;
-    }
-
-    .our-interview-children img {
-        max-width: 200px;
-    }
-
-    /* MARK: Our Standard (Japan Exclusive) */
-
-    .jp-exclusive {
-        padding: 80px 40px 120px;
-        gap: 80px;
-    }
-
-    .jp-bottom .jp-ex-image-bx:first-of-type img {
-        width: 200px;
-        height: 180px;
-    }
-
-    .jp-bottom .jp-ex-image-bx:last-of-type img {
-        width: 280px;
-        height: 180px;
-    }
-
-    .jp-bottom svg {
-        margin-left: 40px;
-        width: 100px;
-    }
-
-    /* MARK: Our Standard (Doctor) */
-
-    .dc-japan-text-box {
-        top: 40%;
-        left: 5%;
-        width: 50%;
-    }
-
-    /* MARK: Reasons */
-
-    .reasons {
-        height: 600px;
-    }
-
-    .reasons h1 {
-        padding: 40px 30px;
-    }
-
-    .reasons-red-box {
-        padding: 40px 30px;
-    }
-
-    .reasons-red-box p {
-        margin: 0 0 50px 0;
-    }
-
-    .reasons-icon img {
-        width: 100px;
-    }
-
-    .reasons h4 {
-        font-size: 70px;
-    }
-
-    /* MARK: History */
-
-    .history {
-        min-height: 1000px;
-        padding: 80px 40px;
-    }
-
-    .history h1 {
-        margin-bottom: 35px;
-    }
-
-    .history p {
-        font-size: 20px;
-        line-height: 48px;
-    }
-
-    /* MARK: Glass Button */
-
-    .glass-container {
-        bottom: 20px;
-        right: 20px;
-        padding: 15px;
-        gap: 12px;
-    }
-
-    .glass-button {
-        width: 240px;
-        padding: 8px 16px;
-    }
-
-    .icon-circle {
-        width: 34px;
-        height: 34px;
-        margin-right: 12px;
-    }
-
-    .button-text {
-        font-size: 15px;
-    }
-}
-
-/* MARK: Mobile Section */
-
-@media screen and (max-width: 600px) {
-
-    .text-body {
-        font-size: 16px;
-    }
-    
-    .text-h1 {
-
-    }
-
-    .text-h2 {
-        font-size: 32px;
-    }
-
-    .text-h3 {
-        
+    :root {
+        --h1-size: 48px;
+        --h2-size: 32px;
+        --h3-size: 20px;
+        --body-size: 16px;
+        --label-size: 9px;
+        --sub-size: 14px;
+        --snowbeef-size: 46px;
+        --body-line: 30px;
+        --sub-line: 22px;
     }
 
     /* MARK: Navigation */
@@ -2298,7 +2057,509 @@ nav {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color: rgba(0,0,0,0.7);
+        background-color: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+
+    .nav-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* MARK: Home */
+
+    .home .content {
+        transform: translateY(-20px);
+    }
+
+    /* MARK: Taste */
+
+    .taste {
+        padding: 100px 6%;
+    }
+
+    .taste img {
+        right: -200px;
+        width: 650px;
+    }
+
+    /* MARK: World Class */
+
+    .world-class-content {
+        padding: 80px 40px;
+        gap: 50px;
+    }
+
+    .world-class-certificate img {
+        width: 100px;
+    }
+
+    /* MARK: Menu */
+
+    .carousel-track {
+        padding: 20px 40px 40px;
+        scroll-padding-left: 40px;
+    }
+
+    .menu-card {
+        flex: 0 0 280px;
+    }
+
+    .meat-left,
+    .meat-right {
+        width: 200px;
+        top: 80px;
+    }
+
+    /* MARK: Why */
+
+    .why > div {
+        transform: translateY(-20px);
+    }
+
+    /* MARK: Itthisak */
+
+    .itthisak img {
+        width: 45%;
+    }
+
+    .itthisak div {
+        width: 55%;
+        padding: 60px 5%;
+    }
+
+    /* MARK: Earth */
+
+    .earth {
+        padding: 60px 20px 0 20px;
+    }
+
+    /* MARK: Contact Info */
+
+    .contact-top {
+        flex-direction: column;
+        gap: 50px;
+        padding: 0 30px;
+    }
+
+    .contact-qr-main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .plate-image-container {
+        width: 700px;
+        bottom: -300px;
+    }
+
+    /* MARK: Contact Page */
+
+    .contact-page {
+        padding: 140px 20px 80px;
+    }
+
+    .contact-page-child {
+        margin-bottom: 50px;
+        max-width: 600px;
+    }
+
+    .contact-page-child .text-h2 {
+        letter-spacing: 3px;
+    }
+
+    .contact-page-child h3 br {
+        display: none;
+    }
+
+    .contact-page-box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .contact-page-box-child {
+        max-width: 100%;
+        aspect-ratio: auto;
+        padding: 30px 20px;
+    }
+
+    .contact-page-box-child svg {
+        width: clamp(50px, 6vw, 90px);
+        margin-bottom: 20px;
+    }
+
+    .contact-page-box-child h3 {
+        margin: 25px 0 12px;
+    }
+
+    /* MARK: Our Product */
+
+    .list-menu-best-seller {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .menu-card-product {
+        height: 360px;
+    }
+
+    .menu-card__image-wrapper {
+        height: 140px;
+    }
+
+    /* MARK: Our Standard (Home) */
+
+    .our-standard {
+        padding: 120px 20px;
+    }
+
+    .our-standard h1 {
+        margin: 70px 0 40px 0;
+        letter-spacing: 3px;
+    }
+
+    .our-standard p {
+        line-height: 34px;
+        margin: 0 0 50px 0;
+    }
+
+    .our-standard-certificate {
+        gap: 40px;
+    }
+
+    .our-standard-certificate img {
+        height: 120px;
+    }
+
+    /* MARK: Our Standard (Banner) */
+
+    .our-st-baner {
+        padding: 100px 20px;
+    }
+
+    .our-st-baner p br {
+        display: none;
+    }
+
+    .our-st-baner .ibmthai {
+        margin-bottom: 25px;
+    }
+
+    /* MARK: Our Standard (Structure) */
+
+    .our-structure > img {
+        height: 750px; 
+    }
+
+    .our-bx-child {
+        height: 250px; 
+    }
+
+    .our-bx-child img,
+    .our-bx-children {
+        height: 250px;
+    }
+
+    .our-bx-children {
+        padding: 30px 4%; 
+    }
+
+    /* MARK: Our Standard (Interview) */
+
+    .our-interview-child {
+        height: 400px;
+        min-height: 400px;
+    }
+
+    .our-interview-children {
+        padding: 20px;
+    }
+
+    .our-interview-children h1 {
+        font-size: 32px;
+    }
+
+    .our-interview-children img {
+        max-width: 200px;
+    }
+
+    /* MARK: Our Standard (Japan Exclusive) */
+
+    .jp-exclusive {
+        padding: 100px 40px 160px;
+        gap: 80px;
+    }
+
+    .jp-top {
+        gap: 80px;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .jp-top > h3.text-h3 {
+        margin: 0 auto;
+    }
+
+    .jp-top > div {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .jp-top h2 {
+        font-size: 36px;
+    }
+
+    .jp-bottom {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .jp-bottom svg {
+        margin: 70px 0 70px 0;
+        transform: rotate(90deg) scale(2);
+        width: 60px;
+        height: auto;
+    }
+
+    .jp-bottom .jp-ex-image-bx:first-of-type img {
+        width: 220px;
+        height: auto;
+    }
+
+    .jp-bottom .jp-ex-image-bx:last-of-type img {
+        width: 320px;
+    }
+
+    /* MARK: Our Standard (Doctor) */
+
+    .dc-japan-section {
+        margin-top: -6vw;
+    }
+
+    .dc-japan-section::before {
+        clip-path: inset(6vw 0 0 0);
+    }
+
+    .dc-japan-base-img {
+        clip-path: inset(6vw 0 0 0);
+    }
+
+    .dc-japan-text-box {
+        top: 35%;
+        left: 6%;
+        transform: translateY(-50%);
+        max-width: 420px;
+    }
+
+    /* MARK: Reasons */
+
+    .reasons {
+        min-height: 650px;
+    }
+
+    .reasons-white-box {
+        padding: 40px 40px;
+    }
+
+    .reasons-white-box h1 {
+        font-size: 40px;
+        padding: 20px 0;
+        max-width: 100%;
+    }
+
+    .reasons-red-box {
+        padding: 60px 40px;
+        justify-content: center;
+    }
+
+    .reasons-red-box h3 {
+        margin: 20px 0 90px 0;
+    }
+
+    .reasons-icon {
+        gap: 10px;
+    }
+
+    .reasons-icon img {
+        width: 120px;
+        max-width: 30%;
+    }
+
+    .reasons-img,
+    .reasons-img-bottom {
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* MARK: History */
+
+    .history {
+        min-height: 1000px;
+        padding: 80px 40px;
+    }
+
+    .history h1 {
+        margin-bottom: 35px;
+    }
+
+    .history p {
+        font-size: 20px;
+        line-height: 48px;
+    }
+
+    /* MARK: Glass Button */
+
+    .glass-container {
+        bottom: 20px;
+        right: 20px;
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .glass-button {
+        width: 240px;
+        padding: 8px 16px;
+    }
+
+    .icon-circle {
+        width: 34px;
+        height: 34px;
+        margin-right: 12px;
+    }
+
+    .button-text {
+        font-size: 15px;
+    }
+}
+
+/* MARK: Mobile Section */
+
+@media screen and (max-width: 600px) {
+
+    :root {
+        --h1-size: 34px;
+        --h2-size: 26px;
+        --h3-size: 18px;
+        --body-size: 15px;
+        --label-size: 8px;
+        --sub-size: 13px;
+        --snowbeef-size: 32px;
+        --h1-line: 1.3;
+        --body-line: 26px;
+        --sub-line: 20px;
+    }
+
+    /* MARK: Navigation */
+
+    nav {
+        padding: 20px; 
+    }
+
+    .nav-brand-text {
+        display: none; 
+    }
+
+    .hamburger-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        background-color: transparent;
+        border: 1px solid rgba(255,255,255,0.2);
+        border-radius: 8px;
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .hamburger-btn span {
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        transition: 0.3s;
+    }
+
+    .nav-menu-wrapper {
+        position: fixed;
+        top: 0;
+        right: -300px; 
+        width: 300px;
+        height: 100vh;
+        background-color: #0A0A0A; 
+        padding: 24px;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+    }
+
+    .nav-menu-wrapper.active {
+        right: 0;
+    }
+
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        background: transparent;
+        border: 1px solid rgba(255,255,255,0.2);
+        border-radius: 4px;
+        color: white;
+        font-size: 16px;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+    }
+
+    .nav-logo {
+        margin-top: 15px;
+    }
+
+    .mobile-menu-header {
+        display: block;
+        margin-bottom: 40px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        padding-bottom: 20px;
+    }
+
+    .mobile-menu-header img {
+        width: 60px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        margin: 0;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .nav-label {
+        font-size: 12px;
+        color: rgba(255,255,255,0.5);
+        letter-spacing: 1px;
+        margin-bottom: -10px;
+    }
+
+    .nav-overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
         z-index: 999;
         opacity: 0;
         visibility: hidden;
@@ -2377,6 +2638,7 @@ nav {
 
     .world-class-content p {
         max-width: 100%;
+        padding: 0 20px 0 20px;
     }
 
     .world-class-certificate {
@@ -2417,7 +2679,7 @@ nav {
         gap: 20px;
     }
 
-    .product p.text-white {
+    .product h3.text-white {
         padding: 0 22px 0 22px;
     }
 
@@ -2433,7 +2695,6 @@ nav {
     }
 
     .why-text {
-        font-size: 14px;
         line-height: 1.6;
         margin-bottom: 30px;
         padding: 0 20px 0 20px;
@@ -2480,6 +2741,10 @@ nav {
         letter-spacing: 1px;
     }
 
+    .earth h3 {
+        padding: 0 20px 0 20px;
+    }
+
     /* MARK: Contact Info */
 
     .contact {
@@ -2488,102 +2753,79 @@ nav {
 
     .contact-top {
         padding: 0 20px;
-        gap: 30px;
+        gap: 40px;
     }
 
     .contact-information {
-        padding: 25px 20px;
-    }
-
-    .contact-information h1 {
-        font-size: 20px;
-    }
-
-    .contact-information .address {
-        font-size: 13px;
+        padding: 30px 20px;
     }
 
     .contact-qr-main {
         grid-template-columns: 1fr;
     }
 
-    .contact-qr-child {
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .contact-qr-child > img {
-        width: 80px;
-        flex-shrink: 0;
-    }
-
-    .contact-qr-children {
-        flex: 1;
-    }
-
-    .contact-form input,
-    .contact-form textarea,
-    .contact-form select {
-        font-size: 14px;
-        padding: 12px;
-    }
-
     .submit-btn {
-        padding: 16px 18px;
         font-size: 12px;
-    }
-
-    .contact-bottom {
-        height: auto;
-        margin-top: 20px;
-        padding-bottom: 80px;
-    }
-
-    .horizontal-line {
-        top: 60px;
-    }
-
-    .horizontal-line::before,
-    .horizontal-line::after {
-        width: 22%; 
-    }
-
-    .bottom-content {
-        margin-top: 30px;
-    }
-
-    .bottom-content p {
-        font-size: 14px;
+        letter-spacing: 2px;
+        padding: 16px;
     }
 
     .bottom-content h1 {
-        font-size: 32px;
-        letter-spacing: 4px;
+        letter-spacing: 6px;
     }
 
     .plate-image-container {
-        width: 400px;
-        bottom: -180px;
+        width: 500px;
+        bottom: -220px;
     }
 
     /* MARK: Contact Page */
 
     .contact-page {
-        padding: 100px 16px 80px;
+        padding: 80px 16px 60px;
     }
 
     .contact-page-child {
-        margin-bottom: 40px;
+        margin-bottom: 35px;
+        max-width: 100%;
+    }
+
+    .contact-page-child p br {
+        display: none;
+    }
+
+    .contact-page-child .text-h2 {
+        letter-spacing: 2px;
+    }
+
+    .contact-page-child .text-body {
+        line-height: 1.6;
     }
 
     .contact-page-box {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 16px;
     }
 
     .contact-page-box-child {
         max-width: 100%;
+        aspect-ratio: auto;
+        padding: 24px 18px;
     }
+
+    .contact-page-box-child svg {
+        width: 60px;
+        margin-bottom: 16px;
+    }
+
+    .contact-page-box-child h3 {
+        margin: 20px 0 10px;
+    }
+
+    .contact-page-box-child p {
+        word-break: break-word;
+    }
+
 
     /* MARK: Our Product */
 
@@ -2636,6 +2878,10 @@ nav {
     .our-standard p {
         line-height: 28px;
         margin: 0 0 40px 0;
+    }
+
+    .our-standard p br {
+        display: none;
     }
 
     .our-standard-certificate {
@@ -2740,6 +2986,10 @@ nav {
         gap: 20px;
     }
 
+    .jp-top p br {
+        display: none;
+    }
+
     .jp-top > div {
         width: 100%;
     }
@@ -2761,8 +3011,8 @@ nav {
     }
 
     .jp-bottom svg {
-        margin: 20px 0;
-        transform: rotate(90deg) scale(0.8);
+        margin: 70px 0 70px 0;
+        transform: rotate(90deg) scale(2);
         width: 60px;
         height: auto;
     }
@@ -2770,26 +3020,35 @@ nav {
     /* MARK: Our Standard (Doctor) */
 
     .dc-japan-section {
+
         margin-top: -15vw;
+
     }
 
     .dc-japan-section::before {
+
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 70%);
-        clip-path: inset(15vw 0 0 0); 
+
+        clip-path: inset(15vw 0 0 0);
+
     }
 
     .dc-japan-text-box {
+        position: absolute;
         top: auto;
         bottom: 10%;
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
         width: 100%;
-        transform: none;
         padding: 0 25px;
         text-align: center;
         box-sizing: border-box;
+        z-index: 4;
+        max-width: 490px;
     }
 
     .dc-japan-base-img {
+        width: 100%;
         height: 500px;
         object-fit: cover;
         clip-path: inset(15vw 0 0 0);
@@ -2797,6 +3056,7 @@ nav {
     }
 
     .dc-japan-transparent-img {
+        width: 100%;
         height: 500px;
         object-fit: cover;
         object-position: 70% center;
@@ -2813,6 +3073,10 @@ nav {
     .reasons {
         flex-direction: column;
         height: auto;
+    }
+
+    .reasons-white-box h1 {
+        font-size: 28px;
     }
 
     .reasons > div {
@@ -2841,7 +3105,12 @@ nav {
         box-sizing: border-box;
     }
 
-    .reasons-red-box p {
+    .reasons-red-box h2 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .reasons-red-box h3 {
         margin: 0 0 40px 0;
         text-align: center;
     }

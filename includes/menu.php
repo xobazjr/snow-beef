@@ -6,11 +6,11 @@
 
     <div class="product">
         <p class="gold uppercase">OUR SNOW BEEF</p>
-        <h1 class="text-h2 font-medium text-white ibmthai">ผลิตภัณฑ์ของเรา</h1>
-        <p class="text-body font-light text-white">
+        <h2 class="text-h2 font-medium text-white ibmthai">ผลิตภัณฑ์ของเรา</h2>
+        <h3 class="text-h3 font-light text-white">
             เนื้อส่วน สันใน, ริบอาย, สันนอก, เซอร์ลอยด์ และชัคโรลกระดับด้วยนวัตกรรมแทรกไขมัน
             เอกสิทธิ์เพื่อสัมผัสนุ่มละมุนดุจเนยและรสชาติที่เข้มข้นสม่ำเสมอในทุกชิ้น
-        </p>
+        </h3>
 
         <div class="btn-group">
             <a href="our-product.php" class="explore-btn text-body btn-outline btn-white outfit">
