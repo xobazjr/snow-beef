@@ -31,6 +31,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Suravaram&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Animation -->
+
+    <link rel="stylesheet" href="css/animation.css">
+    <script src="js/scroll-animation.js"></script>
     
     <!-- Google Analytics -->
 

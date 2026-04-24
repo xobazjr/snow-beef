@@ -3,7 +3,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require __DIR__ . '/../vendor/autoload.php'; // ใช้ composer
+require __DIR__ . '/../vendor/autoload.php';
 
 // .env
 $env = parse_ini_file(__DIR__ . '/../.env');

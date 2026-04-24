@@ -882,11 +882,11 @@ nav {
 
 .horizontal-line::before {
     left: 0;
-    right: calc(36% + var(--plate-size) / 2);
+    right: calc(40% + var(--plate-size) / 2);
 }
 
 .horizontal-line::after {
-    left: calc(36% + var(--plate-size) / 2);
+    left: calc(40% + var(--plate-size) / 2);
     right: 0;
 }
 
@@ -2671,9 +2671,9 @@ nav {
     }
 
     .brush-bottom {
-        transform: translateY(20px);
+        transform: translateY(10px);
         width: 120%;
-        left: -10%;
+        left: 0%;
     }
 
     /* MARK: Taste */
