@@ -1077,7 +1077,7 @@ nav {
 
 .list-menu-best-seller {
     background-color: #141416;
-    padding: 0 20px 120px;
+    padding: 0 60px 120px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -1789,6 +1789,10 @@ nav {
     align-items: flex-start;
     gap: 250px;
     margin: 0 auto;
+}
+
+.jp-right {
+    max-width: 730px;
 }
 
 .jp-top > div {

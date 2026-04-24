@@ -103,7 +103,7 @@
                 <h2 class="gold-soft text-h2 times-new-roman">JP Exclusive Innovation</h2>
                 <h2 class="ibmthai text-h2">TN Plus โดย R&D จากญี่ปุ่น</h2>
             </div>
-            <h3 class="text-h3 jp-right">เพื่อยกระดับความเชื่อมั่นขึ้นไปอีกขั้น Snow Beef คือผลผลิตจากการวิจัย<br>และพัฒนาโดยทีม R&D ของ Bio Fresh Foods ประเทศญี่ปุ่น เราใช้โปรตีน<br>สูตรพิเศษ "TN Plus" เป็นตัวประสานอณูไขมันและเนื้อเข้าด้วยกัน </h3>
+            <h3 class="text-h3 jp-right">เพื่อยกระดับความเชื่อมั่นขึ้นไปอีกขั้น Snow Beef คือผลผลิตจากการวิจัยและพัฒนาโดยทีม R&D ของ Bio Fresh Foods ประเทศญี่ปุ่น เราใช้โปรตีนสูตรพิเศษ "TN Plus" เป็นตัวประสานอณูไขมันและเนื้อเข้าด้วยกัน </h3>
         </div>
 
         <div class="jp-bottom">
