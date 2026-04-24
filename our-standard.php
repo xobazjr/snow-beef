@@ -19,14 +19,16 @@
         </div>
     </section>
 
-    <section class="standard-section w-full">
-        <div class="video-bg">
-            <div class="video-overlay"></div>
-            <video autoplay loop muted playsinline>
-                <source src="assets/video/our-standard.mp4" type="video/mp4">
-            </video>
-        </div>
-    </section>
+    <div class="our-standard-video">
+        <section class="standard-section w-full">
+            <div class="video-bg">
+                <div class="video-overlay"></div>
+                <video autoplay loop muted playsinline>
+                    <source src="assets/video/our-standard.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+    </div>
 
     <section class="our-st-baner b-black white">
         <h2 class="gold-soft times-new-roman text-h2">Biological Matching<br>
