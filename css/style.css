@@ -1027,9 +1027,12 @@ nav {
 }
 
 .contact-page-child .text-h2 {
-    font-weight: 500;
-    letter-spacing: 4px;
-    margin-bottom: 30px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.12em;
+    text-align: center;
+    margin: 40px 30px 30px 30px;
+    
 }
 
 .contact-page-child .text-body {
@@ -1416,14 +1419,18 @@ nav {
 .carousel-track {
     width: 100%;
     max-width: 1380px;
-    padding: 20px 80px 40px;
+
+    padding: 20px 40px 40px;
+
     display: flex;
     gap: 24px;
+
     overflow-x: auto;
-    scrollbar-width: none;
+
     scroll-snap-type: x mandatory;
-    scroll-padding-left: 80px;
     scroll-behavior: smooth;
+
+    scrollbar-width: none;
 }
 
 .carousel-track::-webkit-scrollbar {
@@ -1432,18 +1439,53 @@ nav {
 
 .menu-card {
     flex: 0 0 320px;
+
     background-color: #670F11;
     padding: 30px;
     box-sizing: border-box;
+
     display: flex;
     flex-direction: column;
+
     scroll-snap-align: start;
+
     transition: transform 0.3s ease;
     border: 1px solid rgba(226, 194, 130, 0.29);
 }
 
 .menu-card:hover {
     transform: translateY(-5px);
+}
+
+/* NAV */
+.carousel-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.nav-dots {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dot.active {
+    width: 24px;
+    border-radius: 10px;
+    background: #F7D488;
 }
 
 .menu-label {
@@ -1490,15 +1532,6 @@ nav {
     margin-top: auto;
 }
 
-.carousel-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-    width: 100%;
-}
-
 .nav-arrow {
     cursor: pointer;
     display: flex;
@@ -1509,27 +1542,6 @@ nav {
 
 .nav-arrow:hover {
     opacity: 0.6;
-}
-
-.nav-dots {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.dot {
-    width: 8px;
-    height: 8px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.dot.active {
-    width: 24px;
-    border-radius: 10px;
-    background-color: #F7D488;
 }
 
 /* MARK: Earth */
@@ -2346,6 +2358,7 @@ nav {
 
     .dc-japan-base-img {
         clip-path: inset(6vw 0 0 0);
+        object-position: 20% center;
     }
 
     .dc-japan-text-box {
@@ -2571,15 +2584,25 @@ nav {
         visibility: visible;
     }
 
-    /* MARK: Home (Mobile) */
-
     .home {
-        padding: 0 16px;
+        min-height: 70vh;
+        height: auto;
+        padding: 40px 16px;
+        align-items: center;
+    }
+
+    .video-bg video {
+        object-position: center;
+    }
+
+    .video-overlay {
+        background: rgba(0, 0, 0, 0.45);
     }
 
     .home .content {
-        transform: translateY(0);
+        transform: none;
         gap: 6px;
+        padding: 0 10px;
     }
 
     .home .content p {
@@ -2587,11 +2610,13 @@ nav {
     }
 
     .home .content h1 {
-        letter-spacing: 4px;
+        letter-spacing: 6px;
     }
 
-    .video-overlay {
-        background: rgba(0,0,0,0.5); 
+    .brush-bottom {
+        transform: translateY(20px);
+        width: 120%;
+        left: -10%;
     }
 
     /* MARK: Taste */
@@ -2609,11 +2634,13 @@ nav {
     }
 
     .taste-content h2 {
-        margin: 30px;
+        text-align: start;
+        margin: 0 0 30px 0;
         padding-right: 0;
     }
 
-    .taste-content p {
+    .taste-content h3 {
+        text-align: start;
         padding-right: 0;
     }
 
@@ -2651,53 +2678,142 @@ nav {
 
     /* MARK: Menu */
 
+    .menu-section {
+        padding: 60px 0;
+    }
+
+    .product {
+        padding: 0 16px;
+        margin-bottom: 30px;
+    }
+
+    .product p.gold {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        margin-bottom: 8px;
+    }
+
+    .product h2 {
+        padding: 8px 0 14px;
+    }
+
+    .product h3 {
+        padding: 6px 0;
+    }
+
+    .meat-left,
+    .meat-right {
+        width: 140px;
+        top: 60px;
+        opacity: 0.5;
+    }
+
+    .meat-left {
+        left: -50px;
+    }
+
+    .meat-right {
+        right: -50px;
+    }
+
     .carousel-track {
-        padding: 20px 20px 40px;
-        gap: 16px;
-        scroll-padding-left: 20px;
+        width: fit-content;
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        gap: 14px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        padding: 10px 16px 30px;
+    }
+
+    .carousel-track::-webkit-scrollbar {
+        display: none;
     }
 
     .menu-card {
-        flex: 0 0 240px;
-        padding: 20px;
+        flex: 0 0 75%;
+        scroll-snap-align: center;
     }
 
     .menu-title {
         font-size: 20px;
     }
 
-    .menu-image {
-        height: 180px;
+    .menu-desc {
+        font-size: 12px;
+        margin: 0 0 20px;
+        line-height: 1.5;
     }
 
-    .meat-left,
-    .meat-right {
-        display: none; 
+    .menu-image {
+        height: 160px;
     }
 
     .carousel-nav {
-        gap: 20px;
+        gap: 16px;
+        margin-top: 20px;
     }
 
-    .product h3.text-white {
-        padding: 0 22px 0 22px;
+    .dot {
+        width: 6px;
+        height: 6px;
+    }
+
+    .dot.active {
+        width: 18px;
+    }
+
+    .nav-arrow svg {
+        width: 22px;
+        height: 22px;
     }
 
     /* MARK: Why */
 
     .why {
+        min-height: 70vh;
+        height: auto;
         padding: 80px 16px;
+        background-position: center;
     }
 
     .why > div {
-        transform: none; 
-        gap: 16px;
+        transform: none;
+        gap: 12px;
+        max-width: 100%;
+    }
+
+    .why h3 {
+        text-align: start;
+    }
+
+    .why h2 {
+        line-height: 1.3;
     }
 
     .why-text {
-        line-height: 1.6;
-        margin-bottom: 30px;
-        padding: 0 20px 0 20px;
+        margin: 25px 0 25px 0;
+        padding: 0 10px;
+    }
+
+    .why .mr-dafoe {
+        margin-left: 8px;
+    }
+
+    .why .explore-btn {
+        margin-top: 15px;
+        max-width: 260px;
+    }
+
+    .why-page-home a {
+        display: none;
+    }
+
+    .why-page-home h2 {
+        margin-top: 40px;
     }
 
     /* MARK: Itthisak */
@@ -2714,8 +2830,8 @@ nav {
     .itthisak div {
         width: 100%;
         padding: 40px 20px;
-        text-align: center;
-        align-items: center;
+        text-align: start;
+        align-items: flex-start;
     }
 
     .itthisak p {
@@ -2726,6 +2842,10 @@ nav {
 
     .earth {
         padding: 50px 16px 0 16px;
+    }
+
+    .earth img {
+        margin-top: 30px;
     }
 
     .earth > div {
@@ -2777,6 +2897,10 @@ nav {
     .plate-image-container {
         width: 500px;
         bottom: -220px;
+    }
+
+    .contact-qr-children {
+        align-items: center;
     }
 
     /* MARK: Contact Page */
@@ -2844,6 +2968,10 @@ nav {
         margin-bottom: 40px;
     }
 
+    .product-of-snow-beef .child h3 {
+        padding: 0 20px 0 20px;
+    }
+
     .list-menu-best-seller {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -2868,16 +2996,17 @@ nav {
 
     .our-standard {
         padding: 80px 16px;
+        text-align: center;
     }
 
     .our-standard h1 {
-        margin: 50px 0 30px 0;
-        letter-spacing: 2px;
+        margin: 40px 0 25px 0;
+        letter-spacing: 1.5px;
     }
 
     .our-standard p {
-        line-height: 28px;
-        margin: 0 0 40px 0;
+        line-height: 26px;
+        margin: 0 0 30px 0;
     }
 
     .our-standard h3 br {
@@ -2885,11 +3014,16 @@ nav {
     }
 
     .our-standard-certificate {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 25px;
+        justify-items: center;
+        align-items: center;
     }
 
     .our-standard-certificate img {
         height: 90px;
+        object-fit: contain;
     }
 
     /* MARK: Our Standard (Banner) */
@@ -3056,12 +3190,14 @@ nav {
         height: 500px;
         object-fit: cover;
         clip-path: inset(15vw 0 0 0);
+        object-position: 80% center;
     }
 
     .dc-japan-transparent-img {
         width: 100%;
         height: 500px;
         object-fit: cover;
+        object-position: 80% center;
     }
 
     .dc-japan-desc {
@@ -3082,12 +3218,12 @@ nav {
     }
 
     .reasons > div {
-        display: contents; 
+        display: contents;
     }
 
     .reasons h1 {
         order: 1;
-        padding: 30px 20px;
+        padding: 20px;
         text-align: center;
         width: 100%;
         box-sizing: border-box;
@@ -3108,13 +3244,13 @@ nav {
     }
 
     .reasons-red-box h2 {
-        text-align: center;
+        text-align: start;
         margin-bottom: 10px;
     }
 
     .reasons-red-box h3 {
         margin: 0 0 40px 0;
-        text-align: center;
+        text-align: start;
     }
 
     .reasons-icon {
@@ -3169,4 +3305,27 @@ nav {
     .button-text {
         font-size: 14px;
     }
+
+    /* MARK: STANDARD */
+
+    .standard-section {
+        min-height: 70vh;
+        height: auto;
+        padding: 80px 16px;
+    }
+
+    .standard-section .video-bg,
+    .standard-section .video-overlay {
+        height: 100%;
+    }
+
+    .standard-section video {
+        object-position: center;
+    }
+
+    .standard-section .content {
+        text-align: center;
+        padding: 0 10px;
+    }
+
 }

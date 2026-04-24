@@ -15,12 +15,12 @@
     <section class="reasons">
         <img src="assets/images/cow-eat-grass.webp" class="reasons-img object-cover" alt="วัวกินหญ้าธรรมชาติในทุ่งกว้างเพื่อคุณภาพเนื้อที่ดี">
         <div>
-            <div class="reasons-white-box">
+            <div class="reasons-white-box reasons-topic-desktop">
                 <h1 class="red ibmthai">
-                    3 เหตุผลที่ SNOW BEEF
-                    คือทางเลือกที่ใช่สำหรับคุณ
+                    3 เหตุผลที่ SNOW BEEF คือทางเลือกที่ใช่สำหรับคุณ
                 </h1>
             </div>
+
             <div class="reasons-red-box white">
                 <div>
                     <h2 class="ibmthai text-h2">1. ดีต่อโลก (Better for the Planet)</h2>

@@ -69,53 +69,82 @@
 </section>
 
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-    const track = document.querySelector('.carousel-track');
-    const cards = document.querySelectorAll('.menu-card');
-    const dotsContainer = document.querySelector('.nav-dots');
-    const prev = document.querySelector('.prev');
-    const next = document.querySelector('.next');
+    document.addEventListener('DOMContentLoaded', () => {
+        const track = document.querySelector('.carousel-track');
+        const cards = document.querySelectorAll('.menu-card');
+        const dotsContainer = document.querySelector('.nav-dots');
+        const prev = document.querySelector('.prev');
+        const next = document.querySelector('.next');
 
-    if (!track || cards.length === 0) return;
+        if (!track || cards.length === 0) return;
 
-    const gap = parseInt(getComputedStyle(track).gap) || 0;
-    const getCardWidth = () => cards[0].offsetWidth + gap;
+        /* MARK: FIX DOT COUNT */
+        const DOT_COUNT = 5;
+        const dots = [];
 
-    cards.forEach((_, index) => {
-        const dot = document.createElement('span');
-        dot.classList.add('dot');
-        if (index === 0) dot.classList.add('active');
+        dotsContainer.innerHTML = '';
 
-        dot.addEventListener('click', () => {
+        /* MARK: CREATE 5 DOTS */
+        for (let i = 0; i < DOT_COUNT; i++) {
+            const dot = document.createElement('span');
+            dot.classList.add('dot');
+
+            if (i === 0) dot.classList.add('active');
+
+            dot.addEventListener('click', () => {
+                goToIndex(i);
+            });
+
+            dotsContainer.appendChild(dot);
+            dots.push(dot);
+        }
+
+        /* MARK: MAP SCROLL → DOT INDEX (0–4) */
+        const getDotIndex = () => {
+            const maxScroll = track.scrollWidth - track.clientWidth;
+            const ratio = maxScroll === 0 ? 0 : track.scrollLeft / maxScroll;
+
+            return Math.round(ratio * (DOT_COUNT - 1));
+        };
+
+        /* MARK: UPDATE DOT */
+        const updateDots = () => {
+            const index = getDotIndex();
+
+            dots.forEach(d => d.classList.remove('active'));
+
+            if (dots[index]) {
+                dots[index].classList.add('active');
+            }
+        };
+
+        /* MARK: DOT CLICK → SCROLL */
+        const goToIndex = (index) => {
+            const maxScroll = track.scrollWidth - track.clientWidth;
+            const target = (maxScroll / (DOT_COUNT - 1)) * index;
+
             track.scrollTo({
-                left: index * getCardWidth(),
+                left: target,
+                behavior: 'smooth'
+            });
+        };
+
+        /* MARK: SCROLL EVENT */
+        track.addEventListener('scroll', updateDots);
+
+        /* MARK: ARROWS */
+        prev?.addEventListener('click', () => {
+            track.scrollBy({
+                left: -track.offsetWidth * 0.8,
                 behavior: 'smooth'
             });
         });
 
-        dotsContainer.appendChild(dot);
-    });
-
-    track.addEventListener('scroll', () => {
-        const index = Math.round(track.scrollLeft / getCardWidth());
-        document.querySelectorAll('.dot').forEach(dot => dot.classList.remove('active'));
-        if (dotsContainer.children[index]) {
-            dotsContainer.children[index].classList.add('active');
-        }
-    });
-
-    prev.addEventListener('click', () => {
-        track.scrollBy({
-            left: -getCardWidth(),
-            behavior: 'smooth'
+        next?.addEventListener('click', () => {
+            track.scrollBy({
+                left: track.offsetWidth * 0.8,
+                behavior: 'smooth'
+            });
         });
     });
-
-    next.addEventListener('click', () => {
-        track.scrollBy({
-            left: getCardWidth(),
-            behavior: 'smooth'
-        });
-    });
-});
 </script>
