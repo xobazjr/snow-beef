@@ -234,6 +234,69 @@
     .jp-ex-image-bx:hover img {
         transform: scale(1.05);
     }
+
+    /* MARK: Our Product */
+
+    .our-product-home {
+        position: relative;
+        overflow: hidden;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 511px;
+        line-height: 100%;
+        letter-spacing: 8px;
+        text-align: center;
+        padding: 0 20px;
+
+        background-image: url("../assets/images/wallpapers/wallpaper-our-product.webp");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+
+        transform: translateZ(0);
+        will-change: background-position;
+    }
+
+    .our-product-home::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.65)
+        );
+
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .our-product-home::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        background: radial-gradient(
+            circle at center,
+            rgba(255,255,255,0.03) 0%,
+            rgba(0,0,0,0.4) 70%
+        );
+
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .our-product-home > * {
+        position: relative;
+        z-index: 2;
+
+        transform: translateY(0);
+        transition: transform 0.4s ease;
+    }
 }
 
 /* MARK: Glass Button */

@@ -1,4 +1,4 @@
-// Menu
+// MARK: Menu
 
 document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll(".menu-section");
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     sections.forEach(section => observer.observe(section));
 });
 
-// Contact Info
+// MARK: Contact Info
 
 document.addEventListener("DOMContentLoaded", () => {
     const isDesktop = window.matchMedia("(min-width: 1024px)").matches;
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     sections.forEach(section => observer.observe(section));
 });
 
-// Earth
+// MARK: Earth
 
 document.addEventListener("DOMContentLoaded", () => {
     const isDesktop = window.matchMedia("(min-width: 1024px)").matches;
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
     sections.forEach(section => observer.observe(section));
 });
 
-// Japan Exclusive
+// MARK: Japan Exclusive
 
 document.addEventListener("DOMContentLoaded", () => {
     const isDesktop = window.matchMedia("(min-width: 1024px)").matches;
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
     sections.forEach(section => observer.observe(section));
 });
 
-// Glass Button
+// MARK: Glass Button
 
 document.addEventListener("DOMContentLoaded", () => {
     const glass = document.querySelector(".glass-container");
@@ -136,4 +136,59 @@ document.addEventListener("DOMContentLoaded", () => {
             glass.classList.remove("hide");
         }
     });
+});
+
+/* MARK: Our Product */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const DESKTOP_BREAKPOINT = 1024;
+    const PARALLAX_SPEED = 0.4; 
+    const ENABLE_PARALLAX = true;
+
+    const parallaxSections = document.querySelectorAll('.our-product-home');
+
+    if (!parallaxSections.length) return;
+
+
+    const isDesktop = () => window.innerWidth >= DESKTOP_BREAKPOINT;
+
+    let ticking = false;
+
+    const updateParallax = () => {
+        if (!isDesktop() || !ENABLE_PARALLAX) return;
+
+        const scrollY = window.scrollY;
+
+        parallaxSections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+
+            if (rect.bottom < 0 || rect.top > window.innerHeight) return;
+
+            const offset = scrollY * PARALLAX_SPEED;
+
+            section.style.backgroundPosition = `center calc(50% + ${offset}px)`;
+        });
+
+        ticking = false;
+    };
+
+    const requestTick = () => {
+        if (!ticking) {
+            requestAnimationFrame(updateParallax);
+            ticking = true;
+        }
+    };
+
+    window.addEventListener('scroll', requestTick, { passive: true });
+
+    window.addEventListener('resize', () => {
+        if (!isDesktop()) {
+            parallaxSections.forEach(section => {
+                section.style.backgroundPosition = "center center";
+            });
+        }
+    });
+
+    updateParallax();
 });

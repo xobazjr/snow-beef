@@ -10,7 +10,10 @@
     
     <section class="our-standard b-black">
         <h2 class="gold-soft times-new-roman text-h2">OUR STANDARD</h2>
-        <h3 class="white text-h3"><strong>SNOW BEEF</strong> ดำเนินงานด้วยมาตรฐานสากล GHP และ HACCP โดยควบคุมระบบการผลิตระดับเดียวกับประเทศญี่ปุ่น<br>พร้อมมอบบริการแบบ One-Stop Service ที่สะอาดและปลอดภัยในทุกขั้นตอนการแปรรูป</h3>
+        <h3 class="white text-h3">
+            <strong>SNOW BEEF</strong> ดำเนินงานด้วยมาตรฐานสากล GHP และ HACCP โดยควบคุมระบบการผลิตระดับเดียวกับประเทศญี่ปุ่น<br>
+            พร้อมมอบบริการแบบ One-Stop Service ที่สะอาดและปลอดภัยในทุกขั้นตอนการแปรรูป
+        </h3>
         <div class="our-standard-certificate">
             <img src="assets/images/certificates/haccp.webp" alt="ใบรับรองมาตรฐาน HACCP">
             <img src="assets/images/certificates/ghp.webp" alt="ใบรับรองมาตรฐาน GHP">
