@@ -7,12 +7,15 @@
     <meta name="author" content="Snow Beef Thailand">
     <link rel="canonical" href="https://snowbeefthailand.com/">
 
-    <meta property="og:url" content="https://snowbeefthailand.com/">
+    <meta property="og:url" content="http://206.189.90.152/~rncaqsh123/demo/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="เนื้อวัว สโนว์ บีฟ เนื้อวัวออสเตรเลีย เนื้อวัวลายหิมะ Snow Beef Thailand">
-    <meta property="og:description" content="เนื้อวัวออสเตรเลีย นวัตกรรม Injection ลายไขมันแทรก นุ่ม ชุ่มฉ่ำ ยกระดับรสชาติให้พิเศษยิ่งขึ้น">
-    <meta property="og:image" content="assets/images/thumbnails/thumbnail-snowbeef.jpg">
+    <meta property="og:title" content="Snow Beef Thailand - เนื้อวัวพรีเมียม">
+    <meta property="og:description" content="เนื้อวัวออสเตรเลีย นุ่ม ชุ่มฉ่ำ ด้วยเทคโนโลยี Injection">
+    <meta property="og:image" content="http://206.189.90.152/~rncaqsh123/demo/assets/images/thumbnails/thumbnail-snowbeef.jpg">
+    <meta property="og:site_name" content="Snow Beef Thailand">
 
+    <meta name="twitter:card" content="summary_large_image">
+   
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
     <!-- Preconnect -->
