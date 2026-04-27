@@ -37,10 +37,8 @@
 
                 <div class="menu-divider">
                     <hr>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5">
-                        <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
-                        <path d="M7 2v20"/>
-                        <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 8 10" fill="none">
+                        <path d="M1.5 10V5.425C1.075 5.30833 0.71875 5.075 0.43125 4.725C0.14375 4.375 0 3.96667 0 3.5V0H1V3.5H1.5V0H2.5V3.5H3V0H4V3.5C4 3.96667 3.85625 4.375 3.56875 4.725C3.28125 5.075 2.925 5.30833 2.5 5.425V10H1.5ZM6.5 10V6H5V2.5C5 1.80833 5.24375 1.21875 5.73125 0.73125C6.21875 0.24375 6.80833 0 7.5 0V10H6.5Z" fill="#FED488"/>
                     </svg>
                 </div>
 

@@ -192,3 +192,100 @@ document.addEventListener("DOMContentLoaded", () => {
 
     updateParallax();
 });
+
+// MARK: Lenis
+
+document.addEventListener("DOMContentLoaded", () => {
+    const isDesktop = () => window.innerWidth >= 1024;
+    let lenis;
+
+    const initLenis = () => {
+        if (!isDesktop()) return;
+
+        lenis = new Lenis({
+            duration: 1.2,
+            smooth: true,
+            smoothTouch: false,
+        });
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+    };
+
+    const destroyLenis = () => {
+        if (lenis) {
+            lenis.destroy();
+            lenis = null;
+        }
+    };
+
+    initLenis();
+    
+    window.addEventListener("resize", () => {
+        if (!isDesktop()) {
+            destroyLenis();
+        } else if (!lenis) {
+            initLenis();
+        }
+    });
+});
+
+// MARK: Our Structure
+
+document.addEventListener("DOMContentLoaded", () => {
+    const texts = document.querySelectorAll('.our-bx-children');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (window.innerWidth < 1024) {
+                entry.target.classList.remove('active');
+                return;
+            }
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            } else {
+                entry.target.classList.remove('active');
+            }
+        });
+    }, {
+        threshold: 0.3
+    });
+    texts.forEach(el => observer.observe(el));
+});
+
+// MARK: Our Interview 
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const DESKTOP_BREAKPOINT = 1024;
+    const items = document.querySelectorAll('.our-interview-children');
+
+    if (!items.length) return;
+
+    const isDesktop = () => window.innerWidth >= DESKTOP_BREAKPOINT;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+
+            if (!isDesktop()) {
+                entry.target.classList.remove('active');
+                return;
+            }
+
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            } else {
+                entry.target.classList.remove('active'); // reverse
+            }
+
+        });
+    }, {
+        threshold: 0.35
+    });
+
+    items.forEach(el => observer.observe(el));
+
+});

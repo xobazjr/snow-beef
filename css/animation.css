@@ -1,5 +1,19 @@
 @media (min-width: 1024px) {
 
+    /* MARK: Lenis */
+
+    html.lenis {
+        height: auto;
+    }
+
+    .lenis.lenis-smooth {
+        scroll-behavior: auto;
+    }
+
+    .lenis.lenis-smooth body {
+        overflow: hidden;
+    }
+
     /* MARK: Menu */
 
     .meat-left,
@@ -297,6 +311,43 @@
         transform: translateY(0);
         transition: transform 0.4s ease;
     }
+
+    /* MARK: Our Structure */
+
+    .our-bx-children h3,
+    .our-bx-children p {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: 
+            opacity 0.6s ease,
+            transform 0.6s ease;
+        will-change: transform, opacity;
+    }
+
+    .our-bx-children.active h3,
+    .our-bx-children.active p {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* MARK: Our Interview */
+
+    .our-interview-children {
+        opacity: 0;
+        transform: translateY(60px);
+        transition:
+            opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+            transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+        will-change: transform, opacity;
+    }
+
+    .our-interview-children.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .our-interview-child:nth-child(1) .our-interview-children { transition-delay: 0.1s; }
+    .our-interview-child:nth-child(2) .our-interview-children { transition-delay: 0.15s; }
 }
 
 /* MARK: Glass Button */

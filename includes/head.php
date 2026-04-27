@@ -11,7 +11,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="เนื้อวัว สโนว์ บีฟ เนื้อวัวออสเตรเลีย เนื้อวัวลายหิมะ Snow Beef Thailand">
     <meta property="og:description" content="เนื้อวัวออสเตรเลีย นวัตกรรม Injection ลายไขมันแทรก นุ่ม ชุ่มฉ่ำ ยกระดับรสชาติให้พิเศษยิ่งขึ้น">
-    <meta property="og:image" content="https://snowbeefthailand.com/assets/images/share.png">
+    <meta property="og:image" content="assets/images/thumbnails/thumbnail-snowbeef.jpg">
 
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
@@ -36,6 +36,10 @@
 
     <link rel="stylesheet" href="css/animation.css">
     <script src="js/scroll-animation.js"></script>
+
+    <!-- Lenis -->
+
+    <script src="https://unpkg.com/@studio-freight/lenis"></script>
     
     <!-- Google Analytics -->
 
