@@ -289,3 +289,23 @@ document.addEventListener("DOMContentLoaded", () => {
     items.forEach(el => observer.observe(el));
 
 });
+
+// MARK: reCAPTCHA
+
+function checkBottom() {
+    const scrollTop = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const docHeight = document.documentElement.scrollHeight;
+
+    const badge = document.querySelector('.grecaptcha-badge');
+
+    if (!badge) return;
+
+    if (scrollTop + windowHeight >= docHeight - 10) {
+        badge.classList.add('show');
+    } else {
+        badge.classList.remove('show');
+    }
+}
+
+window.addEventListener('scroll', checkBottom);

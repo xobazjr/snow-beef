@@ -236,6 +236,26 @@ img {
     background: rgba(0, 0, 0, 0.2);
 }
 
+/* MARK: reCAPTCHA */
+
+.grecaptcha-badge {
+    left: 0 !important;
+    right: auto !important;
+    z-index: 99999 !important;
+
+    width: 70px !important;
+    overflow: hidden !important;
+    border-radius: 0 4px 4px 0 !important;
+
+    transition: transform 0.4s ease, width 0.3s ease !important;
+
+    transform: translateX(-110px);
+}
+
+.grecaptcha-badge.show {
+    transform: translateX(0);
+}
+
 /* MARK: Video */
 
 .btn-red {
@@ -1146,7 +1166,6 @@ nav {
     display: flex;
     align-items: center;   
     justify-content: center;
-    overflow: hidden;
 }
 
 .menu-card__image {
@@ -2762,9 +2781,17 @@ nav {
         padding: 6px 0;
     }
 
+    .btn-group > a { 
+        width: 200px;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        box-sizing: border-box; 
+    }
+
     .meat-left,
     .meat-right {
-        width: 140px;
+        width: 110px;
         top: 60px;
         opacity: 0.5;
     }
@@ -2846,11 +2873,7 @@ nav {
         gap: 12px;
         max-width: 100%;
     }
-
-    .why h3 {
-        text-align: start;
-    }
-
+    
     .why h2 {
         line-height: 1.3;
     }
@@ -2907,6 +2930,7 @@ nav {
 
     .earth img {
         margin-top: 30px;
+        width: 100%;
     }
 
     .earth > div {
@@ -3011,7 +3035,7 @@ nav {
     }
 
     .contact-page-child {
-        margin-bottom: 35px;
+        margin-bottom: 45px; 
         max-width: 100%;
     }
 
@@ -3029,67 +3053,81 @@ nav {
 
     .contact-page-box {
         grid-template-columns: 1fr;
-        gap: 16px;
+        gap: 20px; 
     }
 
     .contact-page-box-child {
         max-width: 100%;
         aspect-ratio: auto;
-        padding: 24px 18px;
+        padding: 40px 20px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .contact-page-box-child svg {
         width: 60px;
-        margin-bottom: 16px;
+        margin: 0 auto 20px; 
     }
 
+    .contact-page-box-child h2,
     .contact-page-box-child h3 {
-        margin: 20px 0 10px;
+        margin: 0 0 10px 0; 
     }
 
     .contact-page-box-child p {
+        margin: 0;
         word-break: break-word;
+        line-height: 1.6; 
     }
-
 
     /* MARK: Our Product */
 
-    .our-product-home {
-        min-height: 400px;
-        letter-spacing: 4px;
-    }
-
-    .product-of-snow-beef .child h1 {
-        padding-top: 40px;
-        font-size: 28px;
-    }
-
-    .product-of-snow-beef .child p {
-        font-size: 14px;
-        margin-bottom: 40px;
-    }
-
     .product-of-snow-beef .child h3 {
-        padding: 0 20px 0 20px;
+        padding: 20px;
     }
 
     .list-menu-best-seller {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding-bottom: 80px;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
+        padding: 0 20px 80px 20px; 
     }
 
     .menu-card-product {
-        height: 340px;
-        max-width: 100%;
+        height: auto; 
+        min-height: 240px;
+        padding: 15px 10px; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-card_label {
+        font-size: 10px; 
+        margin-bottom: 5px;
+    }
+
+    .menu-card_title {
+        font-size: 16px; 
+        margin: 5px 0; 
+        line-height: 1.2;
+    }
+
+    .menu-card__description {
+        font-size: 10px; 
+        line-height: 1.3;
+        margin-bottom: 20px;
     }
 
     .menu-card__image-wrapper {
-        height: 130px;
+        height: 60px; 
+        margin-top: auto; 
     }
 
     .menu-card__image {
-        height: 65%;
+        height: 100%;
+        width: auto;
+        object-fit: contain; 
         transform: scale(1.1);
     }
 
@@ -3314,8 +3352,16 @@ nav {
         height: auto;
     }
 
+    .reasons-white-box {
+        padding: 20px 60px;
+    }
+
     .reasons-white-box h1 {
         font-size: 28px;
+    }
+
+    .reasons-red-box h2 {
+        margin: 0;
     }
 
     .reasons > div {
@@ -3386,25 +3432,40 @@ nav {
     /* MARK: Glass Button */
 
     .glass-container {
-        bottom: 15px;
-        right: 15px;
-        padding: 12px;
-        gap: 10px;
+        flex-direction: row; 
+        gap: 15px;           
+        bottom: 20px;
+        right: 20px;
+        padding: 15px 20px;
+        border-radius: 50px; 
     }
 
     .glass-button {
-        width: 200px;
-        padding: 8px 12px;
+        width: 50px;         
+        height: 50px;
+        padding: 0;
+        border-radius: 50%;  
+        justify-content: center;
+        background-color: transparent; 
+    }
+
+    .button-text,
+    .arrow-svg {
+        display: none;
     }
 
     .icon-circle {
-        width: 30px;
-        height: 30px;
-        margin-right: 10px;
+        margin-right: 0;    
+        width: 50px;       
+        height: 50px;
     }
 
-    .button-text {
-        font-size: 14px;
+    .icon-circle svg {
+        width: 50%;         
+    }
+
+    .icon-circle img {
+        width: 65%;          
     }
 
     /* MARK: STANDARD */

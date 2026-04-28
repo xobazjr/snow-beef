@@ -1,3 +1,13 @@
+<?php
+    $env = parse_ini_file(__DIR__ . '/../config.ini');
+
+    if (!$env || !isset($env['RECAPTCHA_SITE_KEY'])) {
+        $siteKey = '';
+    } else {
+        $siteKey = $env['RECAPTCHA_SITE_KEY'];
+    }
+?>
+
 <section class="contact">
     <div class="contact-top">
         <div class="contact-left">
@@ -50,13 +60,6 @@
                     <path d="M1 6H17 M17 6L21 2L25 6L21 10Z" stroke="#D1B171" stroke-width="1" stroke-linejoin="miter"/>
                 </svg>
             </button>
-
-            <!-- <button type="button" class="submit-btn" onclick="onSubmit(event)">
-                <span class="times-new-roman">SEND MESSAGE</span>
-                <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 6H17 M17 6L21 2L25 6L21 10Z" stroke="currentColor" stroke-width="1" stroke-linejoin="miter"/>
-                </svg>
-            </button> -->
         </form>
     </div>
 
@@ -74,23 +77,32 @@
     </div> 
 </section>
 
-<!-- <script src="https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY"></script>
+<?php if ($siteKey): ?>
+    <script src="https://www.google.com/recaptcha/api.js?render=<?php echo $siteKey; ?>"></script>
+<?php endif; ?>
 
- <script>
-    function onSubmit(e) {
+<script>
+    const SITE_KEY = "<?php echo $siteKey; ?>";
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', function(e) {
         e.preventDefault();
-        
-        var form = document.getElementById('contactForm');
+
         if (!form.checkValidity()) {
             form.reportValidity();
             return;
         }
 
+        if (!SITE_KEY) {
+            form.submit();
+            return;
+        }
+
         grecaptcha.ready(function() {
-            grecaptcha.execute('YOUR_RECAPTCHA_SITE_KEY', {action: 'submit'}).then(function(token) {
+            grecaptcha.execute(SITE_KEY, {action: 'submit'}).then(function(token) {
                 document.getElementById('recaptchaResponse').value = token;
-=                form.submit();
+                form.submit();
             });
         });
-    }
-</script> -->
+    });
+</script>

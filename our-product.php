@@ -28,7 +28,7 @@
             <?php foreach ($menus as $menu): ?>
                 <div class="menu-card-product">
                     <span class="menu-card__label text-label outfit"><?= htmlspecialchars($menu->label) ?></span>
-                    <h2 class="menu-card__title h2-topic times-new-roman"><?= htmlspecialchars($menu->title) ?></h2>
+                    <h2 class="menu-card__title text-h3 times-new-roman"><?= htmlspecialchars($menu->title) ?></h2>
 
                     <div class="menu-card__divider">
                         <div class="menu-card__divider-line"></div>
@@ -39,7 +39,7 @@
                         </span>
                     </div>
 
-                    <p class="menu-card__description p-body newsreader"><?= htmlspecialchars($menu->description) ?></p>
+                    <p class="menu-card__description text-body newsreader"><?= htmlspecialchars($menu->description) ?></p>
 
                     <div class="menu-card__image-wrapper">
                         <img
