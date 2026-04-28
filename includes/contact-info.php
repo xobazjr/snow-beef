@@ -14,7 +14,7 @@
             <?php include "qrpage.php" ?>
         </div>
 
-        <form id="contactForm" class="contact-form" action="core/mailer-test.php" method="post">
+        <form id="contactForm" class="contact-form" action="core/mailer.php" method="post">
             <div class="form-group">
                 <label for="fcompany" class="field-label text-body outfit">YOUR COMPANY</label>
                 <input name="fcompany" id="fcompany" type="text" placeholder="Ex.Allmass idea" required>
