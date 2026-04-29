@@ -1,5 +1,5 @@
 <nav>
-  <a href="index.php" class="nav-brand">
+  <a href="index" class="nav-brand">
     <img src="assets/images/logo/logo-snow-beef.webp" class="nav-logo" alt="Bio Fresh Foods">
     <div class="nav-brand-text">
       <span class="nav-brand-name outfit">BIO FRESH FOODS</span>
@@ -22,10 +22,10 @@
 
       <ul class="nav-menu text-body">
         <li class="mobile-only nav-label outfit">NAVIGATION</li>
-        <li><a href="our-product.php" class="outfit">Our Product</a></li>
-        <li><a href="why-page.php" class="outfit">Why Snowbeef?</a></li>
-        <li><a href="our-standard.php" class="outfit">Our Standards</a></li>
-        <li><a href="contact.php" class="outfit">Sale & Support</a></li>
+        <li><a href="our-product" class="outfit">Our Product</a></li>
+        <li><a href="why-page" class="outfit">Why Snowbeef?</a></li>
+        <li><a href="our-standard" class="outfit">Our Standards</a></li>
+        <li><a href="contact" class="outfit">Sale & Support</a></li>
         
         </ul>
   </div>

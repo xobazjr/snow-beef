@@ -20,7 +20,7 @@
                 </svg>
             </a>
 
-            <a href="#" class="explore-btn text-body btn-red outfit">
+            <a href="assets/documents/product-catalog-bio-fresh-food-2026.pdf" download="Product Catalog BIO FRESH FOOD. 2026.pdf" class="explore-btn text-body btn-red outfit">
                 Download Catalog
                 <svg width="26" height="12" viewBox="0 0 26 12" fill="none">
                     <path d="M1 6H17 M17 6L21 2L25 6L21 10Z" stroke="currentColor" stroke-width="1"/>

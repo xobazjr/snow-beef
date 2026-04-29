@@ -12,8 +12,13 @@
     <div class="contact-qr-main">
         <?php foreach ($qrList as $qr): ?>
             <div class="contact-qr-child">
-                <img src="<?php echo htmlspecialchars($qr->getQrImage()); ?>" alt="QR Code สำหรับสแกนแอด LINE ทีมงาน">
-                
+                <div class="name-contact">
+                    <p class="roboto"><?php echo htmlspecialchars($qr->getName()); ?></p>
+                </div>
+
+                <div class="qr-border">
+                    <img src="<?php echo htmlspecialchars($qr->getQrImage()); ?>" alt="QR Code สำหรับสแกนแอด LINE ทีมงาน">
+                </div>
                 <div class="contact-qr-children">
                     <div class="contact-qr-line">
                         <img src="<?php echo htmlspecialchars($qr->getLineImage()); ?>" alt="ไอคอน LINE">

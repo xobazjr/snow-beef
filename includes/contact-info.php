@@ -40,11 +40,11 @@
             <div class="form-group">
                 <label for="frestaurant" class="field-label text-body outfit">WHAT TYPE OF RESTAURANT?</label>
                 <select name="frestaurant" id="frestaurant" required>
-                    <option value="Supermarket" selected>Supermarket</option>
-                    <option value="Chainrestaurant">Chainrestaurant</option>
-                    <option value="Agency">Agency</option>
-                    <option value="Restaurant">Restaurant</option>
-                    <option value="Other">Other</option>
+                    <option value="Supermarket (ซูเปอร์มาร์เก็ต)" selected>Supermarket (ซูเปอร์มาร์เก็ต)</option>
+                    <option value="Chain Restaurant (ร้านอาหารในเครือ)">Chain Restaurant (ร้านอาหารในเครือ)</option>
+                    <option value="Agency (บริษัทตัวแทน)">Agency (บริษัทตัวแทน)</option>
+                    <option value="Restaurant (ร้านอาหาร)">Restaurant (ร้านอาหาร)</option>
+                    <option value="Other (อื่นๆ)">Other (อื่นๆ)</option>
                 </select>
             </div>
             <div class="form-group">
@@ -55,9 +55,14 @@
             <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
 
             <button type="submit" class="submit-btn">
-                <span class="times-new-roman">SEND MESSAGE</span>
-                <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 6H17 M17 6L21 2L25 6L21 10Z" stroke="#D1B171" stroke-width="1" stroke-linejoin="miter"/>
+                <svg width="34" height="23" viewBox="0 0 27 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.591294" width="8.21115" height="8.21115" transform="matrix(0.707116 -0.707097 0.707116 0.707097 14.1367 6.81654)" stroke="#694601" stroke-width="0.836205"/>
+                    <line y1="6.57409" x2="14.476" y2="6.57409" stroke="#694601" stroke-width="0.836205"/>
+                </svg>
+                <span class="times-new-roman text-h3">SEND MESSAGE</span>
+                <svg width="34" height="23" viewBox="0 0 27 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.591294" width="8.21115" height="8.21115" transform="matrix(0.707116 -0.707097 0.707116 0.707097 14.1367 6.81654)" stroke="#694601" stroke-width="0.836205"/>
+                    <line y1="6.57409" x2="14.476" y2="6.57409" stroke="#694601" stroke-width="0.836205"/>
                 </svg>
             </button>
         </form>
@@ -84,30 +89,14 @@
 <script>
     const SITE_KEY = "<?php echo $siteKey; ?>";
     const form = document.getElementById('contactForm');
-    const loading = document.getElementById('loadingOverlay');
-    const submitBtn = form.querySelector("button");
-
-    let isSubmitting = false;
 
     form.addEventListener('submit', function(e) {
         e.preventDefault();
-
-        if (isSubmitting) return;
 
         if (!form.checkValidity()) {
             form.reportValidity();
             return;
         }
-
-        isSubmitting = true;
-
-        submitBtn.disabled = true;
-
-        loading.style.display = "flex";
-
-        const timeout = setTimeout(() => {
-            resetFormState("Request timeout, please try again.");
-        }, 10000);
 
         if (!SITE_KEY) {
             form.submit();
@@ -115,32 +104,10 @@
         }
 
         grecaptcha.ready(function() {
-            grecaptcha.execute(SITE_KEY, {action: 'submit'})
-            .then(function(token) {
-                clearTimeout(timeout);
+            grecaptcha.execute(SITE_KEY, {action: 'submit'}).then(function(token) {
                 document.getElementById('recaptchaResponse').value = token;
                 form.submit();
-            })
-            .catch(function() {
-                clearTimeout(timeout);
-                resetFormState("reCAPTCHA failed, please try again.");
             });
         });
-    });
-
-    function resetFormState(message) {
-        isSubmitting = false;
-        submitBtn.disabled = false;
-        loading.style.display = "none";
-
-        if (message) {
-            alert(message);
-        }
-    }
-
-    window.addEventListener("pageshow", function() {
-        loading.style.display = "none";
-        isSubmitting = false;
-        submitBtn.disabled = false;
     });
 </script>

@@ -557,7 +557,7 @@ img {
 }
 
 .why > div {
-    max-width: 1190px;
+    max-width: 990px;
     width: 100%;
 
     display: flex;
@@ -688,19 +688,36 @@ nav {
 .submit-btn {
     margin-top: auto;
     width: 100%;
-    background-color: white;
-    border: 1px solid #E9C1764D;
-    color: #7E0001;
+    background-color: #EDC97F;
+    border: 1px solid #B9851C;
     font-size: 13px;
     font-weight: 100;
     letter-spacing: 3px;
-    padding: 18px 22px;
+    color: #322203;
+    padding: 18px 40px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 2px;
     transition: all 0.25s ease;
+    box-shadow: 3px 6px 24px 0px rgba(189, 136, 27, 0.65);
+}
+
+.submit-btn:hover {
+    background-color: #EDC97F;
+    color: #000;
+    border-color: #EDC97F;
+    box-shadow: 0 0 20px rgba(237, 201, 127, 0.9);
+}
+
+.submit-btn .text-h3 {
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
+.submit-btn svg:last-of-type {
+    rotate: 180deg;
 }
 
 .contact-left {
@@ -797,10 +814,19 @@ nav {
 
 }
 
-.contact-qr-child > img {
+.qr-border {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #E9C17633;
+}
+
+.qr-border > img {
+    filter: brightness(0) invert(1);
+    padding: 10px;
+    margin: 0 auto;
     width: 100%;
     aspect-ratio: 1/1;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 2px;
     display: block;
 }
@@ -809,6 +835,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 6px;
+    align-items: center;
 }
 
 .contact-qr-line,
@@ -822,9 +849,10 @@ nav {
 
 .contact-qr-phone svg { width: 14px; height: 14px; }
 .contact-qr-line p,
+.name-contact,
 .contact-qr-phone p {
     color: #FFFFFF;
-    font-size: 10px;
+    font-size: 14px;
 }
 
 .form-group {
@@ -865,14 +893,8 @@ nav {
     background-position: right 16px center;
     background-size: 14px;
     cursor: pointer;
-    color: #777777;
-
-}
-
-.submit-btn:hover {
-    background-color: #9A1418;
     color: white;
-    border-color: #9A1418;
+
 }
 
 .contact-bottom {
@@ -940,6 +962,11 @@ nav {
 .horizontal-line::after {
     left: calc(40% + var(--plate-size) / 2);
     right: 0;
+}
+
+.name-contact {
+    color: white;
+    text-align: center;
 }
 
 /* MARK: Glass button */

@@ -37,6 +37,7 @@
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
         curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 5);
         curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query(array(
             'secret' => $env['RECAPTCHA_SECRET_KEY'],
             'response' => $recaptcha
@@ -52,7 +53,7 @@
 
         // MARK: EMAIL TEMPLATE
 
-        $logoUrl = 'http://206.189.90.152/~rncaqsh123/demo/assets/images/logo/logo-snow-beef.png';
+        $logoUrl = 'https://www.snowbeefthailand.com/demo/assets/images/logo/logo-snow-beef.png';
 
         $body = '
             <!DOCTYPE html>

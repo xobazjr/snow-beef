@@ -43,15 +43,15 @@
     <!-- Lenis -->
 
     <script src="https://unpkg.com/@studio-freight/lenis"></script>
-    
-    <!-- Google Analytics -->
 
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-        
+    <!-- Google tag (gtag.js) -->
+     
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FGQDSSHCV"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
-    </script> -->
+
+        gtag('config', 'G-9FGQDSSHCV');
+    </script>
 </head>
