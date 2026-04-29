@@ -84,14 +84,30 @@
 <script>
     const SITE_KEY = "<?php echo $siteKey; ?>";
     const form = document.getElementById('contactForm');
+    const loading = document.getElementById('loadingOverlay');
+    const submitBtn = form.querySelector("button");
+
+    let isSubmitting = false;
 
     form.addEventListener('submit', function(e) {
         e.preventDefault();
+
+        if (isSubmitting) return;
 
         if (!form.checkValidity()) {
             form.reportValidity();
             return;
         }
+
+        isSubmitting = true;
+
+        submitBtn.disabled = true;
+
+        loading.style.display = "flex";
+
+        const timeout = setTimeout(() => {
+            resetFormState("Request timeout, please try again.");
+        }, 10000);
 
         if (!SITE_KEY) {
             form.submit();
@@ -99,10 +115,32 @@
         }
 
         grecaptcha.ready(function() {
-            grecaptcha.execute(SITE_KEY, {action: 'submit'}).then(function(token) {
+            grecaptcha.execute(SITE_KEY, {action: 'submit'})
+            .then(function(token) {
+                clearTimeout(timeout);
                 document.getElementById('recaptchaResponse').value = token;
                 form.submit();
+            })
+            .catch(function() {
+                clearTimeout(timeout);
+                resetFormState("reCAPTCHA failed, please try again.");
             });
         });
+    });
+
+    function resetFormState(message) {
+        isSubmitting = false;
+        submitBtn.disabled = false;
+        loading.style.display = "none";
+
+        if (message) {
+            alert(message);
+        }
+    }
+
+    window.addEventListener("pageshow", function() {
+        loading.style.display = "none";
+        isSubmitting = false;
+        submitBtn.disabled = false;
     });
 </script>
