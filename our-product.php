@@ -46,6 +46,10 @@
                             class="menu-card__image"
                             src="<?= htmlspecialchars($menu->imageUrl) ?>"
                             alt="<?= htmlspecialchars($menu->title) ?>"
+                            width="400"
+                            height="400"
+                            loading="lazy"
+                            decoding="async"
                         />
                     </div>
                 </div>
@@ -56,7 +60,6 @@
         <?php include 'includes/contact-info.php'; ?>
     </main>
 
-    <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/menu-toggle.js"></script>
 </body>
 </html>

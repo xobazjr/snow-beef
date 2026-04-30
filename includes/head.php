@@ -40,6 +40,8 @@
     <link rel="stylesheet" href="css/animation.css">
     <script src="js/scroll-animation.js"></script>
 
+    <script src="js/script.js"></script>
+
     <!-- Lenis -->
 
     <script src="https://unpkg.com/@studio-freight/lenis"></script>

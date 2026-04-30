@@ -15,20 +15,27 @@
             พร้อมมอบบริการแบบ One-Stop Service ที่สะอาดและปลอดภัยในทุกขั้นตอนการแปรรูป
         </h3>
         <div class="our-standard-certificate">
-            <img src="assets/images/certificates/haccp.webp" alt="ใบรับรองมาตรฐาน HACCP">
-            <img src="assets/images/certificates/ghp.webp" alt="ใบรับรองมาตรฐาน GHP">
-            <img src="assets/images/certificates/halal.webp" alt="ใบรับรองมาตรฐาน Halal">
-            <img src="assets/images/certificates/aus-meat.webp" alt="ใบรับรองมาตรฐาน AUS-MEAT">
+            <img src="assets/images/certificates/haccp.webp" alt="ใบรับรองมาตรฐาน HACCP" loading="lazy" decoding="async">
+            <img src="assets/images/certificates/ghp.webp" alt="ใบรับรองมาตรฐาน GHP" loading="lazy" decoding="async">
+            <img src="assets/images/certificates/halal.webp" alt="ใบรับรองมาตรฐาน Halal" loading="lazy" decoding="async">
+            <img src="assets/images/certificates/aus-meat.webp" alt="ใบรับรองมาตรฐาน AUS-MEAT" loading="lazy" decoding="async">
         </div>
     </section>
 
     <div class="our-standard-video">
         <section class="standard-section w-full">
             <div class="video-bg">
-                <div class="video-overlay"></div>
-                <video autoplay loop muted playsinline>
-                    <source src="assets/video/our-standard.mp4" type="video/mp4">
-                </video>
+                <div class="video-overlay bt-black"></div>
+
+                    <video class="lazy-video"
+                        loop muted playsinline
+                        preload="none"
+                        poster="assets/images/thumbnails/thumbnail-snowbeef.webp">
+                        <!-- webm -->
+                        <source src="assets/video/our-standard.webm" type="video/webm">
+                        <!-- fallback -->
+                        <source src="assets/video/our-standard.mp4" type="video/mp4">
+                    </video>
             </div>
         </section>
     </div>
@@ -41,18 +48,18 @@
     </section>
 
     <section class="our-structure">
-        <img src="assets/images/our-meats/our-meats-1.webp" alt="เนื้อวัวโครงสร้างไขมันสมบูรณ์">
+        <img src="assets/images/our-meats/our-meats-1.webp" alt="เนื้อวัวโครงสร้างไขมันสมบูรณ์" loading="lazy" decoding="async">
         <div class="our-bx">
             <div class="our-bx-child">
                 <div class="our-bx-children">
                     <h3 class="text-h3 ibmthai">โครงสร้างไขมันที่สมบูรณ์</h3>
                     <p class="grey text-sub">ไขมันของวัวสายพันธุ์ British จะมีความนุ่มและละลายง่ายกว่า ทำให้เมื่อย่างบนเตา ไขมันจะค่อยๆ ละลายสวยงาม ไม่แข็งเป็นก้อน</p>
                 </div>
-                <img src="assets/images/our-meats/our-meats-2.webp" alt="เนื้อสัมผัสที่เป็นธรรมชาติ">
+                <img src="assets/images/our-meats/our-meats-2.webp" alt="เนื้อสัมผัสที่เป็นธรรมชาติ" loading="lazy" decoding="async">
             </div>
 
             <div class="our-bx-child">
-                 <img src="assets/images/our-meats/our-meats-3.webp" alt="ลายไขมันกระจายตัวเนียนกลมกลืน">
+                 <img src="assets/images/our-meats/our-meats-3.webp" alt="ลายไขมันกระจายตัวเนียนกลมกลืน" loading="lazy" decoding="async">
                 <div class="our-bx-children">
                     <h3 class="text-h3 ibmthai">เนื้อสัมผัสที่เป็นธรรมชาติ</h3>
                     <p class="grey text-sub">ลายไขมันกระจายตัวได้เนียนกริบกลมกลืนไปกับเส้นใยเนื้อหมดปัญหาไขมันแยกตัวหรือดูไม่เป็นธรรมชาติ</p>
@@ -64,7 +71,7 @@
                     <h3 class="text-h3 ibmthai">จุดหลอมเหลวที่พอดี </h3>
                     <p class="grey text-sub">มอบสัมผัสที่ชุ่มฉ่ำและละลายในปาก (Melt-in the-mouth) ให้ความรู้สึกใกล้เคียงกับเนื้อวากิวระดับสูง (High-end Wagyu)</p>
                 </div>
-                <img src="assets/images/our-meats/our-meats-4.webp" alt="เนื้อชุ่มฉ่ำละลายในปาก">
+                <img src="assets/images/our-meats/our-meats-4.webp" alt="เนื้อชุ่มฉ่ำละลายในปาก" loading="lazy" decoding="async">
             </div>
         </div>
     </section>
@@ -79,24 +86,24 @@
     <section class="our-interview">
         <div class="our-interview-child">
             <div class="our-interview-children">
-                <img src="assets/images/menu/meat-3.webp" alt="ไขมันละลายง่าย ไม่แข็งเป็นก้อน">
+                <img src="assets/images/menu/meat-3.webp" alt="ไขมันละลายง่าย ไม่แข็งเป็นก้อน" loading="lazy" decoding="async">
                 <h2 class="grey text-h2 outfit">Melting Behavior</h2>
                 <h3 class="text-h3 grey">
                     ไขมันของวัวสายพันธุ์ British จะมีความนุ่มและละลายง่ายกว่า
                     ทำให้เมื่อย่างบนเตา ไขมันจะค่อยๆ ละลายสวยงาม ไม่แข็งเป็นก้อน</h3>
             </div>
-            <img src="assets/images/melting-behavior.webp" alt="พฤติกรรมการละลายของไขมันเนื้อวัว (Melting Behavior)">
+            <img src="assets/images/melting-behavior.webp" alt="พฤติกรรมการละลายของไขมันเนื้อวัว (Melting Behavior)" loading="lazy" decoding="async">
         </div>
 
         <div class="our-interview-child b-black-premium white">
             <div class="our-interview-children">
-                <img src="assets/images/menu/meat-7.webp" alt="เนื้อสัมผัสชุ่มฉ่ำระดับวากิว">
+                <img src="assets/images/menu/meat-7.webp" alt="เนื้อสัมผัสชุ่มฉ่ำระดับวากิว" loading="lazy" decoding="async">
                 <h2 class="outfit text-h2">Premium Perception</h2>
                 <h3 class="text-h3">
                     มอบสัมผัสที่ชุ่มฉ่ำและละลายในปาก (Melt-in-the-mouth)
                     ให้ความรู้สึกใกล้เคียงกับเนื้อวากิวระดับสูง (High-end Wagyu)</h3>
             </div>
-            <img src="assets/images/premium-perception.webp" alt="สัมผัสระดับพรีเมียม (Premium Perception)">
+            <img src="assets/images/premium-perception.webp" alt="สัมผัสระดับพรีเมียม (Premium Perception)" loading="lazy" decoding="async">
         </div>
     </section>
 
@@ -111,7 +118,7 @@
 
         <div class="jp-bottom">
             <div class="jp-ex-image-bx">
-                <img src="assets/images/meat-before.webp" alt="เนื้อวัวก่อนผ่านนวัตกรรม TN Plus">
+                <img src="assets/images/meat-before.webp" alt="เนื้อวัวก่อนผ่านนวัตกรรม TN Plus" loading="lazy" decoding="async">
                 <h2 class="times-new-roman text-h2 white">Before</h2>
             </div>
             
@@ -121,15 +128,15 @@
             </svg>
 
             <div class="jp-ex-image-bx">
-                <img src="assets/images/menu/meat-3.webp" alt="เนื้อวัวหลังผ่านนวัตกรรม TN Plus">
+                <img src="assets/images/menu/meat-3.webp" alt="เนื้อวัวหลังผ่านนวัตกรรม TN Plus" loading="lazy" decoding="async">
                 <h2 class="times-new-roman text-h2 gold-soft">After</h2>
             </div>
         </div>
     </section>
 
     <section class="dc-japan-section">
-        <img src="assets/images/doctor-japan/dc-japan-1.webp" class="dc-japan-base-img" alt="Lab Background">
-        <img src="assets/images/doctor-japan/dc-japan-2.webp" class="dc-japan-transparent-img" alt="Doctor Transparent">
+        <img src="assets/images/doctor-japan/dc-japan-1.webp" class="dc-japan-base-img" alt="Lab Background" loading="lazy" decoding="async">
+        <img src="assets/images/doctor-japan/dc-japan-2.webp" class="dc-japan-transparent-img" alt="Doctor Transparent" loading="lazy" decoding="async">
         <div class="dc-japan-text-box">
             <h3 class="dc-japan-desc white text-h3">
                 ช่วยล็อกความชุ่มฉ่ำและรสชาติที่เข้มข้นไว้ภายใน ทำให้เนื้อคงความนุ่ม
@@ -141,7 +148,6 @@
     <?php include 'includes/world-class.php' ?>
     <?php include 'includes/contact-info.php' ?>
 
-    <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/menu-toggle.js"></script>
 </body>
 </html>

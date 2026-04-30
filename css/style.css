@@ -688,12 +688,12 @@ nav {
 .submit-btn {
     margin-top: auto;
     width: 100%;
-    background-color: #EDC97F;
-    border: 1px solid #B9851C;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
     font-size: 13px;
     font-weight: 100;
     letter-spacing: 3px;
-    color: #322203;
+    color: #7E0001;
     padding: 18px 40px;
     cursor: pointer;
     display: flex;
@@ -701,14 +701,15 @@ nav {
     justify-content: space-between;
     border-radius: 2px;
     transition: all 0.25s ease;
-    box-shadow: 3px 6px 24px 0px rgba(189, 136, 27, 0.65);
 }
 
 .submit-btn:hover {
-    background-color: #EDC97F;
-    color: #000;
-    border-color: #EDC97F;
-    box-shadow: 0 0 20px rgba(237, 201, 127, 0.9);
+    background-color: #ffffff;
+    color: #7E0001;
+    border-color: #ffffff;
+
+    transform: translateY(-2px);
+    letter-spacing: 4px;
 }
 
 .submit-btn .text-h3 {
@@ -1606,8 +1607,10 @@ nav {
 }
 
 .earth img {
-    margin-top: 130px;
-    width: 90%;
+    padding: 0 50px 0 50px;
+    margin-top: 100px;
+    height: auto;
+    width: 100%;
 }
 
 /* MARK: Reasons */
@@ -3021,6 +3024,7 @@ nav {
     }
 
     .earth img {
+        padding: 0;
         margin-top: 30px;
         width: 100%;
     }

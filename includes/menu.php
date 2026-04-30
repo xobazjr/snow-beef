@@ -1,12 +1,27 @@
 <section class="menu-section">
+
     <div class="product-meats-img">
-        <img src="assets/images/menu/meat-1.webp" class="meat-left" alt="meat">
-        <img src="assets/images/melting-behavior-transparency.webp" class="meat-right" alt="meat">
+        <img 
+            src="assets/images/menu/meat-1.webp" 
+            class="meat-left" 
+            alt="meat"
+            loading="lazy"
+            decoding="async"
+        >
+
+        <img 
+            src="assets/images/melting-behavior-transparency.webp" 
+            class="meat-right" 
+            alt="meat"
+            loading="lazy"
+            decoding="async"
+        >
     </div>
 
     <div class="product">
         <p class="gold uppercase">OUR SNOW BEEF</p>
         <h2 class="text-h2 font-medium text-white ibmthai">ผลิตภัณฑ์ของเรา</h2>
+
         <h3 class="text-h3 font-light text-white">
             เนื้อส่วน สันใน, ริบอาย, สันนอก, เซอร์ลอยด์ และชัคโรลกระดับด้วยนวัตกรรมแทรกไขมัน
             เอกสิทธิ์เพื่อสัมผัสนุ่มละมุนดุจเนยและรสชาติที่เข้มข้นสม่ำเสมอในทุกชิ้น
@@ -20,7 +35,9 @@
                 </svg>
             </a>
 
-            <a href="assets/documents/product-catalog-bio-fresh-food-2026.pdf" download="Product Catalog BIO FRESH FOOD. 2026.pdf" class="explore-btn text-body btn-red outfit">
+            <a href="assets/documents/product-catalog-bio-fresh-food-2026.pdf" 
+               download="Product Catalog BIO FRESH FOOD 2026.pdf" 
+               class="explore-btn text-body btn-red outfit">
                 Download Catalog
                 <svg width="26" height="12" viewBox="0 0 26 12" fill="none">
                     <path d="M1 6H17 M17 6L21 2L25 6L21 10Z" stroke="currentColor" stroke-width="1"/>
@@ -32,8 +49,14 @@
     <div class="carousel-track">
         <?php foreach (array_slice($menus, 0, 5) as $menu): ?>
             <div class="menu-card">
-                <p class="menu-label outfit"><?= htmlspecialchars($menu->label) ?></p>
-                <h3 class="menu-title times-new-roman"><?= htmlspecialchars($menu->title) ?></h3>
+
+                <p class="menu-label outfit">
+                    <?= htmlspecialchars($menu->label) ?>
+                </p>
+
+                <h3 class="menu-title times-new-roman">
+                    <?= htmlspecialchars($menu->title) ?>
+                </h3>
 
                 <div class="menu-divider">
                     <hr>
@@ -42,9 +65,20 @@
                     </svg>
                 </div>
 
-                <p class="menu-desc newsreader">"<?= htmlspecialchars($menu->description) ?>"</p>
+                <p class="menu-desc newsreader">
+                    "<?= htmlspecialchars($menu->description) ?>"
+                </p>
 
-                <img src="<?= htmlspecialchars($menu->imageUrl) ?>" class="menu-image" alt="meat">
+                <div class="menu-image-wrapper">
+                    <img 
+                        src="<?= htmlspecialchars($menu->imageUrl) ?>"
+                        alt="<?= htmlspecialchars($menu->title) ?>"
+                        class="menu-image"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                </div>
+
             </div>
         <?php endforeach; ?>
     </div>
@@ -64,6 +98,7 @@
             </svg>
         </span>
     </div>
+
 </section>
 
 <script>
