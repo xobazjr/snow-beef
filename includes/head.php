@@ -5,18 +5,18 @@
     <meta name="description" content="Snow beef คือเนื้อวัวออสเตรเลียที่เติบโตและเลี้ยงด้วยการกินหญ้าจากธรรมชาติ (Grass-Fed Australian) ก่อนจะนำมาผ่านกระบวนการตัดแต่งและแปรรูปด้วย นวัตกรรม Injection เพื่อให้เนื้อมีลายไขมันแทรกและมีความนุ่ม ชุ่มฉ่ำ ยกระดับคุณภาพและรสชาติของเนื้อวัวให้พิเศษยิ่งขึ้น">
     <meta name="keywords" content="เนื้อวัว, สโนว์ บีฟ, เนื้อวัวลายหิมะ, เนื้อวัวออสเตรเลีย, Snow Beef Thailand">
     <meta name="author" content="Snow Beef Thailand">
-    <link rel="canonical" href="https://snowbeefthailand.com/">
+    <link rel="canonical" href="https://www.snowbeefthailand.com/demo/">
 
-    <meta property="og:url" content="http://206.189.90.152/~rncaqsh123/demo/">
+    <meta property="og:url" content="https://www.snowbeefthailand.com/demo/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Snow Beef Thailand - เนื้อวัวพรีเมียม">
     <meta property="og:description" content="เนื้อวัวออสเตรเลีย นุ่ม ชุ่มฉ่ำ ด้วยเทคโนโลยี Injection">
-    <meta property="og:image" content="http://206.189.90.152/~rncaqsh123/demo/assets/images/thumbnails/thumbnail-snowbeef.jpg">
+    <meta property="og:image" content="https://www.snowbeefthailand.com/demo/assets/images/thumbnails/thumbnail-snowbeef.jpg">
     <meta property="og:site_name" content="Snow Beef Thailand">
 
     <meta name="twitter:card" content="summary_large_image">
    
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/logo/logo-snow-beef.png" type="image/x-icon">
 
     <!-- Preconnect -->
 
@@ -25,26 +25,20 @@
 
     <!-- Fonts -->
 
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Suravaram&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;700&family=Mr+Dafoe&family=Newsreader:wght@300;400;500;700&family=Outfit:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&family=Sarabun:wght@300;400;500;700&family=Suravaram&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Animation -->
 
     <link rel="stylesheet" href="css/animation.css">
-    <script src="js/scroll-animation.js"></script>
+    <script src="js/scroll-animation.js" defer></script>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 
     <!-- Lenis -->
 
-    <script src="https://unpkg.com/@studio-freight/lenis"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis" defer></script>
 
     <!-- Google tag (gtag.js) -->
      

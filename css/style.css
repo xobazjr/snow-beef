@@ -1420,7 +1420,7 @@ nav {
 
 .product {
     text-align: center;
-    max-width: 920px;
+    max-width: 770px;
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
@@ -1447,17 +1447,13 @@ nav {
 .carousel-track {
     width: 100%;
     max-width: 1380px;
-
     padding: 20px 40px 40px;
-
     display: flex;
     gap: 24px;
-
     overflow-x: auto;
-
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-
+    -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
 }
 
@@ -1467,18 +1463,19 @@ nav {
 
 .menu-card {
     flex: 0 0 320px;
-
     background-color: #670F11;
     padding: 30px;
     box-sizing: border-box;
-
     display: flex;
     flex-direction: column;
-
-    scroll-snap-align: start;
-
-    transition: transform 0.3s ease;
+    scroll-snap-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
     border: 1px solid rgba(226, 194, 130, 0.29);
+}
+
+
+.menu-card.active {
+    transform: scale(1.03);
 }
 
 .menu-card:hover {

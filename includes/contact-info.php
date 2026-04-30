@@ -82,13 +82,29 @@
     </div> 
 </section>
 
-<?php if ($siteKey): ?>
-    <script src="https://www.google.com/recaptcha/api.js?render=<?php echo $siteKey; ?>"></script>
-<?php endif; ?>
-
 <script>
     const SITE_KEY = "<?php echo $siteKey; ?>";
     const form = document.getElementById('contactForm');
+
+    let recaptchaLoaded = false;
+
+    function loadRecaptcha(callback) {
+        if (recaptchaLoaded) {
+            callback();
+            return;
+        }
+
+        const script = document.createElement("script");
+        script.src = `https://www.google.com/recaptcha/api.js?render=${SITE_KEY}`;
+        script.async = true;
+
+        script.onload = () => {
+            recaptchaLoaded = true;
+            callback();
+        };
+
+        document.body.appendChild(script);
+    }
 
     form.addEventListener('submit', function(e) {
         e.preventDefault();
@@ -103,10 +119,12 @@
             return;
         }
 
-        grecaptcha.ready(function() {
-            grecaptcha.execute(SITE_KEY, {action: 'submit'}).then(function(token) {
-                document.getElementById('recaptchaResponse').value = token;
-                form.submit();
+        loadRecaptcha(() => {
+            grecaptcha.ready(function() {
+                grecaptcha.execute(SITE_KEY, {action: 'submit'}).then(function(token) {
+                    document.getElementById('recaptchaResponse').value = token;
+                    form.submit();
+                });
             });
         });
     });

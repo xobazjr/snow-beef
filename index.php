@@ -130,8 +130,6 @@
                 alt="คุณอิทธิศักดิ์ เชี่ยวเจริญวงศ์"
                 loading="lazy"
                 decoding="async"
-                width="500"
-                height="600"
             >
 
             <div>
